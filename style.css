@@ -15,6 +15,44 @@
             font-family: "MarkPro Bold";
             src: url("../MarkPro-Bold.otf");
         }
+        @font-face {
+            font-family: 'Futura Bk BT';
+            src: url('./fonts/FuturaBT-Book.eot');
+            src: url('./fonts/FuturaBT-Book-1.eot') format('embedded-opentype'),
+                url('./fonts/FuturaBT-Book.woff2') format('woff2'),
+                url('./fonts/FuturaBT-Book.woff') format('woff'),
+                url('./fonts/FuturaBT-Book.ttf') format('truetype'),
+                url('./fonts/FuturaBT-Book.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Futura Md BT';
+            src: url('./fonts/FuturaBT-Medium.eot');
+            src: url('./fonts/FuturaBT-Medium-1.eot') format('embedded-opentype'),
+                url('./fonts/FuturaBT-Medium.woff2') format('woff2'),
+                url('./fonts/FuturaBT-Medium.woff') format('woff'),
+                url('./fonts/FuturaBT-Medium.ttf') format('truetype'),
+                url('./fonts/FuturaBT-Medium.svg') format('svg');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Futura Md BT';
+            src: url('./fonts/FuturaBT-Bold.eot');
+            src: url('./fonts/FuturaBT-Bold-1.eot') format('embedded-opentype'),
+                url('./fonts/FuturaBT-Bold.woff2') format('woff2'),
+                url('./fonts/FuturaBT-Bold.woff') format('woff'),
+                url('./fonts/FuturaBT-Bold.ttf') format('truetype'),
+                url('./fonts/FuturaBT-Bold.svg') format('svg');
+            font-weight: bold;
+            font-style: normal;
+        }
+                
         body {            
             background: #313131;
             font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -72,60 +110,60 @@
 /* <!-- ======================================= 
 ==CSS Clase General==  
 =======================================--> */
-.flex {
-    display: flex;
-}
-.block {
-    display: block;
-}
-.items-center {
-    align-items: center;           
-}
-.justify-content{
-    justify-content: center;
-}
-.relative {
-    position: relative;
-}
-.text-white {
-    color: #fff;
-}
-.font-semi-bold {
-    font-weight: 600;
-}
-.text-xl{
-    font-size: 17px;
-}
-.text-lg{
-    font-size: 15px;
-}
-.text-md {
-    font-size: 13px;
-}
-.text-sm{
-    font-size: 11px;
-}      
-.mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-.w-full {
-    width: 100%;
-}
-.marge-prueba {
-    padding-top: 20px;
-}
-.space> :not([hidden])~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-.pd-mb-top{
-    margin-top: 15px;
-}
-.pd-mb-bottom{
-    margin-bottom: 15px;
-}
+        .flex {
+            display: flex;
+        }
+        .block {
+            display: block;
+        }
+        .items-center {
+            align-items: center;           
+        }
+        .justify-content{
+            justify-content: center;
+        }
+        .relative {
+            position: relative;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .font-semi-bold {
+            font-weight: 600;
+        }
+        .text-xl{
+            font-size: 17px;
+        }
+        .text-lg{
+            font-size: 15px;
+        }
+        .text-md {
+            font-size: 13px;
+        }
+        .text-sm{
+            font-size: 11px;
+        }      
+        .mx-auto{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .marge-prueba {
+            padding-top: 20px;
+        }
+        .space> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+        .pd-mb-top{
+            margin-top: 15px;
+        }
+        .pd-mb-bottom{
+            margin-bottom: 15px;
+        }
 
 /* <!-- ======================================= 
 ==End CSS Clase General==  
@@ -180,7 +218,7 @@
             border-radius: 9999px;
             border-width: 1px;
             border-style: solid;
-            margin-right: 15px;
+            /* margin-right: 15px; */
         }       
         .btn:hover {
             border-color: #fff;
@@ -283,8 +321,22 @@
             color: rgb(71, 67, 67);
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
-            font-family: 'Roboto', sans-serif;            
+            font-family: 'Roboto', sans-serif;      
         }
+        .section-title{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 0px;
+            color: rgb(71, 67, 67);
+            z-index: 2;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;     
+            font-family: 'Futura Md BT';
+        }    
         .single-portfolio:nth-child(even) {
             flex-flow: row-reverse;
         }
@@ -372,31 +424,30 @@
         .bg-header {      
             /* --featured-img: linear-gradient(180deg,rgba(0, 194, 255),rgba(255, 50, 50)); */
             background:
-                radial-gradient(farthest-side at top left,
+            radial-gradient(farthest-side at top left,
                     rgba(0, 194, 255, 0.2),
                     transparent 1000px),
-                radial-gradient(farthest-corner at bottom right,
+            radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.2),
                     transparent 1000px);
                 /* radial-gradient(300px 300px at center center ,rgba(49,49,49,.80),rgb(49, 49, 49)),var(--featured-img); */                   
         }
         .portfolio-section{
             background:
-                radial-gradient(farthest-corner at top right,
-                rgba(255, 50, 50, 0.2),
+            radial-gradient(farthest-corner at top right,
+            rgba(255, 50, 50, 0.2),
                         transparent 1000px);
                 
-        }
-        
+        }        
     }
     @media (min-width: 1024px){
         .container {
             max-width: 1025px;     
         }             
         .header {
-            padding-left: 60px;
-            padding-right: 60px;
-            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
             padding-bottom: 0px;
             box-shadow: none;
         }
@@ -424,8 +475,7 @@
             display: block;
         }
         .img-header{
-            margin-top: 100px;
-          
+            margin-top: 100px;          
         }
         .text-xl{
             font-size: 25px;
@@ -482,15 +532,34 @@
             right: -30px;
             font-size: 90px;        
         }
+        .section-title {
+            top: 86%;
+            left: 2%;
+            font-size: 75px;      
+        }
     }
     @media (min-width: 1280px) {
         .container {
             max-width: 1280px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .header {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 40px;
+            padding-bottom: 0px;
+            box-shadow: none;
         }
         .count {
             right: -110px;
             font-size: 100px;      
         }  
+        .section-title {
+            top: 82%;
+            left: 5%;
+            font-size: 90px;    
+        }
         .bash-1{
             width: 350px;
             height: 80px;
@@ -500,10 +569,24 @@
     @media (min-width: 1400px) {
         .container {
             max-width: 1400px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .header {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 40px;
+            padding-bottom: 0px;
+            box-shadow: none;
         }
         .count {
             right: -110px;
             font-size: 120px;      
+        }
+        .section-title {
+            top: 82%;
+            left: 5%;
+            font-size: 100px;       
         }
         .bash-1{
             width: 350px;
@@ -511,32 +594,37 @@
             right: 170px;
         }  
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* <!-- ======================================= 
+==End-Container-Responsibe-CSS==  
+=======================================--> */
 
     
-     .skill-wrapper {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*  */
+     /* .skill-wrapper {
         position: relative;
         max-width: 1170px;
         margin: 0 auto;
@@ -582,13 +670,10 @@
         position: relative;
         z-index: 1;
         align-self: stretch;
-    }
-
-   
+    }  
     .single-skill.animated:nth-child(odd) {
         transform: translate(0, 80px);
     }
-
     .single-skill p {
         line-height: 1.6;
         margin-top: 12px;
@@ -608,7 +693,6 @@
         height: 2px;
         background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
     }
-
     .single-skill span.circle {
         display: block;
         width: 14px;
@@ -631,20 +715,14 @@
         right: -50px;
         height: 30px;
         width: 115px;
-
         background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
-
     }
-
     .single-skill:nth-child(odd) span.rectengle{
         right: inherit;
         left: -50px;
         background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
-
-
     }
-@media (max-width: 991px){
-  
+    @media (max-width: 991px){ 
     .skill-wrapper {
         display: block;
         max-width: 510px;
@@ -666,8 +744,7 @@
         left: -32px;
         right: inherit;
         background: linear-gradient(to right, rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
-    }
-   
+    }   
     .single-skill.animated:nth-child(odd) {
         transform: translate(0, 0);
     }
@@ -679,10 +756,7 @@
     .single-skill:nth-child(odd) span.circle{
         right: inherit;
         left: -39px;
+    }   
     }
-    
-}
 
-/* <!-- ======================================= 
-==End-Container-Responsibe-CSS==  
-=======================================--> */
+ */
