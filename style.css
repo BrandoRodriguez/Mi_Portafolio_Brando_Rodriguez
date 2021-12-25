@@ -3,13 +3,13 @@
         ==CSS-General==  
 =======================================--> */ 
         body::-webkit-scrollbar{
-            width: 15px;
+            width: 10px;
             background: #313131;
         }
         body::-webkit-scrollbar-thumb{
             background: rgba(255,255,255, .2);
             border-radius: 10px;
-            border-right: 2px solid #313131;
+            border-right: 3px solid #313131;
         }
         @font-face {
             font-family: "MarkPro Bold";
@@ -135,7 +135,7 @@
             font-size: 17px;
         }
         .text-lg{
-            font-size: 15px;
+            font-size: 14px;
         }
         .text-md {
             font-size: 13px;
@@ -299,6 +299,7 @@
             font-size: 14px;
             line-height: 1.6;
             text-align: justify;
+            margin-bottom: 15px;
         }
         .link-btn {
             height: 40px;
@@ -475,7 +476,7 @@
             display: block;
         }
         .img-header{
-            margin-top: 100px;          
+            margin-top: 70px;          
         }
         .text-xl{
             font-size: 25px;
@@ -486,18 +487,16 @@
             height: 90px;
             right: 150px;
             top: 0;
-            border-bottom: none;
-            background-color:rgba(128,128,128,.2);
+            border-bottom: none;          
+            background: linear-gradient(to right, rgba(0,0,0,0.1) 1%,rgba(78,78,78,0.80) 99%,rgba(78,78,78,1) 100%);
             padding: 0 5px;
-            border-bottom: none;
-            background-color: rgba(128,128,128,.2);
             border-radius: 8px;   
             cursor: pointer;    
         }  
-        .bash-1:hover{
+        /* .bash-1:hover{
             animation: bg-fade-in .2s ease-out forwards;
             background-color:#2e2e2e;
-        }    
+        }     */
         .dk-hero-hidden{
             display: block;
         }
@@ -530,11 +529,11 @@
         }
         .count {
             right: -30px;
-            font-size: 90px;        
+            font-size: 85px;        
         }
         .section-title {
             top: 86%;
-            left: 1%;
+            left: 0%;
             font-size: 75px;      
         }
     }
@@ -553,7 +552,7 @@
         }
         .count {
             right: -110px;
-            font-size: 100px;      
+            font-size: 90px;      
         }  
         .section-title {
             top: 82%;
@@ -581,7 +580,7 @@
         }
         .count {
             right: -110px;
-            font-size: 120px;      
+            font-size: 110px;      
         }
         .section-title {
             top: 82%;
@@ -592,6 +591,7 @@
             width: 350px;
             height: 80px;
             right: 170px;
+            padding: 15px;
         }  
     }
 /* <!-- ======================================= 
@@ -624,7 +624,7 @@
 
 
     /*  */
-     /* .skill-wrapper {
+     .skill-wrapper {
         position: relative;
         max-width: 1170px;
         margin: 0 auto;
@@ -705,6 +705,17 @@
         z-index: 2;
         box-shadow: 0 0px 0px 8px #333;
     }
+    .circl {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: #f43534;
+        border-radius: 100%;
+        position: absolute;
+        left: -5px;
+        z-index: 2;
+        box-shadow: 0 0px 0px 8px #333;
+    }
     .single-skill:nth-child(odd) span.circle{
         right: inherit;
         left: -39px;
@@ -759,4 +770,4 @@
     }   
     }
 
- */
+
