@@ -489,7 +489,7 @@
             top: 0;
             border-bottom: none;          
             background: linear-gradient(to right, rgba(0,0,0,0.1) 1%,rgba(78,78,78,0.80) 99%,rgba(78,78,78,1) 100%);
-            padding: 0 5px;
+            padding: 15px;
             border-radius: 8px;   
             cursor: pointer;    
         }  
@@ -556,8 +556,8 @@
         }  
         .section-title {
             top: 82%;
-            left: 3%;
-            font-size: 90px;    
+            left: 60px;
+            font-size: 80px;    
         }
         .bash-1{
             width: 350px;
@@ -591,7 +591,6 @@
             width: 350px;
             height: 80px;
             right: 170px;
-            padding: 15px;
         }  
     }
 /* <!-- ======================================= 
