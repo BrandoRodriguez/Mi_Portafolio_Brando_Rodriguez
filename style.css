@@ -67,11 +67,10 @@
             font-weight: bold;
             font-style: normal;
         }
-        html{
+        body{
             background: #313131;
-            height: 100%;
             font-family: "Sen", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }       
+        }      
       
  
      
@@ -215,7 +214,6 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
-            ;
         }
         .h-img-logo {
             height: 32px;
@@ -236,7 +234,6 @@
             border-radius: 9999px;
             border-width: 1px;
             border-style: solid;
-            /* margin-right: 15px; */
         }       
         .btn:hover {
             border-color: #fff;
@@ -355,11 +352,24 @@
             font-weight: 700;
             line-height: 1;     
             font-family: 'Futura Md BT';
+        }  
+        .section-title1{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            top: 0;
+            left: 0;
+            font-size: 0px;
+            color: rgb(71, 67, 67);
+            margin-bottom: 50px;
+            z-index: 2;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1;     
+            font-family: 'Futura Md BT';
         }    
         .single-portfolio:nth-child(even) {
             flex-flow: row-reverse;
-        }
-        
+        }       
         .single-portfolio:nth-child(even) .portfolio-content {
             padding-left: 0;
             padding-right: 0px;
@@ -434,8 +444,7 @@
             margin-left: auto;
             margin-right: auto;
             align-items: center;
-            justify-content: center;
-            
+            justify-content: center;          
         }
         .hidden {
             display: none;
@@ -451,7 +460,7 @@
                     transparent 1000px);
                 /* radial-gradient(300px 300px at center center ,rgba(49,49,49,.80),rgb(49, 49, 49)),var(--featured-img); */                   
         }
-        html::before {
+        body::before {
             content: "";
             width: 100%;
             height: 120%;
@@ -467,11 +476,8 @@
             background:
             radial-gradient(farthest-corner at top right,
             rgba(255, 50, 50, 0.2),
-                        transparent 1000px);
-                
-        }  
-  
-           
+                        transparent 1000px);               
+        }            
     }
     @media (min-width: 1024px){
         .container {
@@ -525,10 +531,6 @@
             border-radius: 8px;   
             cursor: pointer;    
         }  
-        /* .bash-1:hover{
-            animation: bg-fade-in .2s ease-out forwards;
-            background-color:#2e2e2e;
-        }     */
         .dk-hero-hidden{
             display: block;
         }
@@ -568,6 +570,10 @@
             left: 18px;
             font-size: 65px;     
         }
+        .section-title1 {
+            left: 18px;
+            font-size: 65px;     
+        }
     }
     @media (min-width: 1280px) {
         .container {
@@ -588,6 +594,10 @@
         }  
         .section-title {
             top: 82%;
+            left: 60px;
+            font-size: 80px;    
+        }
+        .section-title1 {
             left: 60px;
             font-size: 80px;    
         }
@@ -627,6 +637,10 @@
             left: 3%;
             font-size: 100px;       
         }
+        .section-title1 {
+            left: 3%;
+            font-size: 100px;       
+        }
         .bash-1{
             width: 350px;
             height: 80px;
@@ -644,31 +658,6 @@
 /* <!-- ======================================= 
 ==End-Container-Responsibe-CSS==  
 =======================================--> */
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*  */
      .skill-wrapper {
@@ -689,7 +678,6 @@
         position: absolute;
         left: 50%;
     }
-
     .vertical-line:before,
     .vertical-line:after{
         content: "";
@@ -821,6 +809,7 @@
     #stars {
         width: 1px;
         height: 1px;
+        opacity: 0.5;
         background: transparent;
         animation: animStar 50s linear infinite;
         box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -1005,6 +994,7 @@
     #stars2 {
         width: 2px;
         height: 2px;
+        opacity: 0.5;
         background: transparent;
         animation: animStar 100s linear infinite;
         box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
@@ -1064,6 +1054,7 @@
     #stars3 {
         width: 3px;
         height: 3px;
+        opacity: 0.5;
         background: transparent;
         animation: animStar 150s linear infinte;
         box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
