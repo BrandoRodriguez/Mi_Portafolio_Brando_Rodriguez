@@ -108,10 +108,11 @@
       right: 150px;
       top: 0;
       border-bottom: none;          
-      background: linear-gradient(to right, rgba(0,0,0,0.1) 1%,rgba(78,78,78,0.50) 99%,rgba(78,78,78,1) 100%);
-      padding: 15px;
-      border-radius: 8px;   
-      cursor: pointer;    
+      padding: 15px; 
+      cursor: pointer;  
+      background: rgb(255, 255, 255, 0.9%);
+      border-radius: 5px;
+      border: 1px solid rgb(71, 67, 67);  
   }  
   .dk-hero-hidden{
       display: block;
