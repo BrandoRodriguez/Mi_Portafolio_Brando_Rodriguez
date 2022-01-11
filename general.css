@@ -1,0 +1,63 @@
+/* <!-- ======================================= 
+==CSS Clase General==  
+=======================================--> */
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}
+.items-center {
+  align-items: center;           
+}
+.justify-content{
+  justify-content: center;
+}
+.relative {
+  position: relative;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.text-xl{
+  font-size: 17px;
+}
+.text-lg{
+  font-size: 14px;
+}
+.text-md {
+  font-size: 13px;
+}
+.text-sm{
+  font-size: 11px;
+}      
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.w-full {
+  width: 100%;
+}
+.marge-prueba {
+  padding-top: 20px;
+}
+.space> :not([hidden])~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.pd-mb-top{
+  margin-top: 15px;
+}
+.pd-mb-bottom{
+  margin-bottom: 15px;
+}
+/* <!-- ======================================= 
+==End CSS Clase General==  
+=======================================--> */    
