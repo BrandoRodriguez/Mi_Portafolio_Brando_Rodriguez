@@ -272,6 +272,7 @@
         .bash-linea {
             border-bottom: 1px solid #5c5b5b;
             padding-bottom: 15px;
+            padding-top: 15px;
         } 
         .pd-info{
             padding: 0 0 0 10px;
@@ -343,10 +344,10 @@
         .section-title{
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
-            position: absolute;
+            position:relative;
             top: 0;
             left: 0;
-            font-size: 0px;
+            font-size: 50px;
             color: rgb(71, 67, 67);
             z-index: 2;
             text-transform: uppercase;
@@ -359,7 +360,7 @@
             -webkit-text-stroke-width: 2px;
             top: 0;
             left: 0;
-            font-size:65px; 
+            font-size:50px; 
             color: rgb(71, 67, 67);
             margin-bottom: 50px;
             z-index: 2;
@@ -416,7 +417,7 @@
         .single-skill {
             width: 50%;
             max-width: 535px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             background: rgb(255, 255, 255, 0.9%);
             padding: 15px 30px 20px;
             border-radius: 5px;
@@ -680,7 +681,8 @@
         .section-title {
             top: 86%;
             left: 18px;
-            font-size: 65px;     
+            font-size: 65px; 
+            position:absolute; 
         }
         .section-title1 {
             left: 18px;
