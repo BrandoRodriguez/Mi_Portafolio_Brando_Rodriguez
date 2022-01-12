@@ -12,36 +12,46 @@
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../responsibe.css">
     <style>
-     
-
-        .bg {
-            position: relative;
-            overflow: hidden;
-            background: #000 url("../../assets/img-bg/background.png") no-repeat center center/cover
-            ;
-
-z-index: 1;
+        .bg::after {
+            content: "";
+            width: 100%;
+            height: 120%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("../../assets/img-bg/background.png") no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.6;
         }
 
-    
-        .single-portfolio{
+        .single-portfolio {
             flex-flow: row-reverse;
-            
-        }       
+            margin-top: 100px;
+        }
+
         .single-portfolio .portfolio-content {
             padding-left: 0;
             padding-right: 0px;
         }
+
         .single-portfolio .img-area .count {
             left: -70px;
             right: inherit;
+            top: -50;
+            opacity: 0.3;
         }
-        @media (min-width: 1024px){
-.single-portfolio .portfolio-content {
-    padding-left: 0;
-    padding-right: 40px;
-    
-}}
+
+        @media (min-width: 1024px) {
+            .single-portfolio .portfolio-content {
+                padding-left: 0;
+                padding-right: 40px;
+            }
+
+            .text-xx {
+                font-size: 46px;
+                margin-top: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -49,7 +59,7 @@ z-index: 1;
     <!-- ======================================= 
         ==Start Hero section==  
 =======================================-->
-    <section class="bg bg-lineal w-full font-header">
+    <section class="bg  bg-lineal w-full font-header">
         <div id="stars"></div>
         <nav class="relative">
             <div class="header">
@@ -92,48 +102,45 @@ z-index: 1;
                     <img class="btn-hidden" src="../../assets/menu-mobile.svg" alt="btn-menu">
                 </div>
             </div>
-            <div class="container mx-auto w-full">
-                <div class="single-portfolio">
-                    <div class="img-area">
-                        <span class="count nav-hidden">01</span>
-                        <img src="../../assets/img-proyects/phone.png" alt="portfolio-img" class="img-p">
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="portfolio-type text-sm">
-                            HTML & CSS
-                            <span class="">
-                                STANDAR
-                            </span>
-                        </span>
-                        <h2 class="text-white text-xl">ECommerce | Layout, Design, & Styling</h2>
-                        <div class="flex justify-center items-center">
-                            <div class="icon-tec">
-                                <img class="img-icon-tec" src="../../assets/icon-tec/figma.png">
-                            </div>
-                        </div>
-                        <p class="text-md">See how designers find creative ways to create engaging visual
-                            layout designs — bringing a little creativity back to your website. Design your online shop
-                            the way you want using our advanced options.We pride ourselves on being user-friendly for
-                            you and your customers.</p>
-                        <a href="../../header/index.html" class="text-white text-lg">View
-                            Components
-                            <span class="link-btn">
-                                <img src="../../assets/flecha.png" alt="arrow">
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
 
         </nav>
-     
+        <div class="container mx-auto w-full">
+            <div class="single-portfolio">
+                <div class="img-area">
+                    <span class="count nav-hidden">MY ECOMERCE</span>
+                    <img src="../../assets/img-proyects/phone.png" alt="portfolio-img" class="img-p">
+                </div>
+                <div class="portfolio-content">
+                    <span class="portfolio-type text-md">
+                        DESIGN SMARTER, NOT HARDER
+                    </span>
+                    <h2 class="text-white text-xx">ECommerce | Layout, Design, & Styling</h2>
+                    <div class="flex justify-center items-center">
+                        <div class="icon-tec">
+                            <img class="img-icon-tec" src="../../assets/icon-tec/figma.png">
+                        </div>
+                    </div>
+                    <p class="text-md">See how designers find creative ways to create engaging visual
+                        layout designs — bringing a little creativity back to your website. Design your online shop
+                        the way you want using our advanced options.We pride ourselves on being user-friendly for
+                        you and your customers.</p>
+                    <a href="../../header/index.html" class="text-white text-lg">View
+                        Components
+                        <span class="link-btn">
+                            <img src="../../assets/flecha.png" alt="arrow">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </section>
 
     <!-- ======================================= 
         ==End Hero section==  
 =======================================-->
-  
+
 
 </body>
 
