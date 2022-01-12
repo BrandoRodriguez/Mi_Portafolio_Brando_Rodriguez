@@ -121,13 +121,21 @@
         .link-btn {
             height: 40px;
             width: 40px;
-            background: #D1AC90;
             border-radius: 100%;
             display: inline-flex;
             flex-flow: column;
             align-items: center;
             justify-content: center;
             margin-left: 5px;
+            position: relative;
+            z-index: 2;
+            --border-opacity: 1;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-width: 1px;
+            border-style: solid;
+        }
+        .link-btn:hover {
+            border-color: #fff;
         }
         .count {
             position: absolute;
@@ -452,10 +460,3 @@
     
           
           
-
-
-  
-
-
-
-    
