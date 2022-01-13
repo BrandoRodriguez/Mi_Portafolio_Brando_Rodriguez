@@ -6,8 +6,8 @@
             display: flex;
             padding-left: 15px;
             padding-right: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
             justify-content: space-between;
             align-items: center;
             box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
@@ -15,17 +15,20 @@
             z-index: 2;
         }
         .h-img-logo {
-            height: 32px;
+            height: 27px;
         }        
         .nav-hidden {
             display: none;
         }
         .dk-hero-hidden{
             display: none;
-        }       
+        }   
+        .ctn-btn{
+            gap: 5px;
+        }    
         .btn {
-            padding-top: 9px;
-            padding-bottom: 9px;
+            padding-top: 7px;
+            padding-bottom: 7px;
             padding-left: 20px;
             padding-right: 20px;
             --border-opacity: 1;
@@ -44,7 +47,7 @@
         }
         .social-icon {
             position: absolute;
-            right: 11px;
+            right: 6px;
             bottom: 0;
             top: 60px;
             z-index: 2;
@@ -52,7 +55,6 @@
         }
         .social-icon li {
             display: block;
-            margin-bottom: 2px;
         }
         .social-icon li a {
             width: 46px;
