@@ -1,6 +1,15 @@
 /* <!-- ======================================= 
 ==Container-Responsibe-CSS==  
 =======================================--> */
+.bg-header {      
+    background:
+    radial-gradient(farthest-side at top left,
+            rgba(0, 194, 255, 0.3),
+            transparent 1000px),
+    radial-gradient(farthest-corner at bottom right,
+            rgba(255, 50, 50, 0.3),
+            transparent 1000px);          
+}
 @media (min-width: 640px) {
   .container {
       width: 100%;
@@ -30,17 +39,7 @@
   .hidden {
       display: none;
   }
-  .bg-header {      
-      /* --featured-img: linear-gradient(180deg,rgba(0, 194, 255),rgba(255, 50, 50)); */
-      background:
-      radial-gradient(farthest-side at top left,
-              rgba(0, 194, 255, 0.3),
-              transparent 1000px),
-      radial-gradient(farthest-corner at bottom right,
-              rgba(255, 50, 50, 0.3),
-              transparent 1000px);
-          /* radial-gradient(300px 300px at center center ,rgba(49,49,49,.80),rgb(49, 49, 49)),var(--featured-img); */                   
-  }
+ 
   body::after {
       content: "";
       width: 100%;
