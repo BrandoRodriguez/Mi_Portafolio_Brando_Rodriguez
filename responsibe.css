@@ -5,10 +5,10 @@
     background:
     radial-gradient(farthest-side at top left,
             rgba(0, 194, 255, 0.3),
-            transparent 1000px),
+            transparent 300px),
     radial-gradient(farthest-corner at bottom right,
             rgba(255, 50, 50, 0.3),
-            transparent 1000px);          
+            transparent 300px);          
 }
 @media (min-width: 640px) {
   .container {
@@ -56,7 +56,16 @@
       radial-gradient(farthest-corner at top right,
       rgba(255, 50, 50, 0.3),
                   transparent 1000px);               
-  }            
+  } 
+  .bg-header {      
+    background:
+    radial-gradient(farthest-side at top left,
+            rgba(0, 194, 255, 0.3),
+            transparent 1000px),
+    radial-gradient(farthest-corner at bottom right,
+            rgba(255, 50, 50, 0.3),
+            transparent 1000px);          
+}           
 }
 @media (min-width: 1024px){
   .container {
