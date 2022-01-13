@@ -14,6 +14,15 @@
             position: relative;
             z-index: 2;
         }
+        .img-bg{
+            position: absolute;
+            top: 120px;
+            left: 0px;
+            object-fit: cover;
+            object-position: center center;
+            opacity: 0.2;
+            z-index: -1;
+          }
         .h-img-logo {
             height: 27px;
         }        

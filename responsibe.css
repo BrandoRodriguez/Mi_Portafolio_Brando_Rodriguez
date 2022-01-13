@@ -45,7 +45,6 @@
   .hidden {
       display: none;
   }
- 
   body::after {
       content: "";
       width: 100%;
@@ -84,6 +83,16 @@
       padding-bottom: 0px;
       box-shadow: none;
   }
+  .img-bg{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0.2;
+    z-index: -1;
+    width: 65%;
+  }
   .btn {
       padding-top: 12px;
       padding-bottom: 12px;
@@ -100,9 +109,6 @@
   }
   .hg-img-hero{
       width:608px;
-  }
-  .btn-hidden {
-      display: none;
   }
   .nav-hidden {
       display: block;
