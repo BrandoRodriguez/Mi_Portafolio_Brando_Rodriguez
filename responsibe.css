@@ -14,7 +14,8 @@
     background:
     radial-gradient(farthest-corner at top right,
     rgba(255, 50, 50, 0.3),
-                transparent 300px);               
+                transparent 300px);  
+    padding-top: 15px;             
 } 
 @media (min-width: 640px) {
   .container {
@@ -60,7 +61,8 @@
       background:
       radial-gradient(farthest-corner at top right,
       rgba(255, 50, 50, 0.3),
-                  transparent 1000px);               
+                  transparent 1000px);   
+      padding-top: 0px;             
   } 
   .bg-header {      
     background:
@@ -83,32 +85,35 @@
       padding-bottom: 0px;
       box-shadow: none;
   }
-  .img-bg{
-    position: absolute;
-    top: 100px;
-    left: 350px;
-    object-fit: cover;
-    object-position: center center;
-    opacity: 0.2;
-    z-index: -1;
-    width: 65%;
-  }
-  .btn {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      padding-left: 30px;
-      padding-right: 30px;
-      --border-opacity: 1;
-      border-color: rgba(168, 168, 170, var(--border-opacity));
-      border-radius: 9999px;
-      border-width: 1px;
-      border-style: solid;
+  .img-bg{    
+        position: absolute;
+        top: 100px;
+        left: 350px;
+        object-fit: cover;
+        object-position: center center;
+        opacity: 0.2;
+        z-index: -1;
+        width: 65%;
+    }
+    .btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        --border-opacity: 1;
+        border-color: rgba(168, 168, 170, var(--border-opacity));
+        border-radius: 9999px;
+        border-width: 1px;
+        border-style: solid;
   }
   .h-img-logo {
       height: 35px;
   }
   .hg-img-hero{
       width:608px;
+  }
+  .btn-hidden{
+      display: none;
   }
   .nav-hidden {
       display: block;

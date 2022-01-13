@@ -164,7 +164,7 @@
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
             position:relative;
-            top: 0;
+            top: 10px;
             left: 0;
             font-size: 50px;
             color: rgb(71, 67, 67);
