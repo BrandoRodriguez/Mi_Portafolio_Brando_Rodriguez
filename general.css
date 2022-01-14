@@ -30,6 +30,7 @@
 }
 .text-lg{
   font-size: 14px;
+  line-height: 23px;
 }
 .text-md {
   font-size: 13px;
@@ -58,6 +59,13 @@
 .pd-mb-bottom{
   margin-bottom: 15px;
 }
+.text-center{
+  text-align: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 /* <!-- ======================================= 
 ==End CSS Clase General==  
 =======================================--> */    
