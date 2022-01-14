@@ -99,10 +99,10 @@
 }           
 }
 @media (min-width: 1024px){
-  .container {
+    .container {
       max-width: 1025px;     
   }             
-  .header {
+     .header {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 20px;
@@ -119,6 +119,10 @@
         border-radius: 9999px;
         border-width: 1px;
         border-style: solid;
+  }
+  .contact-form .btn{
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .h-img-logo {
       height: 35px;

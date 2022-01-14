@@ -640,6 +640,9 @@
         [contenteditable="true"]:empty:before {
             content: attr(placeholder);
         }
+        .contact-form {
+            padding-bottom: 3rem;
+        }
         .contact-title{
             margin-bottom: 25px;
         }
