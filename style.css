@@ -461,38 +461,18 @@
             height: 18px;
             margin-right: 8px;
         }
-        
-    
-          
-          
-/*  */
-
-
-
-
-
         .card{
             position: relative;
             z-index: 2;
         }
-        @media screen and (min-width: 1280px) {
-            .card__wrapper {
-                display: flex;
-                margin-bottom: 0;
-            }
-            .card__hero-wrapper {
-                flex: 1 1 60%;
-                margin-right: 1.5rem;
-                margin-bottom: 0;
-            }
+        .card__hero-wrapper{
+            margin-bottom: 15px;
         }
-
         .card__hero {
             display: block;
             position: relative;
             border-radius: 8px;
         }
-
         .card__article-card,
         .card__hero {
             background-color: rgba(128, 128, 128, .2);
@@ -502,7 +482,6 @@
             border-radius: 8px;
             position: relative;
         }
-
         .responsive-media {
             position: relative;
             height: 0;
@@ -511,7 +490,6 @@
             text-align: left;
             width: 100%;
         }
-
         .card__hero .responsive-media::before {
             content: '';
             border-radius: 8px;
@@ -522,10 +500,8 @@
             top: 0;
             z-index: 1;
             background: linear-gradient( 
-    180deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 75%);
-    }
-        
-
+            180deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 75%);
+        }
         .card__hero-content {
             position: absolute;
             bottom: 0;
@@ -533,12 +509,6 @@
             padding: 1rem;
             z-index: 2;
         }
-        @media (min-width: 1024px){
-            .card__hero-content {
-                padding: 1.5rem;
-            }
-        }
-
         .card__category {
             font-weight: 800;
             text-transform: uppercase;
@@ -546,152 +516,90 @@
             font-size: 12px;
             color: rgba(101, 100, 98, .9);
         }
-
- 
-
-    .game-badge {
-        width: 40px;
-        height: 40px;
-        background-color: #141212;
-        border-radius: 50%;
-    }
-
-    .card__badge {
-        position: absolute;
-        left: 8px;
-        top: 8px;
-    }
-
-    .icon {
-        display: inline-block;
-        vertical-align: middle;
-        font-style: normal;
-    }
-
-    .icon svg {
-        vertical-align: top;
-        height: auto;
-    }
-
-    /*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*  */
-
-    .card__articles {
-        display: grid;
-        gap: 10px;
-    }
-    @media screen and (min-width: 1280px) {
+        .game-badge {
+            width: 40px;
+            height: 40px;
+            background-color: #141212;
+            border-radius: 50%;
+        }
+        .card__badge {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            font-style: normal;
+        }
+        .icon svg {
+            vertical-align: top;
+            height: auto;
+        }
         .card__articles {
-            flex: 1 1 40%;
-            height: 91px;
+            display: grid;
+            gap: 10px;
         }
-    }
-
-    .card__article {
-        box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
-        border-radius: 8px;
-    }
-
-    .card__article-card {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 8px;
-        min-height: 90px;
-    }
-    .card__article-card:hover {
-        background-color: #2E2E2E;
-    }
-
-    .card__article-image {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 120px;
-        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-        background-size: cover;
-        background-position: center;
-        border-radius: 0 8px 8px 0;
-    }
-
- 
-    @media screen and (min-width: 550px) {
+        .card__article {
+            box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
+            border-radius: 8px;
+        }
+        .card__article-card {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            min-height: 90px;
+        }
+        .card__article-card:hover {
+            background-color: #2E2E2E;
+        }
         .card__article-image {
-            width: 150px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 120px;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 8px 8px 0;
         }
-    }
-
-
-
-    .card__article-title-wrapper {
-        padding: 0.5rem 0.5rem 0.5rem 1rem;
-        margin-right: 120px;
-    }
-
-    @media screen and (min-width: 550px) {
         .card__article-title-wrapper {
-            padding: 1rem 0.5rem 1rem 1.625rem;
-            margin-right: 200px;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            margin-right: 120px;
         }
-    }
-
-    .card__badge--top-right {
-        position: absolute;
-        right: 8px;
-        top: 8px;
-    }
-    .game-badge--small {
-        width: 24px;
-        height: 24px;
-    }
-
-    @media screen and (min-width: 550px) {
+        .card__badge--top-right {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+        }
         .game-badge--small {
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
+        } 
+        .card__article-card::after,
+        .card__hero::after {
+            content: '';
+            border-radius: 8px;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            padding: 2px;
+            color: #f9f9f9;
+            display: block;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            transition: opacity .1s ease-out;
+            background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .4));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
         }
-    }
-
-
-  
-    .card__article-card::after,
-    .card__hero::after {
-        content: '';
-        border-radius: 8px;
-        top: -4px;
-        left: -4px;
-        right: -4px;
-        bottom: -4px;
-        padding: 2px;
-        color: #f9f9f9;
-        display: block;
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
-        transition: opacity .1s ease-out;
-        background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .4));
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-    }
-    .card__article-card:hover::after, .card__hero:hover::after {
-        opacity: 1;
-    }
+        .card__article-card:hover::after, .card__hero:hover::after {
+            opacity: 1;
+        }
 
 
