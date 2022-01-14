@@ -14,9 +14,18 @@
     background:
     radial-gradient(farthest-corner at top right,
     rgba(255, 50, 50, 0.3),
-                transparent 300px);  
-    padding-top: 15px;             
+                transparent 300px),
+    radial-gradient(farthest-corner at bottom left,
+  rgba(255, 50, 50, 0.3),
+                            transparent 300px);
+    padding-top: 0px;             
 } 
+.skill-section{
+  background:
+  radial-gradient(farthest-corner at top left,
+  rgba(255, 50, 50, 0.3),
+              transparent 300px);
+}
 @media (min-width: 640px) {
   .container {
       width: 100%;
@@ -88,8 +97,8 @@
       max-width: 1025px;     
   }             
   .header {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
       padding-top: 20px;
       padding-bottom: 0px;
       box-shadow: none;
@@ -162,7 +171,7 @@
   }
   .social-icon {
     position: absolute;
-    left: 10px;
+    left: 4px;
     top: 350px;
     z-index: 2;
     width: 50px;
@@ -194,7 +203,7 @@
   }
   .section-title {
       top: 86%;
-      left: 18px;
+      left: 13px;
       font-size: 65px; 
       position:absolute; 
   }
