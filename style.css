@@ -379,7 +379,7 @@
         .blog-section .single-blog{
             width: calc(100% / 4 - 20px);
             margin-left: 20px;
-            background: #26272a;
+            background-color: rgba(128, 128, 128, .2);
             display: flex;
             flex-flow: column;
             justify-content: space-between;
@@ -428,13 +428,13 @@
             align-items: center;
             justify-content: space-between;
             padding: 20px 30px;
-            border-top: 1px solid #35373d;
+            border-top: 1px solid #4e5056;
             position: relative;      
         }
         .blog-section .single-blog .like-comment .read-more {
             width: 50px;
             height: 50px;
-            border: 1px solid #35373d;
+            border: 1px solid #4e5056;
             display: flex;
             border-radius: 100%;
             flex-flow: column;
