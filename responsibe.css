@@ -24,7 +24,7 @@
   background:
   radial-gradient(farthest-corner at top left,
   rgba(255, 50, 50, 0.3),
-              transparent 300px);
+              transparent 250px);
 }
 @media (min-width: 640px) {
   .container {
