@@ -311,7 +311,7 @@
     .single-skill span.rectengle {
         left: -32px;
         right: inherit;
-        background: linear-gradient(to right, rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right, rgba(78,78,78,0.50) 0%,rgba(0,0,0,0) 50%);
     }   
     .single-skill.animated:nth-child(odd) {
         transform: translate(0, 0);
@@ -319,7 +319,7 @@
     .single-skill:nth-child(odd) span.rectengle{
         right: inherit;
         left: -32px;
-        background: linear-gradient(to right,  rgba(78,78,78,1) 0%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right, rgba(78,78,78,0.50) 0%,rgba(0,0,0,0) 50%);
     }
     .single-skill:nth-child(odd) span.circle{
         right: inherit;
