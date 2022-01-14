@@ -151,6 +151,9 @@
             -webkit-text-stroke-width: 2px;
             font-family: 'Roboto', sans-serif;      
         }
+        .skill-section .count{
+            opacity: 0.3;
+        }
         .section-title{
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
