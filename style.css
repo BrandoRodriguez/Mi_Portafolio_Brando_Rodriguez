@@ -609,12 +609,12 @@
         }
         .footer-section{
             padding-top: 10rem;
-            padding-bottom: 10rem;
+            padding-bottom: 3rem;
             position: relative;
             z-index: 2;
         }
         .ctn-logo{
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
         .bg-icon{
             background-color: rgba(128, 128, 128, .2);
@@ -636,4 +636,59 @@
             color: rgba(124, 124, 127, var(--tw-text-opacity));
         }
 
+
+        [contenteditable="true"]:empty:before {
+            content: attr(placeholder);
+        }
+        .contact-title{
+            margin-bottom: 25px;
+        }
+        .contact-text{
+            margin-bottom: 17px;
+        }
+        .contact__input {
+            border-bottom: 1px solid #999999;
+            color: #999999;
+            display: inline-block;
+            cursor: text;
+        }
+        .description {
+            line-height: 1.67;
+        }
+        .contact__wrap-checkbox {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .contact__label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            cursor: pointer;
+        }
+        .contact__label::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 5px;
+            background: #f2f2f2;
+        }
+        .contact__link, .contact__span-checked {
+            display: inline;
+            cursor: pointer;
+            color: #999999;
+        }
+        .contact__checkbox:checked + .contact__label::before {
+            background: #f2f2f2 url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgM0w1IDdMMTEgMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) no-repeat center;
+        }
+        .contact-checkbox{
+            margin-bottom: 3rem;
+        }
 
