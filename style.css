@@ -231,7 +231,7 @@
         .single-skill {
             width: 50%;
             max-width: 535px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             background: rgb(255, 255, 255, 0.9%);          
             padding: 15px 20px 15px;
             border-radius: 5px;
@@ -297,6 +297,7 @@
             height: 30px;
             width: 100px;
             background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 99%,rgba(78,78,78,1) 10%);
+            z-index: -1;
         }
         .single-skill:nth-child(odd) span.rectengle{
             right: inherit;
