@@ -156,7 +156,7 @@
             -webkit-text-stroke-width: 2px;
             position:relative;
             top: 10px;
-            left: 0;
+            left: -3px;
             font-size: 50px;
             color: rgb(71, 67, 67);
             z-index: 2;
@@ -238,7 +238,7 @@
             align-self: stretch;
         }  
         .single-skill.animated:nth-child(odd) {
-            transform: translate(0, 80px);
+            transform: translate(0, 50px);
         }
         .single-skill p {
             line-height: 1.6;
@@ -267,7 +267,7 @@
             background: #f43534;
             border-radius: 100%;
             position: absolute;
-            top: 50px;
+            top: 32px;
             right: -39px;
             z-index: 2;
             box-shadow: 0 0px 0px 8px #333;
@@ -289,7 +289,7 @@
         }
         .single-skill span.rectengle {
             position: absolute;
-            top: 42px;
+            top: 25px;
             right: -30px;
             height: 30px;
             width: 100px;
