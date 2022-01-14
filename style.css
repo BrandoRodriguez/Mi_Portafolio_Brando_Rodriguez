@@ -91,7 +91,7 @@
             display: block;
             flex-flow: row wrap;
             align-items: center;
-            margin-bottom: 50px;
+            padding-bottom: 50px;
         }
         .portfolio-content h2 {
             line-height: 44px;

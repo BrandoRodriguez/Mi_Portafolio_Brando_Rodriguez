@@ -61,17 +61,26 @@
       background:
       radial-gradient(farthest-corner at top right,
       rgba(255, 50, 50, 0.3),
-                  transparent 1000px);
+                  transparent 700px),
+      radial-gradient(farthest-corner at bottom left,
+    rgba(255, 50, 50, 0.3),
+                              transparent 700px);
       padding-top: 0px;             
   } 
+  .skill-section{
+    background:
+    radial-gradient(farthest-corner at top left,
+    rgba(255, 50, 50, 0.3),
+                transparent 700px);
+  }
   .bg-header {      
     background:
     radial-gradient(farthest-side at top left,
             rgba(0, 194, 255, 0.3),
-            transparent 1000px),
+            transparent 700px),
     radial-gradient(farthest-corner at bottom right,
             rgba(255, 50, 50, 0.3),
-            transparent 1000px);          
+            transparent 700px);          
 }           
 }
 @media (min-width: 1024px){
