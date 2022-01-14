@@ -119,11 +119,17 @@
         border-radius: 9999px;
         border-width: 1px;
         border-style: solid;
-  }
-  .contact-form .btn{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+    }
+    .contact-form .btn{
+        padding-left: 50px;
+        padding-right: 50px;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 25%;
+    }
   .h-img-logo {
       height: 35px;
   }

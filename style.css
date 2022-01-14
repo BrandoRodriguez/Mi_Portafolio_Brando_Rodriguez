@@ -36,7 +36,15 @@
             border-radius: 9999px;
             border-width: 1px;
             border-style: solid;
-        }       
+        }    
+        .contact-form .btn{
+            display: inline-flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+        }   
         .btn:hover {
             border-color: #fff;
         }
