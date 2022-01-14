@@ -80,6 +80,15 @@
     background:
     radial-gradient(farthest-corner at top left,
     rgba(255, 50, 50, 0.3),
+                transparent 700px),
+    radial-gradient(farthest-corner at bottom right,
+    rgba(255, 50, 50, 0.3),
+                transparent 700px);
+  }
+  .blog-section{
+    background:
+    radial-gradient(farthest-corner at top right,
+    rgba(255, 50, 50, 0.3),
                 transparent 700px);
   }
   .bg-header {      

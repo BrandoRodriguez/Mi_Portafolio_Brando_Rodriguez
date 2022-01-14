@@ -339,7 +339,8 @@
           
         .blog-section{
             position: relative;
-            padding-top: 102px;
+            padding-top: 102px;        
+            padding-bottom: 102px;
             overflow: hidden;
         }    
         .blog-section .ellipse {
