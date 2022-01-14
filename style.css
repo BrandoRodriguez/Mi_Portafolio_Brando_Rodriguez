@@ -120,6 +120,9 @@
             text-align: justify;
             margin-bottom: 15px;
         }
+        .img-area img{
+            border-radius: 8px;
+        }
         .link-btn {
             height: 40px;
             width: 40px;
@@ -383,6 +386,9 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
+            border-radius: 8px;
+        }
+        .featured-img img{
             border-radius: 8px;
         }
         .blog-section .single-blog .featured-img img {
