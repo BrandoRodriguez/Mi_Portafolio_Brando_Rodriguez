@@ -600,7 +600,7 @@
             pointer-events: none;
             position: absolute;
             transition: opacity .1s ease-out;
-            background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .4));
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, .4));
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
         }
