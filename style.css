@@ -408,8 +408,7 @@
             transition: all 1s ease 0.1s;
         }
         .blog-section .single-blog .post-title {
-            padding: 24px 30px 50px;
-            text-align: center;
+            padding: 24px 30px 30px;
         }
         .blog-section .single-blog .post-title h3{
             font-size: 16px;
@@ -432,8 +431,8 @@
             position: relative;      
         }
         .blog-section .single-blog .like-comment .read-more {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border: 1px solid #4e5056;
             display: flex;
             border-radius: 100%;
@@ -441,10 +440,10 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: -26px;
+            top: -21px;
             left: 50%;
             transform: translateX(-50%);
-            background: #26272a;
+            background: #2d2f32;
         }
         .blog-section .single-blog .like-comment .read-more:hover {
             background: #f43534;
