@@ -17,7 +17,7 @@
                 transparent 300px),
     radial-gradient(farthest-corner at bottom left,
   rgba(255, 50, 50, 0.3),
-                            transparent 300px);
+                            transparent 250px);
     padding-top: 0px;             
 } 
 .skill-section{
@@ -208,7 +208,6 @@
       position:absolute; 
   }
   .section-title1 {
-      left: 18px;
       font-size: 65px;     
   }
   .single-skill{
@@ -238,7 +237,6 @@
       font-size: 84px;   
   }
   .section-title1 {
-      padding-left:60px;
       font-size: 80px;    
   }
   .bash-1{
@@ -287,7 +285,6 @@
       font-size: 95px;     
   }
   .section-title1 {
-      padding-left: 10px;
       font-size: 95px;    
   }
   .bash-1{

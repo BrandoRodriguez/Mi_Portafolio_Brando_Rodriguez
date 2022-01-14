@@ -339,7 +339,7 @@
           
         .blog-section{
             position: relative;
-            padding: 102px 0 120px;
+            padding-top: 102px;
             overflow: hidden;
         }    
         .blog-section .ellipse {
@@ -361,9 +361,7 @@
         }   
         .blog-section .section-title{
             position: relative;
-            transform: translate(0);
             top: 0;
-            text-align: right;
             margin-bottom: 50px;
         }
         .blog-section .blog-wrapper{
