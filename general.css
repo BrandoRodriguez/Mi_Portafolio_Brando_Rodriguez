@@ -13,6 +13,9 @@
 .justify-content{
   justify-content: center;
 }
+.space-between{
+  justify-content: space-between;
+}
 .relative {
   position: relative;
 }
@@ -64,6 +67,7 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 
 /* <!-- ======================================= 
 ==End CSS Clase General==  

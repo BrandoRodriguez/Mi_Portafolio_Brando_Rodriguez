@@ -53,7 +53,6 @@
             -webkit-box-align: center;
             align-items: center;
             width: 100%;
-            margin-top: 3rem;
         }   
         .btn:hover {
             border-color: #fff;
@@ -176,18 +175,19 @@
             opacity: 0.3;
         }
         .section-title{
-            -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
-            position:relative;
-            top: 10px;
+            position: relative;
+            top: 25px;
             left: -3px;
             font-size: 50px;
             color: rgb(71, 67, 67);
             z-index: 2;
             text-transform: uppercase;
             font-weight: 700;
-            line-height: 1;     
+            line-height: 1;
             font-family: 'Futura Md BT';
+            padding-bottom: 50px;
         }  
         .section-title1{
             -webkit-text-fill-color: transparent;
@@ -224,14 +224,16 @@
             flex-flow: row wrap;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 50px;
         }
         .vertical-line {
             display: block;
-            height: calc(100% + 80px);
+            height: calc(100% + 70px);
             width: 1px;
             background: #f43534;
             position: absolute;
             left: 50%;
+            top: -35px;
         }
         .vertical-line:before,
         .vertical-line:after{
@@ -364,14 +366,13 @@
           
         .blog-section{
             position: relative;
-            padding-top: 102px;        
-            padding-bottom: 102px;
+            padding-top: 50px;        
             overflow: hidden;
         }    
         .blog-section .ellipse {
             position: absolute;
             top: 70px;
-            left: 200px;
+            right: 200px;
             max-width: 590px;
             z-index: 1;
             opacity: 0.5;
@@ -396,6 +397,7 @@
             display: flex;
             flex-flow: row;
             margin-left: -20px;
+            padding-bottom: 50px;
         }
         .blog-section .single-blog{
             width: calc(100% / 4 - 20px);
@@ -488,6 +490,7 @@
         .card{
             position: relative;
             z-index: 2;
+            padding-bottom: 50px;
         }
         .card__hero-wrapper{
             margin-bottom: 15px;
@@ -626,8 +629,7 @@
             opacity: 1;
         }
         .footer-section{
-            padding-top: 10rem;
-            padding-bottom: 3rem;
+            padding-top: 50px;
             position: relative;
             z-index: 2;
         }
@@ -648,6 +650,11 @@
             --tw-border-opacity: 1;
             border-color: rgba(92, 91, 91, var(--tw-border-opacity));
             padding-top: 3rem;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+
         }
         .text-gray{
             --tw-text-opacity: 1;
@@ -709,3 +716,19 @@
         .contact__checkbox:checked + .contact__label::before {
             background: #f2f2f2 url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgM0w1IDdMMTEgMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) no-repeat center;
         }
+        .contact-checkbox{
+            padding-bottom: 50px;
+        }
+        .ctn-social{
+display: flex;
+        }
+        .ctn-social a{
+            width: 46px;
+              height: 46px;
+              border-radius: 100%;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+          }
