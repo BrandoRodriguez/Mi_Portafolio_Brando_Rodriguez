@@ -53,6 +53,8 @@
             -webkit-box-align: center;
             align-items: center;
             width: 100%;
+            position: relative;
+            z-index: 2;
         }   
         .btn:hover {
             border-color: #fff;
@@ -633,7 +635,7 @@
             z-index: 2;
         }
         .ctn-logo{
-            margin-bottom: 3rem;
+            padding-bottom: 3rem;
         }
         .bg-icon{
             background-color: rgba(128, 128, 128, .2);
