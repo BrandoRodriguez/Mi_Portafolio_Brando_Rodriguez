@@ -114,13 +114,8 @@
         padding-bottom: 12px;
         padding-left: 30px;
         padding-right: 30px;
-        --border-opacity: 1;
-        border-color: rgba(168, 168, 170, var(--border-opacity));
-        border-radius: 9999px;
-        border-width: 1px;
-        border-style: solid;
     }
-    .contact-form .btn{
+    .btn1{
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 50px;

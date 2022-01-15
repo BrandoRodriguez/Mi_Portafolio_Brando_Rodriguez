@@ -37,15 +37,23 @@
             border-width: 1px;
             border-style: solid;
         }    
-        .contact-form .btn{
+        .btn1{
             padding-top: 9px;
             padding-bottom: 9px;
+            padding-left: 20px;
+            padding-right: 20px;
+            --border-opacity: 1;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
+            border-radius: 9999px;
+            border-width: 1px;
+            border-style: solid;
             display: inline-flex;
             -webkit-box-pack: center;
             justify-content: center;
             -webkit-box-align: center;
             align-items: center;
             width: 100%;
+            margin-top: 3rem;
         }   
         .btn:hover {
             border-color: #fff;
@@ -701,7 +709,3 @@
         .contact__checkbox:checked + .contact__label::before {
             background: #f2f2f2 url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgM0w1IDdMMTEgMSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+) no-repeat center;
         }
-        .contact-checkbox{
-            margin-bottom: 3rem;
-        }
-
