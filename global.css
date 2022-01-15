@@ -25,14 +25,21 @@ body::-webkit-scrollbar-thumb{
 }
 @font-face {
   font-family: 'Futura Md BT';
-  src: url('./fonts/FuturaBT-Bold.eot');
-  src: url('./fonts/FuturaBT-Bold-1.eot') format('embedded-opentype'),
-      url('./fonts/FuturaBT-Bold.woff2') format('woff2'),
-      url('./fonts/FuturaBT-Bold.woff') format('woff'),
-      url('./fonts/FuturaBT-Bold.ttf') format('truetype'),
-      url('./fonts/FuturaBT-Bold.svg') format('svg');
+  src: url('./fonts/FuturaBT-Bold.woff2');
   font-weight: bold;
   font-style: normal;
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/6xKjdSxYI9_3nPWN.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/6xKudSxYI9__J9CYLUv0.woff2) format('woff2');
 }
 body {
   /* background: #313131; */
