@@ -38,6 +38,8 @@
             border-style: solid;
         }    
         .contact-form .btn{
+            padding-top: 9px;
+            padding-bottom: 9px;
             display: inline-flex;
             -webkit-box-pack: center;
             justify-content: center;
