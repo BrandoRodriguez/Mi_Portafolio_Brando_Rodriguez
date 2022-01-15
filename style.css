@@ -483,8 +483,7 @@
             display: flex;
             align-items: center;
         }
-        .blog-section .single-blog .like-comment span svg{
-            height: 18px;
+        .img-space{
             margin-right: 8px;
         }
         .card{
@@ -732,3 +731,6 @@ display: flex;
               justify-content: center;
               text-align: center;
           }
+
+
+
