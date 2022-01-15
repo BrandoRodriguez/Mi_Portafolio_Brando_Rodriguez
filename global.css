@@ -44,7 +44,7 @@ body {
 @keyframes Noise-module--flicker--2Xqie{0%{transform:translate(0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%)}70%{transform:translateY(10%)}80%{transform:translate(-15%)}90%{transform:translate(10%,5%)}to{transform:translate(5%)}}
 .Noise-module--noise--3_meL{
   bottom:0;left:0;
-  opacity:.6;
+  opacity:.5;
   overflow:hidden;
   pointer-events:none;
   position:fixed;
@@ -53,7 +53,7 @@ body {
 }
 .Noise-module--noise--3_meL:after{ 
   /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
-  background: url("./assets/img-bg/noise.png");
+  background: url("./assets/img-bg/bg.png");
   content: "";
     height: 300%;
     left: -100%;
