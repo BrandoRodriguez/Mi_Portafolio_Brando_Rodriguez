@@ -27,6 +27,12 @@
   rgba(255, 50, 50, 0.3),
               transparent 250px);
 }
+.footer-section{
+    background:
+    radial-gradient(farthest-corner at top left,
+    rgba(255, 50, 50, 0.3),
+    transparent 250px);
+  }
 .recursos-section{
     padding-top: 50px;
 }
@@ -87,6 +93,12 @@
       padding-top: 0px;             
   } 
   .skill-section{
+    background:
+    radial-gradient(farthest-corner at top left,
+    rgba(255, 50, 50, 0.3),
+    transparent 700px);
+  }
+  .footer-section{
     background:
     radial-gradient(farthest-corner at top left,
     rgba(255, 50, 50, 0.3),
@@ -329,7 +341,7 @@
       box-shadow: none;
   }
   .count {
-      right: -100px;
+      right: -70px;
       font-size: 110px;      
   }
   .section-title {
