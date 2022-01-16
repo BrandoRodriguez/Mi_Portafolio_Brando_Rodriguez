@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./slick.css">
+  <style>
+
+
+
+
+.container {
+      width: 100%;
+      margin: 0 auto;
+
+    }
+    @media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    } 
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    } 
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    } 
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1280px;
+    } 
+}
+
+
+
+
+  /*---------instagram-section------*/
+  .instagram-section {
+    padding: 120px 0;
+    background: #141519;
+    position: relative;
+    overflow: hidden;
+}
+
+.instagram-section .insta-shape {
+    position: absolute;
+    right: -80px;
+    top: 120px;
+    z-index: 1;
+}
+.contact-section .section-title,
+.instagram-section .section-title{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 55px;
+}
+.contact-section .section-title svg,
+.instagram-section .section-title svg{
+    width: 45px;
+    color: #f43534;
+}
+.contact-section .section-title h2,
+.instagram-section .section-title h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.instagram-section .instagram-img-wrapper{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    z-index: 2;
+    padding-left: 6px;
+}
+.instagram-section .single-col.sm {
+    width: 20%;
+}
+.instagram-section .single-col.md {
+    width: calc(30% - 20px);
+    margin-left: 20px;
+}
+.instagram-section .single-col.lg {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+    padding-top: 70px;
+}
+.instagram-section .single-col img{
+    margin-bottom: 20px;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+.instagram-section .single-col img:hover{
+    filter: grayscale(0);
+}
+.instagram-section .single-col a:last-child img{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px){
+.instagram-section {
+        padding: 100px 0;
+    }
+    .instagram-section .instagram-img-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .footer-area .contact-section {
+        padding: 100px 0;
+    }
+    .contact-section .content-wrapper {
+        padding: 0 15px;
+    }
+    .scroll-top {
+        bottom: 90px;
+    }
+}  
+
+/*---------testimonial-section------------*/
+.testimonial-section{
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+    background: url("./assets/testimonial-bg.jpg") no-repeat center center / cover;
+}
+.testimonial-section .overlay{
+    background: rgba(20, 21, 25, 0.9);
+}
+.testimonial-section .shape {
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+.testimonial-section .testimonial-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+.testimonial-section .single-testimonial {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.testimonial-section .single-testimonial .slick-slide {
+    position: relative;
+    padding-top: 140px;
+}
+.testimonial-section .single-testimonial img.quote {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -1;
+}
+.testimonial-section .single-testimonial h2 {
+    font-style: italic;
+    color: #fff;
+}
+.testimonial-section .single-testimonial .author a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f43534;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-top: 26px;
+}
+.testimonial-section .single-testimonial .author .desgination {
+    display: block;
+    font-size: 14px;
+    text-transform: none;
+    color: #f43534;
+}
+.testimonial-section .slick-dots{
+    margin-top: 10px;
+}
+.testimonial-section .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.testimonial-section .slick-dots li button {
+    border: none;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #333;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 0;
+}
+.testimonial-section .slick-dots li.slick-active button {
+    background: #acacac;
+}
+
+/*----author image area-------*/
+.testimonial-section .author-img-wrapper {
+    margin: 20px 0 0 300px;
+    position: relative;
+    max-width: 210px;
+}
+
+.testimonial-section .author-img-wrapper:before{
+    content: url("./assets/img-proyects/curve.png");
+    position: absolute;
+    bottom: -30px;
+    left: 126px;
+    width: 0;
+    transition: all 1.5s ease 0.3s;
+}
+.testimonial-section .author-img-wrapper.animated:before{
+    width: 1100px;
+}
+.testimonial-section .author-img-wrapper .author-img {
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+    border: 2px dashed #696a69;
+    padding: 10px;
+}
+.testimonial-section .author-img-wrapper:focus{
+    box-shadow: none;
+    border: none;
+}
+
+
+
+@media (max-width: 1399px){
+.testimonial-section .single-testimonial h2 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    .testimonial-section .testimonial-wrapper {
+        max-width: 850px;
+    }
+    .testimonial-section .single-testimonial img.quote {
+        max-width: 150px;
+    }
+    .testimonial-section .single-testimonial .slick-slide {
+        padding-top: 55px;
+    }
+    .testimonial-section .author-img-wrapper .author-img {
+        height: 140px;
+        width: 140px;
+    }
+    .testimonial-section .author-img-wrapper {
+        margin: 20px 0 0 230px;
+        max-width: 160px;
+    }
+  }
+  @media (max-width: 767px){
+  .testimonial-section .single-testimonial h2 {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .testimonial-section .single-testimonial .author a {
+        font-size: 18px;
+        margin-top: 14px;
+    }
+    .testimonial-section .author-img-wrapper {
+        margin: 20px 0 0 90px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  /* -------------------------------------- */
+
+
+    .link-default {
+      display: inline-block;
+      color: #fff;
+      font-family: 'Futura Md BT';
+      font-weight: 500;
+      margin-top: 37px;
+    }
+
+    .link-default span {
+      height: 53px;
+      width: 53px;
+      background: #f43534;
+      border-radius: 100%;
+      display: inline-flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5px;
+    }
+
+    .link-default:hover span {
+      animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
+    }
+
+    @-webkit-keyframes button_pulse {
+      0% {
+        box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
+      }
+
+      100% {
+        box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+      }
+    }
+
+    @keyframes button_pulse {
+      0% {
+        box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
+      }
+
+      100% {
+        box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+      }
+    }
+
+    /*-----------portfolio section--------*/
+
+    .portfolio-section {
+      background: url("./assets/project-bg1.jpg") no-repeat center center / cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio-section .overlay {
+      background: rgba(20, 21, 25, 0.85);
+    }
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .portfolio-section .shape {
+      position: absolute;
+      bottom: 100px;
+      left: -120px;
+      opacity: 0.8;
+    }
+
+    .portfolio-section .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      transform: translateY(-10px);
+    }
+
+    .portfolio-section .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1585px;
+      margin-left: 0;
+    }
+
+    .portfolio-section .portfolio-wrapper {
+      display: flex;
+      flex-flow: row;
+
+    }
+
+    .portfolio-section .portfolio-content-wrapper {
+      width: 40%;
+      padding-left: 60px;
+    }
+
+    .portfolio-section .portfolio-img {
+      width: 60%;
+      background: #1e1f23;
+      position: relative;
+    }
+
+    .portfolio-section .portfolio-img img:focus {
+      box-shadow: none;
+      outline: inherit;
+    }
+
+    .portfolio-section .portfolio-img:before {
+      content: url("./assets/dot-texture-horizontal.png");
+      position: absolute;
+      bottom: -110px;
+      left: 20px;
+    }
+
+    .portfolio-section .portfolio-content {
+      padding-bottom: 50px;
+    }
+
+    .portfolio-section .portfolio-content:focus {
+      box-shadow: none;
+      outline: inherit;
+    }
+
+    .portfolio-section .portfolio-content .portfolio-type {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #f43534;
+      font-weight: 700;
+      font-family: 'Futura Md BT';
+      letter-spacing: 1px;
+    }
+
+    .portfolio-section .portfolio-content h2 {
+      color: #fffefe;
+      font-family: 'Futura Md BT';
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .portfolio-section .portfolio-content p {
+      color: #ababab;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+      max-width: 430px;
+    }
+
+    .portfolio-section .portfolio-content-wrapper .slick-arrow {
+      background: transparent;
+      border: 1px solid #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      position: absolute;
+      bottom: 0;
+      left: 60px;
+      opacity: 0.2;
+      padding: 0;
+    }
+
+    .portfolio-section .portfolio-content-wrapper .slick-arrow:hover {
+      background: #f43534;
+      border-color: #f43534;
+      opacity: 1;
+    }
+
+    .portfolio-section .portfolio-content-wrapper .slick-next {
+      left: 125px;
+    }
+
+    .portfolio-section .portfolio-content-wrapper .slick-prev img {
+      transform: rotate(-180deg);
+      transform-origin: center center;
+
+    }
+
+    .portfolio-section .portfolio-paging-status {
+      position: absolute;
+      right: 405px;
+      bottom: 6px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #f43534;
+    }
+
+    @media (max-width: 1399px) {
+
+      /*------portfolio-section----*/
+      .portfolio-section .container {
+        max-width: 1140px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper {
+        padding-right: 40px;
+        padding-left: 30px;
+        width: 45%;
+      }
+
+      .portfolio-section .portfolio-img {
+        width: 55%;
+        background: transparent;
+      }
+
+      .portfolio-section .portfolio-img:before {
+        left: 0;
+      }
+
+      .portfolio-section .portfolio-content h2 {
+        margin-bottom: 12px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-arrow {
+        left: 30px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-next {
+        left: 95px;
+      }
+
+      .portfolio-section .shape {
+        display: none;
+      }
+
+      .portfolio-section .portfolio-paging-status {
+        right: 320px;
+        bottom: 0;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .portfolio-section {
+        padding: 100px 0 98px;
+      }
+
+      .portfolio-section .container {
+        max-width: 940px;
+        margin: 0 auto;
+      }
+
+      .portfolio-section .portfolio-wrapper {
+        display: block;
+      }
+
+      .portfolio-section .portfolio-content-wrapper {
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+        margin-top: 30px;
+      }
+
+      .portfolio-section .portfolio-content {
+        padding-left: 10px;
+      }
+
+      .portfolio-section .portfolio-img {
+        width: 100%;
+        align-self: flex-start;
+      }
+
+      .skill-section .section-title,
+      .blog-section .section-title,
+      .portfolio-section .section-title,
+      .service-section .section-title {
+        font-size: 90px;
+      }
+
+      .portfolio-section .portfolio-img:before {
+        display: none;
+      }
+
+      .portfolio-section .portfolio-content h2 {
+        font-size: 36px;
+        line-height: 44px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-arrow {
+        left: 15px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-next {
+        left: 80px;
+      }
+
+      .portfolio-section .portfolio-paging-status {
+        right: inherit;
+        left: 150px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .portfolio-section .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .portfolio-section .portfolio-wrapper {
+        flex-flow: column-reverse;
+      }
+
+      .portfolio-section .portfolio-content-wrapper {
+        width: 100%;
+        padding: 0 15px;
+      }
+
+      .portfolio-section .portfolio-img {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+      }
+
+      .portfolio-section .portfolio-img:before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 575px) {
+
+      .portfolio-section {
+        padding: 74px 0 90px;
+      }
+
+      .portfolio-section .portfolio-content h2 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+
+      .portfolio-section .portfolio-content p {
+        text-align: left;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-arrow {
+        bottom: -20px;
+        left: 20px;
+      }
+
+      .portfolio-section .portfolio-content-wrapper .slick-next {
+        left: 80px;
+      }
+
+      .portfolio-section .portfolio-paging-status {
+        right: inherit;
+        left: 145px;
+        bottom: -16px;
+      }
+    }
+
+
+    /* ------------------------- */
+
+  
+  </style>
+</head>
+
+<body>
+  <section class="section portfolio-section">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="portfolio-wrapper">
+        <div class="portfolio-img">
+          <div class="img-area">
+            <img src="./assets/img-proyects/portfolio11.jpg"
+              alt="portfolio img">
+          </div>
+          <div class="img-area">
+            <img src="./assets/img-proyects/portfolio13.jpg"
+              alt="portfolio img">
+          </div>
+          <div class="img-area">
+            <img src="./assets/img-proyects/portfolio11.jpg"
+              alt="portfolio img">
+          </div>
+        </div>
+
+        <div class="portfolio-content-wrapper">
+          <div class="portfolio-content">
+            <span class="portfolio-type">Blog Website</span>
+            <h2>Staker Fashion Blog</h2>
+            <p>Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun.</p>
+            <a href="#" class="live-view link-default">View Live
+              <span>
+                <img src="./assets/flecha.png" alt="arrow">
+              </span>
+            </a>
+          </div>
+
+          <div class="portfolio-content">
+            <span class="portfolio-type">Event Website</span>
+            <h2>Staker Event Website</h2>
+            <p>Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun eros
+              faucibus lobortis a sit amet leo.</p>
+            <a href="#" class="live-view link-default">View Live
+              <span>
+                <img src="./assets/flecha.png" alt="arrow">
+              </span>
+            </a>
+          </div>
+
+          <div class="portfolio-content">
+            <span class="portfolio-type">Criptocurrency</span>
+            <h2>Staker Criptocurrency</h2>
+            <p>Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun eros
+              faucibus lobortis.</p>
+            <a href="#" class="live-view link-default">View Live
+              <span>
+                <img src="./assets/flecha.png" alt="arrow">
+              </span>
+            </a>
+          </div>
+        </div>
+        <span class="portfolio-paging-status"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================= 
+        ==Start Testimonial section==  
+    =======================================-->
+    <section class="testimonial-section">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="testimonial-wrapper">
+              <div class="single-testimonial">
+                  <div>
+                      <img src="./assets/img-proyects/testimonial-quote.png" alt="quote" class="quote">
+                      <h2>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</h2>
+                      <h5 class="author"><a href="" target="_blank" title="View Author Info">Joseph Sanchez</a> <span class="desgination">CEO at Facebook</span></h5>
+                  </div>
+                  
+                  <div>
+                      <img src="./assets/img-proyects/testimonial-quote.png" alt="quote" class="quote">
+                      <h2>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</h2>
+                      <h5 class="author"><a href="" target="_blank" title="View Author Info">Joseph Sanchez</a> <span class="desgination">CEO at Facebook</span></h5>
+                  </div>
+                  
+                  <div>
+                      <img src="./assets/img-proyects/testimonial-quote.png" alt="quote" class="quote">
+                      <h2>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</h2>
+                      <h5 class="author"><a href="" target="_blank" title="View Author Info">Joseph Sanchez</a> <span class="desgination">CEO at Facebook</span></h5>
+                  </div>
+              </div>
+              
+              <div class="author-img-wrapper animate-me">
+                  <div><img src="./assets/img-proyects/testimonial-author1.jpg" class="author-img" alt="author img"></div>
+                  <div><img src="./assets/img-proyects/testimonial-author1.jpg" class="author-img" alt="author img"></div>
+                  <div><img src="./assets/img-proyects/testimonial-author1.jpg" class="author-img" alt="author img"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ======================================= 
+      ==End Testimonial section==  
+  =======================================-->
+  
+  <section class="instagram-section">
+    <img src="./assets/img-ins/instagram-shape.png" alt="shape" class="insta-shape">
+    <div class="container">
+        <div class="section-title">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+            <h2>Instagram</h2>
+        </div>
+        <div class="instagram-img-wrapper">
+            <div class="single-col sm">
+                <a href=""><img src="./assets/img-ins/instagram-img1.jpg" alt="instagram img"></a>
+                <a href=""><img src="./assets/img-ins/instagram-img2.jpg" alt="instagram img"></a>
+            </div>
+            <div class="single-col md">
+                <a href=""><img src="./assets/img-ins/instagram-img3.jpg" alt="instagram img"></a>
+                <a href=""><img src="./assets/img-ins/instagram-img4.jpg" alt="instagram img"></a>
+            </div>
+            <div class="single-col lg">
+                <a href=""><img src="./assets/img-ins/instagram-img5.jpg" alt="instagram img"></a>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- jQuary library -->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <!-- slick js -->
+  <script src="./js/slick.min.js"></script>
+  <script src="js/main-2.js"></script>
+</body>
+
+</html>
