@@ -28,8 +28,22 @@
 .font-semi-bold {
   font-weight: 600;
 }
+.text-xx{
+  font-size: 24px;
+  letter-spacing: .0em;
+  line-height: 30px;
+}
+@media (min-width: 1024px) {
+  .text-xx{
+    font-size: 54px;
+    letter-spacing: .02em;
+    line-height: 54px;
+  }
+}
 .text-xl{
   font-size: 17px;
+  letter-spacing: .02em;
+  line-height: 54px;
 }
 .text-lg{
   font-size: 15px;
@@ -74,7 +88,9 @@
 .padding-bottom{
   padding-bottom: 25px;
 }
-
+.padding-top{
+  padding-bottom: 25px;
+}
 
 /* <!-- ======================================= 
 ==End CSS Clase General==  
