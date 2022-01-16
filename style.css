@@ -60,6 +60,10 @@
         .btn:hover {
             border-color: #fff;
         }
+        .btn1:hover {
+            border-color: #fff;
+            opacity: 0.9;
+        }
         
         .img-bash-1{
             padding: 0 7px 0 0;
