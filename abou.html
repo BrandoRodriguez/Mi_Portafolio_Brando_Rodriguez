@@ -33,17 +33,17 @@
     }
 
     .hero-section .hero-image {
-    max-width: 670px;
-    position: absolute;
-    right: 6px;
-    height: 107%;
-    display: block;
-    z-index: 2;
-    top: -7%;
-    background: url(./assets/img-about/yo.jpg) no-repeat center right/cover;
-    margin-bottom: 20px;
-    width: 100%;
-    opacity: .7;
+      max-width: 635px;
+      position: absolute;
+      right: 6px;
+      height: 107%;
+      display: block;
+      z-index: 2;
+      top: -7%;
+      background: url(./assets/img-about/yo.jpg) no-repeat center right/cover;
+      margin-bottom: 20px;
+      width: 100%;
+      opacity: .7;
 
     }
 
@@ -123,24 +123,27 @@
       transform: rotate(90deg);
       transform-origin: center;
       left: -30px;
-      top: 1px;
+      top: -3px;
       animation: scroll-down-move 1s ease infinite;
     }
 
     .hero-section .content-wrapper {
-      height: 100vh;
+      height: 94vh;
       width: 100%;
       min-height: 750px;
       display: flex;
       flex-flow: column;
-      justify-content: center;
+      padding-top: 200px;
       position: relative;
     }
-    @media (max-width: 575px){
-.hero-section .content-wrapper {
-  min-height: 300px;
-    height: 95vh;
-}}
+
+    @media (max-width: 575px) {
+      .hero-section .content-wrapper {
+        min-height: 300px;
+        height: 95vh;
+        padding: 0;
+      }
+    }
 
     .hero-section .hero-image-wrapper .dot-texture {
       position: absolute;
@@ -234,6 +237,126 @@
       }
     }
 
+    
+  @media (max-width: 1599px){
+.hero-section .hero-image {
+    max-width: 600px;
+}}
+
+    @media (max-width: 1399px){
+ /*------hero-section----*/
+ .hero-section .social-icon {
+        bottom: 30px;
+    }
+    .hero-section .social-icon li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .hero-section .hero-image-wrapper {
+        max-width: 970px;
+    }
+    .hero-section .hero-image {
+        max-width: 562px;
+    }
+    .hero-section .hero-image-wrapper .dot-texture {
+        display: none;
+    }
+    .hero-section .vertical-logo {
+        width: 210px;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 122px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 30px;
+        line-height: 44px;
+        max-width: 670px;
+        width: 100%;
+    }
+  }
+
+    @media (max-width: 1199px) {  
+    .fp-tableCell {
+        display: block;
+        height: auto!important;
+    }
+    
+    .menu-wrapper ul.main-menu {
+        max-width: 940px;
+    }
+    .menu-wrapper .quick-link {
+        max-width: 940px;
+    }
+    
+    .hero-section .content-wrapper {
+        padding: 0 15px;
+    }
+    .hero-section .hero-image-wrapper {
+        max-width: 770px;
+    }
+    .hero-section .hero-image {
+        max-width: 378px;
+    }
+    .hero-section .vertical-logo {
+        width: 240px;
+        left: calc(100% / 4);
+    }
+    .hero-section .social-icon li {
+        display: block;
+        margin-bottom: 2px;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 90px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 24px;
+        line-height: 34px;
+        max-width: 480px;
+    }
+  }
+
+
+
+  @media (max-width: 991px) {
+    .hero-section .hero-image {
+        max-width: 550px;
+        background-position: 94% 100%;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 76px;
+    }
+    .hero-section .hero-content h2 {
+        font-size: 22px;
+        line-height: 34px;
+        max-width: 440px;
+    }
+    .hero-section .vertical-logo {
+        width: 190px;
+    }
+    .hero-section .hero-image-wrapper .dot-texture {
+        display: none;
+    }
+    
+    .about-section .about-img2 {
+        display: none;
+    }
+    .about-section .about-img1 {
+        width: 230px;
+    }
+    .about-section .about-content {
+        max-width: 480px;
+        width: 100%;
+        padding: 83px 6px 83px 20px;
+    }
+    .about-section .about-content h5 {
+        max-width: 100%;
+    }
+
+  }
+
+
+
+
 
 
 
@@ -243,206 +366,234 @@
 
 
     /*-------about section------*/
- 
-.about-section{
-    overflow: hidden;
-    background: url("file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-bg.jpg") no-repeat center top/ cover;
-}
-.about-section .container{
-    position: relative;
-    display: flex;
-    flex-flow: row;
-}
-.about-section .overlay{
-    background: rgba(22, 23, 27, 0.9);
-    z-index: 0;
-}
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-.about-section .about-shape {
-    position: absolute;
-    right: 0;
-    z-index: 3;
-    bottom: 30px;
-    max-width: 630px;
-    transform-origin: top right;
-    animation: about-shape-move 8s ease infinite;
-}
 
-.about-section .about-shape span {
-    position: absolute;
-    border-radius: 100%;
-    background: #fff;
-}
-
-.about-section .about-shape .circle1 {
-    width: 128px;
-    height: 128px;
-    bottom: 40px;
-    left: 100px;
-    background: #f43534;
-    animation: circle1-move 5s linear infinite;
-}
-
-.about-section .about-content{
-    z-index: 4;
-    position: relative;
-    max-width: 640px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 100px 6px 100px 60px;
-}
-@media (max-width: 991px){
-.about-section .about-content {
-    max-width: 480px;
-    padding: 84px 6px 85px 20px;
-}}
-.about-section .dot-pattern {
-    position: absolute;
-    left: -107px;
-    bottom: 20px;
-}
-.about-section .about-img1 {
-    position: relative;
-    z-index: 2;
-    left: 4px;
-    width: 320px;
-    display: block;
-    background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img1.jpg) no-repeat top left/cover;
-}
-@media (max-width: 767px){
-.about-section .about-img1 {
-    display: none;
-}}
-.about-section .about-img2 {
-    position: relative;
-    z-index: 2;
-    right: 5px;
-    width: 320px;
-    display: block;
-    background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img2.jpg) no-repeat left top / cover;
-}
-@media (max-width: 991px){
-.about-section .about-img2 {
-    display: none;
-}}
-.about-section .about-img1:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #141518;
-    transition: all 1s ease;
-}
-.about-section .about-img1.animated:before {
-    width: 0;
-}
-.about-section .about-content h2{
-    text-align: justify;
-    margin-bottom: 52px;
-    transition: all 1.2s ease 0.6s;
-}
-@media (max-width: 575px){
-.about-section .about-content h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-    line-height: 1.5;
-}}
-.about-section .about-content h5{
-    text-align: justify;
-    font-size: 22px;
-    line-height: 43px;
-    font-family: 'Futura Bk BT';
-    font-weight: 400;
-    margin-left: auto;
-    max-width: 315px;
-    transition: all 1.2s ease 0.8s;
-}
-@media (max-width: 575px){
-.about-section .about-content h5 {
-    text-align: center;
-    line-height: 1.7;
-    font-size: 20px;
-    max-width: 100%;
-}}
-.about-section .about-content h2,
-.about-section .about-content h5{
-    transform: translateY(30px);
-    opacity: 0;
-    visibility: hidden;
-}
-.about-section .about-content h2.animated,
-.about-section .about-content h5.animated{
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-}
-
-
-@keyframes about-shape-move {
-    0% {
-        transform: rotate(0deg);
+    .about-section {
+      overflow: hidden;
+      background: url("file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-bg.jpg") no-repeat center top/ cover;
     }
-    50% {
+
+    .about-section .container {
+      position: relative;
+      display: flex;
+      flex-flow: row;
+    }
+
+    .about-section .overlay {
+      background: rgba(22, 23, 27, 0.9);
+      z-index: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about-section .about-shape {
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      bottom: 30px;
+      max-width: 630px;
+      transform-origin: top right;
+      animation: about-shape-move 8s ease infinite;
+    }
+
+    .about-section .about-shape span {
+      position: absolute;
+      border-radius: 100%;
+      background: #fff;
+    }
+
+    .about-section .about-shape .circle1 {
+      width: 128px;
+      height: 128px;
+      bottom: 40px;
+      left: 100px;
+      background: #f43534;
+      animation: circle1-move 5s linear infinite;
+    }
+
+    .about-section .about-content {
+      z-index: 4;
+      position: relative;
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 100px 6px 100px 60px;
+    }
+
+    @media (max-width: 991px) {
+      .about-section .about-content {
+        max-width: 480px;
+        padding: 84px 6px 85px 20px;
+      }
+    }
+
+    .about-section .dot-pattern {
+      position: absolute;
+      left: -107px;
+      bottom: 20px;
+    }
+
+    .about-section .about-img1 {
+      position: relative;
+      z-index: 2;
+      left: 4px;
+      width: 320px;
+      display: block;
+      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img1.jpg) no-repeat top left/cover;
+    }
+
+    @media (max-width: 767px) {
+      .about-section .about-img1 {
+        display: none;
+      }
+    }
+
+    .about-section .about-img2 {
+      position: relative;
+      z-index: 2;
+      right: 5px;
+      width: 320px;
+      display: block;
+      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img2.jpg) no-repeat left top / cover;
+    }
+
+    @media (max-width: 991px) {
+      .about-section .about-img2 {
+        display: none;
+      }
+    }
+
+    .about-section .about-img1:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #141518;
+      transition: all 1s ease;
+    }
+
+    .about-section .about-img1.animated:before {
+      width: 0;
+    }
+
+    .about-section .about-content h2 {
+      text-align: justify;
+      margin-bottom: 52px;
+      transition: all 1.2s ease 0.6s;
+    }
+
+    @media (max-width: 575px) {
+      .about-section .about-content h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 1.5;
+      }
+    }
+
+    .about-section .about-content h5 {
+      text-align: justify;
+      font-size: 22px;
+      line-height: 43px;
+      font-family: 'Futura Bk BT';
+      font-weight: 400;
+      margin-left: auto;
+      max-width: 315px;
+      transition: all 1.2s ease 0.8s;
+    }
+
+    @media (max-width: 575px) {
+      .about-section .about-content h5 {
+        text-align: center;
+        line-height: 1.7;
+        font-size: 20px;
+        max-width: 100%;
+      }
+    }
+
+    .about-section .about-content h2,
+    .about-section .about-content h5 {
+      transform: translateY(30px);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .about-section .about-content h2.animated,
+    .about-section .about-content h5.animated {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    @keyframes about-shape-move {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
         transform: rotate(4deg);
-    }
-    100% {
+      }
+
+      100% {
         transform: rotate(0deg);
+      }
     }
-}
 
-@keyframes circle1-move {
-    0% {
+    @keyframes circle1-move {
+      0% {
         bottom: 40px;
-    }
-    50% {
+      }
+
+      50% {
         bottom: 70px;
-    }
-    100% {
+      }
+
+      100% {
         bottom: 40px;
+      }
+
     }
-    
-}
 
-.skill-section .section-title,
-.blog-section .section-title,
-.portfolio-section .section-title,
-.service-section .section-title{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    font-size: 140px;
-    z-index: 2;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1;
-    color: rgba(78, 78, 78, 0.2);
-}
-.blog-section .section-title,
-.portfolio-section .section-title,
-.service-section .section-title{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #333;
-}
+    .skill-section .section-title,
+    .blog-section .section-title,
+    .portfolio-section .section-title,
+    .service-section .section-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      font-size: 140px;
+      z-index: 2;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(78, 78, 78, 0.2);
+    }
 
-.bg-header {
-    background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px);
-    background:radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px), url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/home2-hero-bg.jpg) no-repeat;
-    background-size: 100%;
-    background-position: center bottom;
-    z-index: -1;
-    background-size: cover;
-}
+    .blog-section .section-title,
+    .portfolio-section .section-title,
+    .service-section .section-title {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #333;
+    }
+
+    .bg-header {
+      background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px);
+      background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px), url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/home2-hero-bg.jpg) no-repeat;
+      background-size: 100%;
+      background-position: center bottom;
+      z-index: -1;
+      background-size: cover;
+    }
   </style>
 </head>
 
@@ -502,8 +653,7 @@
         <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="texture"
           class="dot-texture animate-me animated">
       </div>
-      <span class="scroll-down animate-me animated" id="scroll-me">scroll down <img
-          src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/scroll-down-arrow.png"
+      <span class="scroll-down animate-me animated" id="scroll-me">scroll down <img src="./assets/flecha-rigth.png"
           alt="arrow"></span>
       <ul class="social-icono">
         <li class="facebook">
@@ -551,12 +701,12 @@
           </a>
         </li>
       </ul>
-  
+
       <div class="container mx-auto">
         <div class="content-wrapper">
           <div class="hero-content">
             <img class="hidden flex img-header mx-auto" src="./assets/img-profile-mb.webp" alt="">
-            <h1 class="animate-me">Hi! I’m Belal</h1>
+            <h1 class="animate-me">Hi! I’m Brezgo</h1>
             <h2 class="animate-me ">WordPress Expert and Front-end Developer</h2>
             <a href="#" class="hire-me link-default animate-me ">Hire Me
               <span>
@@ -571,22 +721,27 @@
   <!-- ======================================= 
         ==End Hero section==  
 =======================================-->
-<section class="about-section pos-relative relative" id="about-me">
-  <div class="overlay"></div>
-  <div class="about-shape">
-    <img src="./assets/img-ins/about-shape.png" alt="shape" class="shape">
-    <span class="circle1"></span>
-</div>
-  <div class="container mx-auto">
-      <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="pattern img" class="dot-pattern">
+  <section class="about-section pos-relative relative" id="about-me">
+    <div class="overlay"></div>
+    <div class="about-shape">
+      <img src="./assets/img-ins/about-shape.png" alt="shape" class="shape">
+      <span class="circle1"></span>
+    </div>
+    <div class="container mx-auto">
+      <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="pattern img"
+        class="dot-pattern">
       <span class="about-img1 animate-me animated"></span>
       <div class="about-content">
-          <h2 class="animate-me animated text-white text-xx">Meet my startup design agency team UITrendy. Currently i am working at UITrendy as Wed Developer. </h2>
-          <h5 class="animate-me animated text-white">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 B making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Colle Virginia, looked up one of the mo obscure Latin words, consectetured.</h5>
+        <h2 class="animate-me animated text-white text-xx">Meet my startup design agency team UITrendy. Currently i am
+          working at UITrendy as Wed Developer. </h2>
+        <h5 class="animate-me animated text-white">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 B making it over 2000 years old. Richard
+          McClintock, a Latin professor at Hampden-Sydney Colle Virginia, looked up one of the mo obscure Latin words,
+          consectetured.</h5>
       </div>
       <span class="about-img2 animate-me animated"></span>
-  </div>
-</section>
+    </div>
+  </section>
 
   <!-- ======================================= 
         ==Star Footer-Section==  
