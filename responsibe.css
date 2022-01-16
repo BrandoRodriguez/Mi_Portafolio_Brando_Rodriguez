@@ -205,10 +205,8 @@
       display: block;
   }
   .social-icon {
-    position: absolute;
     left: 4px;
     top: 350px;
-    z-index: 2;
     width: 50px;
  }
   .marge-prueba {
@@ -321,10 +319,8 @@
       max-width: 535px;
   } 
   .social-icon {
-    position: absolute;
     left: 55px;
     top: 250px;          
-    z-index: 2;
     width: 50px;
 }           
 } 
