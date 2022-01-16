@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome!</title>
+  <meta name="description" content="Brando Rodriguez" />
+  <meta name="author" content="Brando Rodriguez" />
+  <meta name="theme-color" content="#1F1F1F">
+  <!-- <link rel="stylesheet" rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"> -->
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./general.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsibe.css">
+  <style>
+    .hero-section {
+      /* background: #16171b url('images/hero-bg.jpg') no-repeat; */
+      background-position: center top;
+      background-size: 100%;
+    }
+
+    .hero-section .hero-image-wrapper {
+      width: 100%;
+      max-width: 1280px;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      height: 100%;
+      z-index: 1;
+      transform: translateX(50%);
+    }
+
+    @media (max-width: 1599px) {
+      .hero-section .hero-image-wrapper {
+        max-width: 1080px;
+      }
+    }
+
+    .hero-section .hero-image {
+      width: 100%;
+      max-width: 440px;
+      position: absolute;
+      right: 6px;
+      height: 100%;
+      display: block;
+      z-index: 2;
+      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/hero-img-bg.jpg) no-repeat center right/cover;
+    }
+
+    @media (max-width: 575px) {
+      .hero-section .hero-image-wrapper {
+        display: none;
+      }
+    }
+
+    .hero-section .hero-image:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background: #16171b;
+    }
+
+    .hero-section .hero-image img {
+      height: 100%;
+      display: block;
+      max-width: 100%;
+    }
+
+    .hero-section .social-icono {
+      position: absolute;
+      right: 40px;
+      bottom: 40px;
+      z-index: 2;
+    }
+
+    .social-icono li a {
+      width: 46px;
+      height: 46px;
+      border-radius: 100%;
+      color: #fff;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.5s ease;
+    }
+
+    .social-icono li a svg {
+      width: 15px;
+    }
+
+    .hero-section .scroll-down {
+      position: absolute;
+      bottom: 110px;
+      left: -10px;
+      font-size: 14px;
+      color: #acacac;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      transform-origin: top;
+      transform: rotate(-90deg) translateX(50px);
+      cursor: pointer;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.8s ease 1s;
+    }
+
+    .hero-section .scroll-down.animated {
+      transform: rotate(-90deg) translateX(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .hero-section .scroll-down img {
+      position: absolute;
+      width: 14px;
+      transform: rotate(90deg);
+      transform-origin: center;
+      left: -30px;
+      top: 1px;
+      animation: scroll-down-move 1s ease infinite;
+    }
+
+    .hero-section .content-wrapper {
+      height: 100vh;
+      width: 100%;
+      min-height: 750px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      position: relative;
+    }
+    @media (max-width: 575px){
+.hero-section .content-wrapper {
+  min-height: 300px;
+    height: 95vh;
+}}
+
+    .hero-section .hero-image-wrapper .dot-texture {
+      position: absolute;
+      right: -107px;
+      bottom: 20px;
+    }
+
+    .hero-section .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 575px) {
+      .hero-section .hero-content {
+        text-align: center;
+      }
+    }
+
+    .hero-section .hero-content h1 {
+      background: url('images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
+      font-size: 142px;
+      line-height: 0.8;
+      color: #fff;
+      font-family: 'Futura Md BT';
+      font-weight: bold;
+      display: inline-block;
+      margin-left: -10px;
+    }
+
+    @media (max-width: 575px) {
+      .hero-section .hero-content h1 {
+        font-size: 45px;
+        line-height: 1.1;
+        background: none;
+        margin-left: 0;
+      }
+    }
+
+    .hero-section .hero-content h2 {
+      color: #fff;
+      font-family: 'Futura Md BT';
+      font-weight: 500;
+      margin-top: 16px;
+    }
+
+    /* .hero-section .hero-content .hire-me{
+    transition: all 1.2s ease 0.9s;
+}
+
+.hero-section .hero-content .hire-me,
+.hero-section .hero-content h1,
+.hero-section .hero-content h2{
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+}
+.hero-section .hero-content .hire-me.animated,
+.hero-section .hero-content h1.animated,
+.hero-section .hero-content h2.animated{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+    @-webkit-keyframes scroll-down-move {
+      0% {
+        left: -30px;
+      }
+
+      50% {
+        left: -40px;
+      }
+
+      100% {
+        left: -30px;
+      }
+    }
+
+    @keyframes scroll-down-move {
+      0% {
+        left: -30px;
+      }
+
+      50% {
+        left: -40px;
+      }
+
+      100% {
+        left: -30px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+    /*-------about section------*/
+ 
+.about-section{
+    overflow: hidden;
+    background: url("file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-bg.jpg") no-repeat center top/ cover;
+}
+.about-section .container{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+.about-section .overlay{
+    background: rgba(22, 23, 27, 0.9);
+    z-index: 0;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.about-section .about-shape {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    bottom: 30px;
+    max-width: 630px;
+    transform-origin: top right;
+    animation: about-shape-move 8s ease infinite;
+}
+
+.about-section .about-shape span {
+    position: absolute;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.about-section .about-shape .circle1 {
+    width: 128px;
+    height: 128px;
+    bottom: 40px;
+    left: 100px;
+    background: #f43534;
+    animation: circle1-move 5s linear infinite;
+}
+
+.about-section .about-content{
+    z-index: 4;
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 6px 100px 60px;
+}
+@media (max-width: 991px){
+.about-section .about-content {
+    max-width: 480px;
+    padding: 84px 6px 85px 20px;
+}}
+.about-section .dot-pattern {
+    position: absolute;
+    left: -107px;
+    bottom: 20px;
+}
+.about-section .about-img1 {
+    position: relative;
+    z-index: 2;
+    left: 4px;
+    width: 320px;
+    display: block;
+    background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img1.jpg) no-repeat top left/cover;
+}
+@media (max-width: 767px){
+.about-section .about-img1 {
+    display: none;
+}}
+.about-section .about-img2 {
+    position: relative;
+    z-index: 2;
+    right: 5px;
+    width: 320px;
+    display: block;
+    background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img2.jpg) no-repeat left top / cover;
+}
+@media (max-width: 991px){
+.about-section .about-img2 {
+    display: none;
+}}
+.about-section .about-img1:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #141518;
+    transition: all 1s ease;
+}
+.about-section .about-img1.animated:before {
+    width: 0;
+}
+.about-section .about-content h2{
+    text-align: justify;
+    margin-bottom: 52px;
+    transition: all 1.2s ease 0.6s;
+}
+@media (max-width: 575px){
+.about-section .about-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 1.5;
+}}
+.about-section .about-content h5{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 43px;
+    font-family: 'Futura Bk BT';
+    font-weight: 400;
+    margin-left: auto;
+    max-width: 315px;
+    transition: all 1.2s ease 0.8s;
+}
+@media (max-width: 575px){
+.about-section .about-content h5 {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 20px;
+    max-width: 100%;
+}}
+.about-section .about-content h2,
+.about-section .about-content h5{
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+}
+.about-section .about-content h2.animated,
+.about-section .about-content h5.animated{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@keyframes about-shape-move {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes circle1-move {
+    0% {
+        bottom: 40px;
+    }
+    50% {
+        bottom: 70px;
+    }
+    100% {
+        bottom: 40px;
+    }
+    
+}
+
+.skill-section .section-title,
+.blog-section .section-title,
+.portfolio-section .section-title,
+.service-section .section-title{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 140px;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(78, 78, 78, 0.2);
+}
+.blog-section .section-title,
+.portfolio-section .section-title,
+.service-section .section-title{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <!-- ======================================= 
+        ==Start Hero section==  
+=======================================-->
+  <div class="Noise-module--noise--3_meL">
+  </div>
+  <section class="bg-header bg-lineal w-full font-header">
+    <div id="stars"></div>
+    <nav class="relative">
+      <div class="header">
+        <a class="text-white" href="./index.html">
+          <img class="h-img-logo" src="./assets/logo.png" alt="logo" width="auto">
+        </a>
+        <div class="nav-hidden">
+          <ul class="flex items-center text-white space">
+            <li><a class="text-white font-semi-bold text-md" href="#">About</a></li>
+            <span>
+              <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li><a class="text-white font-semi-bold text-md" href="#">Skills</a></li>
+            <span>
+              <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li><a class="text-white font-semi-bold text-md" href="./projects/index.html">Projects</a></li>
+            <span>
+              <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li><a class="text-white font-semi-bold text-md" href="#">Resources</a>
+            </li>
+            <span>
+              <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
+              </svg>
+            </span>
+            <li><a class="text-white font-semi-bold text-md" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="ctn-btn flex justify-center items-center">
+          <a class="btn text-white font-semi-bold text-md" href="">Sign Up</a>
+          <img class="btn-hidden" src="./assets/menu-right.svg" alt="btn-menu">
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section pos-relative relative">
+      <div class="hero-image-wrapper">
+        <span class="hero-image"></span>
+        <!-- <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="texture"
+          class="dot-texture animate-me animated"> -->
+      </div>
+      <span class="scroll-down animate-me animated" id="scroll-me">scroll down <img
+          src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/scroll-down-arrow.png"
+          alt="arrow"></span>
+      <ul class="social-icono">
+        <li class="facebook">
+          <a href="" title="Facebook" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+              class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="" title="Twitter" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+              class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a href="" title="Linkedin" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
+              class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="" title="Instagram" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+              class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+              </path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+  
+      <div class="container mx-auto">
+        <div class="content-wrapper">
+          <div class="hero-content">
+            <h1 class="animate-me">Hi! I’m Belal</h1>
+            <h2 class="animate-me ">WordPress Expert and Front-end Developer</h2>
+            <a href="#" class="hire-me link-default animate-me ">Hire Me
+              <span>
+                <img src="./assets/flecha.png" alt="arrow">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================================= 
+        ==End Hero section==  
+=======================================-->
+<section class="about-section pos-relative relative" id="about-me">
+  <div class="overlay"></div>
+  <div class="container mx-auto">
+      <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="pattern img" class="dot-pattern">
+      <span class="about-img1 animate-me animated"></span>
+      <div class="about-content">
+          <h2 class="animate-me animated text-white text-xx">Meet my startup design agency team UITrendy. Currently i am working at UITrendy as Wed Developer. </h2>
+          <h5 class="animate-me animated text-white">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 B making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Colle Virginia, looked up one of the mo obscure Latin words, consectetured.</h5>
+      </div>
+      <span class="about-img2 animate-me animated"></span>
+  </div>
+</section>
+
+  <!-- ======================================= 
+        ==Star Footer-Section==  
+=======================================-->
+  <section class="footer-section">
+    <div class="container mx-auto ctn-logo">
+      <h2 class="section-title1">GET IN TOUCH</h2>
+      <form class="contact-form  text-white">
+        <h2 class="contact-title text-xl">Hagamos un nuevo proyecto juntos.</h2>
+        <p class="contact-text description text-md">
+          ¡Hola! Soy
+          <span class="contact__input" contenteditable="true" placeholder="tu nombre"></span>
+          y trabajo para.
+          <span class="contact__input" contenteditable="true" placeholder="el nombre de tu compañía"></span>.
+          Nos gustaría desarrollar una aplicación. Puede comunicarse conmigo
+          <span class="contact__input" contenteditable="true" placeholder="Tu correo electrónico"></span>
+          para conversar al respecto y programar una llamada. ¡Gracias!
+        </p>
+        <div class="contact-checkbox flex">
+          <div class="contact__wrap-checkbox">
+            <input class="contact__checkbox" id="i-confirm" type="checkbox">
+            <label class="contact__label" for="i-confirm"></label>
+          </div>
+          <div class=" text-md">
+            <span class="contact__span-checked ">He leído los </span>
+            <a class="contact__link link" href="">
+              Términos de uso y el Acuerdo de usuario</a>
+          </div>
+        </div>
+        <a class="btn1 text-white font-semi-bold text-lg" href="">Sign Up</a>
+      </form>
+      <div class="p-footer">
+        <p class=" text-lg text-white ">
+          <span>&copy; 2022 Brando Rodriguez.</span>
+          <span class="text-gray">All rights reserved.</span>
+        </p>
+        <div class="ctn-social ">
+          <a href="" title="Twitter" target="_blank">
+            <img src="./assets/img-icons/tw.svg" alt="">
+          </a>
+          <a href="" title="Linkedin" target="_blank">
+            <img src="./assets/img-icons/ln.svg" alt="">
+          </a>
+          <a href="" title="Instagram" target="_blank">
+            <img src="./assets/img-icons/ins.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ======================================= 
+        ==End Footer-Section==  
+=======================================-->
+</body>
+
+</html>
