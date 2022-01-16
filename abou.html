@@ -15,12 +15,6 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./responsibe.css">
   <style>
-    .hero-section {
-      /* background: #16171b url('images/hero-bg.jpg') no-repeat; */
-      background-position: center top;
-      background-size: 100%;
-    }
-
     .hero-section .hero-image-wrapper {
       width: 100%;
       max-width: 1280px;
@@ -39,14 +33,18 @@
     }
 
     .hero-section .hero-image {
-      width: 100%;
-      max-width: 440px;
-      position: absolute;
-      right: 6px;
-      height: 100%;
-      display: block;
-      z-index: 2;
-      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/hero-img-bg.jpg) no-repeat center right/cover;
+    max-width: 670px;
+    position: absolute;
+    right: 6px;
+    height: 107%;
+    display: block;
+    z-index: 2;
+    top: -7%;
+    background: url(./assets/img-about/yo.jpg) no-repeat center right/cover;
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: .7;
+
     }
 
     @media (max-width: 575px) {
@@ -437,7 +435,14 @@
     -webkit-text-stroke-color: #333;
 }
 
-
+.bg-header {
+    background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px);
+    background:radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px), url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/home2-hero-bg.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    z-index: -1;
+    background-size: cover;
+}
   </style>
 </head>
 
@@ -494,8 +499,8 @@
     <div class="hero-section pos-relative relative">
       <div class="hero-image-wrapper">
         <span class="hero-image"></span>
-        <!-- <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="texture"
-          class="dot-texture animate-me animated"> -->
+        <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="texture"
+          class="dot-texture animate-me animated">
       </div>
       <span class="scroll-down animate-me animated" id="scroll-me">scroll down <img
           src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/scroll-down-arrow.png"
@@ -550,6 +555,7 @@
       <div class="container mx-auto">
         <div class="content-wrapper">
           <div class="hero-content">
+            <img class="hidden flex img-header mx-auto" src="./assets/img-profile-mb.webp" alt="">
             <h1 class="animate-me">Hi! I’m Belal</h1>
             <h2 class="animate-me ">WordPress Expert and Front-end Developer</h2>
             <a href="#" class="hire-me link-default animate-me ">Hire Me

@@ -22,6 +22,7 @@
         }
         .dk-hero-hidden{
             display: none;
+            opacity: .9;
         }   
         .ctn-btn{
             gap: 5px;
