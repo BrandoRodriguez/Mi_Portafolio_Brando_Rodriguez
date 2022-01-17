@@ -43,8 +43,8 @@ body::-webkit-scrollbar-thumb{
 }
 body {
   /* background: #313131; */
-  /* background: #151515; */
-  background: #1F1F1F;
+  background: #151515;
+  /* background: #1F1F1F; */
   font-family: "Sen";
   -webkit-font-smoothing: antialiased;
   position: relative; 
@@ -94,14 +94,16 @@ body p{
 }  */
 .Noise-module--noise--3_meL:after{ 
   /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
-  background: url("./assets/img-bg/bg1.png");
+  background: url("./assets/img-bg/bg.png");
   content: "";
     height: 300%;
     left: -100%;
     pointer-events: none;
     position: absolute;
     top: -100%;
-    width: 300%;
+    width: 300%;  
+    background-size: 4vw;
+
 }
 address,
 blockquote,
