@@ -9,13 +9,12 @@
   <meta name="description" content="Brando Rodriguez" />
   <meta name="author" content="Brando Rodriguez" />
   <meta name="theme-color" content="#1F1F1F">
-  <!-- <link rel="stylesheet" rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"> -->
   <link rel="stylesheet" href="./global.css">
   <link rel="stylesheet" href="./general.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./responsibe.css">
   <style>
-    .hero-section .hero-image-wrapper {
+    .hero-image-wrapper {
       width: 100%;
       max-width: 1280px;
       position: absolute;
@@ -25,14 +24,7 @@
       z-index: 1;
       transform: translateX(50%);
     }
-
-    @media (max-width: 1599px) {
-      .hero-section .hero-image-wrapper {
-        max-width: 1080px;
-      }
-    }
-
-    .hero-section .hero-image {
+    .hero-image {
       max-width: 635px;
       position: absolute;
       right: 6px;
@@ -46,36 +38,17 @@
       opacity: .7;
 
     }
-
-    @media (max-width: 575px) {
-      .hero-section .hero-image-wrapper {
-        display: none;
-      }
-    }
-
-    .hero-section .hero-image:before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 0%;
-      height: 100%;
-      background: #16171b;
-    }
-
-    .hero-section .hero-image img {
+    .hero-image img {
       height: 100%;
       display: block;
       max-width: 100%;
     }
-
     .hero-section .social-icono {
       position: absolute;
       right: 40px;
       bottom: 40px;
       z-index: 2;
     }
-
     .social-icono li a {
       width: 46px;
       height: 46px;
@@ -88,12 +61,10 @@
       text-align: center;
       transition: all 0.5s ease;
     }
-
     .social-icono li a svg {
       width: 15px;
     }
-
-    .hero-section .scroll-down {
+    .scroll-down {
       position: absolute;
       bottom: 110px;
       left: -10px;
@@ -110,14 +81,12 @@
       visibility: hidden;
       transition: all 0.8s ease 1s;
     }
-
-    .hero-section .scroll-down.animated {
+    .scroll-down.animated {
       transform: rotate(-90deg) translateX(0px);
       opacity: 1;
       visibility: visible;
     }
-
-    .hero-section .scroll-down img {
+    .scroll-down img {
       position: absolute;
       width: 14px;
       transform: rotate(90deg);
@@ -126,44 +95,26 @@
       top: -3px;
       animation: scroll-down-move 1s ease infinite;
     }
-
-    .hero-section .content-wrapper {
+    .content-wrapper {
       height: 94vh;
       width: 100%;
       min-height: 750px;
       display: flex;
       flex-flow: column;
-      padding-top: 200px;
       position: relative;
+      justify-content: center;
     }
-
-    @media (max-width: 575px) {
-      .hero-section .content-wrapper {
-        min-height: 300px;
-        height: 95vh;
-        padding: 0;
-      }
-    }
-
-    .hero-section .hero-image-wrapper .dot-texture {
+    .dot-texture {
       position: absolute;
       right: -107px;
       bottom: 20px;
     }
-
-    .hero-section .hero-content {
+    .hero-content {
       position: relative;
       z-index: 2;
     }
-
-    @media (max-width: 575px) {
-      .hero-section .hero-content {
-        text-align: center;
-      }
-    }
-
-    .hero-section .hero-content h1 {
-      background: url('images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
+   .hero-content h1 {
+      background: url('file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
       font-size: 142px;
       line-height: 0.8;
       color: #fff;
@@ -188,25 +139,6 @@
       font-weight: 500;
       margin-top: 16px;
     }
-
-    /* .hero-section .hero-content .hire-me{
-    transition: all 1.2s ease 0.9s;
-}
-
-.hero-section .hero-content .hire-me,
-.hero-section .hero-content h1,
-.hero-section .hero-content h2{
-    transform: translateY(30px);
-    opacity: 0;
-    visibility: hidden;
-}
-.hero-section .hero-content .hire-me.animated,
-.hero-section .hero-content h1.animated,
-.hero-section .hero-content h2.animated{
-    transform: translateY(0px);
-    opacity: 1;
-    visibility: visible;
-} */
 
 
     @-webkit-keyframes scroll-down-move {
@@ -237,123 +169,172 @@
       }
     }
 
-    
-  @media (max-width: 1599px){
-.hero-section .hero-image {
-    max-width: 600px;
-}}
 
-    @media (max-width: 1399px){
- /*------hero-section----*/
- .hero-section .social-icon {
-        bottom: 30px;
+    @media (max-width: 1599px) {
+      .hero-section .hero-image {
+        max-width: 600px;
+      }
     }
-    .hero-section .social-icon li {
+
+    @media (max-width: 1599px) {
+      .hero-section .hero-image-wrapper {
+        max-width: 1080px;
+      }
+    }
+
+    @media (max-width: 1399px) {
+
+      /*------hero-section----*/
+      .hero-section .social-icon {
+        bottom: 30px;
+      }
+
+      .hero-section .social-icon li {
         display: inline-block;
         margin-bottom: 0;
-    }
-    .hero-section .hero-image-wrapper {
+      }
+
+      .hero-section .hero-image-wrapper {
         max-width: 970px;
-    }
-    .hero-section .hero-image {
+      }
+
+      .hero-section .hero-image {
         max-width: 562px;
-    }
-    .hero-section .hero-image-wrapper .dot-texture {
+      }
+
+      .hero-section .hero-image-wrapper .dot-texture {
         display: none;
-    }
-    .hero-section .vertical-logo {
+      }
+
+      .hero-section .vertical-logo {
         width: 210px;
-    }
-    .hero-section .hero-content h1 {
+      }
+
+      .hero-section .hero-content h1 {
         font-size: 122px;
-    }
-    .hero-section .hero-content h2 {
+      }
+
+      .hero-section .hero-content h2 {
         font-size: 30px;
         line-height: 44px;
         max-width: 670px;
         width: 100%;
+      }
     }
-  }
 
-    @media (max-width: 1199px) {  
-    .fp-tableCell {
+    @media (max-width: 1199px) {
+      .fp-tableCell {
         display: block;
-        height: auto!important;
-    }
-    
-    .menu-wrapper ul.main-menu {
+        height: auto !important;
+      }
+
+      .menu-wrapper ul.main-menu {
         max-width: 940px;
-    }
-    .menu-wrapper .quick-link {
+      }
+
+      .menu-wrapper .quick-link {
         max-width: 940px;
-    }
-    
-    .hero-section .content-wrapper {
+      }
+
+      .hero-section .content-wrapper {
         padding: 0 15px;
-    }
-    .hero-section .hero-image-wrapper {
+      }
+
+      .hero-section .hero-image-wrapper {
         max-width: 770px;
-    }
-    .hero-section .hero-image {
+      }
+
+      .hero-section .hero-image {
         max-width: 378px;
-    }
-    .hero-section .vertical-logo {
+      }
+
+      .hero-section .vertical-logo {
         width: 240px;
         left: calc(100% / 4);
-    }
-    .hero-section .social-icon li {
+      }
+
+      .hero-section .social-icon li {
         display: block;
         margin-bottom: 2px;
-    }
-    .hero-section .hero-content h1 {
+      }
+
+      .hero-section .hero-content h1 {
         font-size: 90px;
-    }
-    .hero-section .hero-content h2 {
+      }
+
+      .hero-section .hero-content h2 {
         font-size: 24px;
         line-height: 34px;
         max-width: 480px;
+      }
     }
-  }
 
 
 
-  @media (max-width: 991px) {
-    .hero-section .hero-image {
+    @media (max-width: 991px) {
+      .hero-section .hero-image {
         max-width: 550px;
         background-position: 94% 100%;
-    }
-    .hero-section .hero-content h1 {
+      }
+
+      .hero-section .hero-content h1 {
         font-size: 76px;
-    }
-    .hero-section .hero-content h2 {
+      }
+
+      .hero-section .hero-content h2 {
         font-size: 22px;
         line-height: 34px;
         max-width: 440px;
-    }
-    .hero-section .vertical-logo {
+      }
+
+      .hero-section .vertical-logo {
         width: 190px;
-    }
-    .hero-section .hero-image-wrapper .dot-texture {
+      }
+
+      .hero-section .hero-image-wrapper .dot-texture {
         display: none;
-    }
-    
-    .about-section .about-img2 {
+      }
+
+      .about-section .about-img2 {
         display: none;
-    }
-    .about-section .about-img1 {
+      }
+
+      .about-section .about-img1 {
         width: 230px;
-    }
-    .about-section .about-content {
+      }
+
+      .about-section .about-content {
         max-width: 480px;
         width: 100%;
         padding: 83px 6px 83px 20px;
-    }
-    .about-section .about-content h5 {
+      }
+
+      .about-section .about-content h5 {
         max-width: 100%;
+      }
+
     }
 
-  }
+    @media (max-width: 575px) {
+      .hero-section .hero-image-wrapper {
+        display: none;
+      }
+    }
 
+    @media (max-width: 575px) {
+      .hero-section .content-wrapper {
+        min-height: 300px;
+        height: 95vh;
+        padding: 0;
+      }
+    }
+
+
+    @media (max-width: 575px) {
+      .hero-section .hero-content {
+        text-align: center;
+      }
+    }
 
 
 
@@ -587,13 +568,27 @@
     }
 
     .bg-header {
-      background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px);
-      background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 700px), radial-gradient(farthest-corner at bottom right, rgba(255, 50, 50, 0.3), transparent 700px), url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/home2-hero-bg.jpg) no-repeat;
+      background: url(./assets/img-bg/home2-hero-bg.jpg) no-repeat;
       background-size: 100%;
       background-position: center bottom;
       z-index: -1;
       background-size: cover;
     }
+
+
+
+    .hero-section .vertical-logo {
+    position: absolute;
+    left: calc(100% / 6);
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (max-width: 575px){
+.hero-section .vertical-logo {
+    width: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}}
   </style>
 </head>
 
@@ -603,7 +598,8 @@
 =======================================-->
   <div class="Noise-module--noise--3_meL">
   </div>
-  <section class="bg-header bg-lineal w-full font-header">
+  
+  <section class="bg-header">
     <div id="stars"></div>
     <nav class="relative">
       <div class="header">
@@ -647,58 +643,33 @@
         </div>
       </div>
     </nav>
-    <div class="hero-section pos-relative relative">
+
+    <div class="hero-section relative">
+      <span class="vertical-logo"><img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/vertical-logo.png" alt="vertical-logo"></span>
       <div class="hero-image-wrapper">
         <span class="hero-image"></span>
-        <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="texture"
-          class="dot-texture animate-me animated">
+        <img src="./assets/img-bg/dot-texture.png" alt="texture" class="dot-texture">
       </div>
-      <span class="scroll-down animate-me animated" id="scroll-me">scroll down <img src="./assets/flecha-rigth.png"
-          alt="arrow"></span>
+      <a href="">
+        <span class="scroll-down animated">scroll down <img src="./assets/flecha-rigth.png"
+          alt="arrow">
+      </span>
+      </a>     
       <ul class="social-icono">
-        <li class="facebook">
-          <a href="" title="Facebook" target="_blank">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
-              class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512">
-              <path fill="currentColor"
-                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-              </path>
-            </svg>
-          </a>
-        </li>
         <li class="twitter">
-          <a href="" title="Twitter" target="_blank">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
-              class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
-              <path fill="currentColor"
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-              </path>
-            </svg>
-          </a>
+            <a href="" title="Twitter" target="_blank">
+                <img src="./assets/img-icons/tw.svg" alt="">
+            </a>
         </li>
         <li class="linkedin">
-          <a href="" title="Linkedin" target="_blank">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
-              class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path fill="currentColor"
-                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-              </path>
-            </svg>
-          </a>
+            <a href="" title="Linkedin" target="_blank">
+                <img src="./assets/img-icons/ln.svg" alt="">
+            </a>
         </li>
         <li class="instagram">
-          <a href="" title="Instagram" target="_blank">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
-              class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512">
-              <path fill="currentColor"
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-              </path>
-            </svg>
-          </a>
+            <a href="" title="Instagram" target="_blank">
+                <img src="./assets/img-icons/ins.svg" alt="">
+            </a>
         </li>
       </ul>
 
@@ -706,7 +677,7 @@
         <div class="content-wrapper">
           <div class="hero-content">
             <img class="hidden flex img-header mx-auto" src="./assets/img-profile-mb.webp" alt="">
-            <h1 class="animate-me">Hi! I’m Brezgo</h1>
+            <h1 class="animate-me">Hi! I’m Belal</h1>
             <h2 class="animate-me ">WordPress Expert and Front-end Developer</h2>
             <a href="#" class="hire-me link-default animate-me ">Hire Me
               <span>
@@ -721,7 +692,10 @@
   <!-- ======================================= 
         ==End Hero section==  
 =======================================-->
-  <section class="about-section pos-relative relative" id="about-me">
+
+
+
+  <!-- <section class="about-section pos-relative relative" id="about-me">
     <div class="overlay"></div>
     <div class="about-shape">
       <img src="./assets/img-ins/about-shape.png" alt="shape" class="shape">
@@ -742,8 +716,12 @@
       <span class="about-img2 animate-me animated"></span>
     </div>
   </section>
+ -->
 
-  <!-- ======================================= 
+
+
+
+<!-- ======================================= 
         ==Star Footer-Section==  
 =======================================-->
   <section class="footer-section">
@@ -792,7 +770,6 @@
       </div>
 
     </div>
-
   </section>
   <!-- ======================================= 
         ==End Footer-Section==  
