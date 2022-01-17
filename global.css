@@ -102,7 +102,7 @@ body p{
     position: absolute;
     top: -100%;
     width: 300%;  
-    background-size: 4vw;
+    /* background-size: 4vw; */
 
 }
 address,
