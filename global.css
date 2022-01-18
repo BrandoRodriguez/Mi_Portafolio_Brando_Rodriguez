@@ -35,12 +35,7 @@ body::-webkit-scrollbar-thumb{
   font-weight: 700;
   src: url(./fonts/6xKudSxYI9__J9CYLUv0.woff2) format('woff2');
 }
-@font-face {
-  font-family: 'Futura Md BT';
-  src: url('./fonts/FuturaBT-Bold.woff2');
-  font-weight: bold;
-  font-style: normal;
-}
+
 body {
   /* background: #313131; */
   background: #151515;
@@ -67,7 +62,7 @@ body p{
 @keyframes Noise-module--flicker--2Xqie{0%{transform:translate(0)}10%{transform:translate(-5%,-5%)}20%{transform:translate(-10%,5%)}30%{transform:translate(5%,-10%)}40%{transform:translate(-5%,15%)}50%{transform:translate(-10%,5%)}60%{transform:translate(15%)}70%{transform:translateY(10%)}80%{transform:translate(-15%)}90%{transform:translate(10%,5%)}to{transform:translate(5%)}}
 .Noise-module--noise--3_meL{
   bottom:0;left:0;
-  opacity:.5;
+  opacity:.6;
   /* overflow:hidden; */
   pointer-events:none;
   position:fixed;
@@ -104,6 +99,12 @@ body p{
     width: 300%;  
     /* background-size: 4vw; */
 
+}
+@font-face {
+  font-family: 'Futura Md BT';
+  src: url('./fonts/FuturaBT-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 address,
 blockquote,

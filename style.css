@@ -169,6 +169,7 @@
             border-color: #fff;
         }
         .count {
+            font-family: 'Futura Md BT';
             position: absolute;
             right: -30px;
             font-size: 90px;   
@@ -177,8 +178,8 @@
             font-weight: 900;
             color: rgb(71, 67, 67);
             -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 2px;
-            font-family: 'Futura Md BT';    
+            -webkit-text-stroke-width: 2px;   
+            
         }
         .skill-section .count{
             opacity: 0.3;
@@ -204,7 +205,7 @@
             top: 0;
             left: 0;
             font-size:50px; 
-            color: rgb(71, 67, 67);
+            color: #4A4545;
             margin-bottom: 50px;
             z-index: 2;
             text-transform: uppercase;
