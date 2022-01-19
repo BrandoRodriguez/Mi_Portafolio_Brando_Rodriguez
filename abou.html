@@ -24,18 +24,20 @@
       z-index: 1;
       transform: translateX(50%);
     }
+    .hero-image-wrapper-hiden {
+        display: none;
+      }   
     .hero-image {
-      max-width: 635px;
-      position: absolute;
-      right: 6px;
-      height: 107%;
-      display: block;
-      z-index: 2;
-      top: -7%;
-      background: url(./assets/img-about/yo2.png) no-repeat center right/cover;
-      margin-bottom: 20px;
-      width: 100%;
-      opacity: .7;
+    position: absolute;
+    right: 6px;
+    height: 107%;
+    display: block;
+    z-index: 2;
+    top: -7%;
+    background: url(./assets/img-about/yo2.png) no-repeat center right/cover;
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: .7;
 
     }
     .hero-image img {
@@ -63,6 +65,29 @@
     }
     .social-icono li a svg {
       width: 15px;
+    }
+    @-webkit-keyframes scroll-down-move {
+      0% {
+        left: -30px;
+      }
+      50% {
+        left: -40px;
+      }
+      100% {
+        left: -30px;
+      }
+    }
+
+    @keyframes scroll-down-move {
+      0% {
+        left: -30px;
+      }
+      50% {
+        left: -40px;
+      }
+      100% {
+        left: -30px;
+      }
     }
     .scroll-down {
       position: absolute;
@@ -104,240 +129,79 @@
       position: relative;
       justify-content: center;
     }
-    .dot-texture {
-      position: absolute;
-      right: -107px;
-      bottom: 20px;
-    }
     .hero-content {
       position: relative;
       z-index: 2;
+      text-align: center;
     }
    .hero-content h1 {
-      background: url('file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/hero-title-pettern-bg.png') no-repeat 95% center / contain;
-      font-size: 142px;
-      line-height: 0.8;
+      font-size: 25px;
+      line-height: 1.1;
+      background: none;
+      margin-left: 0;
       color: #fff;
       font-family: 'Futura Md BT';
       font-weight: bold;
       display: inline-block;
       margin-left: -10px;
     }
-
-    @media (max-width: 575px) {
-      .hero-section .hero-content h1 {
-        font-size: 45px;
-        line-height: 1.1;
-        background: none;
-        margin-left: 0;
-      }
-    }
-
-    .hero-section .hero-content h2 {
+   .hero-content h2 {
       color: #fff;
-      font-family: 'Futura Md BT';
       font-weight: 500;
       margin-top: 16px;
+      font-size: 16px;
+      line-height: 54px;
     }
 
-
-    @-webkit-keyframes scroll-down-move {
-      0% {
-        left: -30px;
+    @media (min-width: 768px) {
+      .hero-content{
+      text-align: start;
       }
-
-      50% {
-        left: -40px;
+      .hero-content h1 {
+            font-size: 76px;
       }
-
-      100% {
-        left: -30px;
-      }
-    }
-
-    @keyframes scroll-down-move {
-      0% {
-        left: -30px;
-      }
-
-      50% {
-        left: -40px;
-      }
-
-      100% {
-        left: -30px;
-      }
-    }
-
-
-    @media (max-width: 1599px) {
-      .hero-section .hero-image {
-        max-width: 600px;
-      }
-    }
-
-    @media (max-width: 1599px) {
-      .hero-section .hero-image-wrapper {
-        max-width: 1080px;
-      }
-    }
-
-    @media (max-width: 1399px) {
-
-      /*------hero-section----*/
-      .hero-section .social-icon {
-        bottom: 30px;
-      }
-
-      .hero-section .social-icon li {
-        display: inline-block;
-        margin-bottom: 0;
-      }
-
-      .hero-section .hero-image-wrapper {
-        max-width: 970px;
-      }
-
-      .hero-section .hero-image {
-        max-width: 562px;
-      }
-
-      .hero-section .hero-image-wrapper .dot-texture {
-        display: none;
-      }
-
-      .hero-section .vertical-logo {
-        width: 210px;
-      }
-
-      .hero-section .hero-content h1 {
-        font-size: 122px;
-      }
-
-      .hero-section .hero-content h2 {
-        font-size: 30px;
-        line-height: 44px;
-        max-width: 670px;
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 1199px) {
-      .fp-tableCell {
+      .hero-image-wrapper-hiden {
         display: block;
-        height: auto !important;
+      } 
+    }   
+    @media(min-width: 1024px){
+    .hero-content h1{
+          background: url('./assets/img-about/hero-title-pettern-bg.png') no-repeat 95% center / contain;
+          font-size: 90px;
+          line-height: 0.8;
       }
-
-      .menu-wrapper ul.main-menu {
-        max-width: 940px;
+    .hero-content h2 {
+      font-size: 24px;
       }
-
-      .menu-wrapper .quick-link {
-        max-width: 940px;
-      }
-
-      .hero-section .content-wrapper {
-        padding: 0 15px;
-      }
-
-      .hero-section .hero-image-wrapper {
-        max-width: 770px;
-      }
-
-      .hero-section .hero-image {
-        max-width: 378px;
-      }
-
-      .hero-section .vertical-logo {
-        width: 240px;
-        left: calc(100% / 4);
-      }
-
-      .hero-section .social-icon li {
-        display: block;
-        margin-bottom: 2px;
-      }
-
-      .hero-section .hero-content h1 {
-        font-size: 90px;
-      }
-
-      .hero-section .hero-content h2 {
-        font-size: 24px;
-        line-height: 34px;
-        max-width: 480px;
-      }
+    .hero-image-wrapper {
+      max-width: 995px;
     }
-
-
-
-    @media (max-width: 991px) {
-      .hero-section .hero-image {
-        max-width: 550px;
-        background-position: 94% 100%;
-      }
-
-      .hero-section .hero-content h1 {
-        font-size: 76px;
-      }
-
-      .hero-section .hero-content h2 {
-        font-size: 22px;
-        line-height: 34px;
-        max-width: 440px;
-      }
-
-      .hero-section .vertical-logo {
-        width: 190px;
-      }
-
-      .hero-section .hero-image-wrapper .dot-texture {
-        display: none;
-      }
-
-      .about-section .about-img2 {
-        display: none;
-      }
-
-      .about-section .about-img1 {
-        width: 230px;
-      }
-
-      .about-section .about-content {
-        max-width: 480px;
-        width: 100%;
-        padding: 83px 6px 83px 20px;
-      }
-
-      .about-section .about-content h5 {
-        max-width: 100%;
-      }
-
     }
-
-    @media (max-width: 575px) {
-      .hero-section .hero-image-wrapper {
-        display: none;
+    @media (min-width: 1280px){
+    .hero-content h1 {
+            font-size: 122px;
+          }
+    .hero-content h2 {
+      font-size: 30px;
       }
-    }
-
-    @media (max-width: 575px) {
-      .hero-section .content-wrapper {
-        min-height: 300px;
-        height: 95vh;
-        padding: 0;
+    .hero-image {
+      max-width: 635px;
       }
+    .hero-image-wrapper {
+      max-width: 1160px;
     }
-
-
-    @media (max-width: 575px) {
-      .hero-section .hero-content {
-        text-align: center;
+    }
+    @media (min-width: 1400px){
+    .hero-content h1 {
+            font-size: 142px;
+          }
+    .hero-content h2 {
+      font-size: 30px;
       }
+    .hero-image-wrapper {
+      max-width: 1280px;
     }
-
-
-
+    }
 
 
 
@@ -646,9 +510,9 @@
 
     <div class="hero-section relative">
       <span class="vertical-logo"><img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/vertical-logo.png" alt="vertical-logo"></span>
-      <div class="hero-image-wrapper">
+      <div class="hero-image-wrapper hero-image-wrapper-hiden">
         <span class="hero-image"></span>
-        <img src="./assets/img-bg/dot-texture.png" alt="texture" class="dot-texture">
+        <!-- <img src="./assets/img-bg/dot-texture.png" alt="texture" class="dot-texture"> -->
       </div>
       <a href="">
         <span class="scroll-down animated">scroll down <img src="./assets/flecha-rigth.png"
@@ -695,7 +559,7 @@
 
 
 
-  <!-- <section class="about-section pos-relative relative" id="about-me">
+  <section class="about-section pos-relative relative" id="about-me">
     <div class="overlay"></div>
     <div class="about-shape">
       <img src="./assets/img-ins/about-shape.png" alt="shape" class="shape">
@@ -716,7 +580,7 @@
       <span class="about-img2 animate-me animated"></span>
     </div>
   </section>
- -->
+
 
 
 

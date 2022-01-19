@@ -36,6 +36,7 @@
 .recursos-section{
     padding-top: 50px;
 }
+
 @media (min-width: 640px) {
   .container {
       width: 100%;
@@ -51,6 +52,7 @@
     justify-content: center;
     text-align: center;
 }}
+
 @media (min-width: 768px) {
   .container {
       max-width: 768px;
