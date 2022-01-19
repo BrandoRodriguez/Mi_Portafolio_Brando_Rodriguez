@@ -126,7 +126,7 @@
       display: flex;
       flex-flow: column;
       position: relative;
-      justify-content: center;
+      justify-content: inherit;
     }
     .hero-content {
       position: relative;
@@ -161,8 +161,10 @@
       }
       .hero-image-wrapper-hiden {
         display: block;
-      } 
-    }
+      }
+      .content-wrapper {
+      justify-content: center;
+    } 
     }   
     @media(min-width: 1024px){
     .hero-content h1{
