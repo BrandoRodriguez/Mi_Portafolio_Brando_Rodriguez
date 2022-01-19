@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./responsibe.css">
   <style>
+     .bg-header {
+      background: url(./assets/img-bg/home2-hero-bg.jpg) no-repeat;
+      background-position: center bottom;
+      z-index: -1;
+      background-size: cover;
+    }
     .hero-image-wrapper {
       width: 100%;
       max-width: 1280px;
@@ -151,6 +157,112 @@
       font-size: 16px;
       line-height: 54px;
     }
+    .vertical-logo {
+    position: absolute;
+    width: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    }
+
+/* description */
+    .about-section .container {
+      position: relative;
+      display: flex;
+      flex-flow: row;
+    }
+    .about-shape {
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      bottom: 30px;
+      max-width: 630px;
+      transform-origin: top right;
+      animation: about-shape-move 8s ease infinite;
+    }
+
+    .about-shape span {
+      position: absolute;
+      border-radius: 100%;
+    }
+    .circle1 {
+      width: 128px;
+      height: 128px;
+      bottom: 40px;
+      left: 100px;
+      background: #f43534;
+      animation: circle1-move 5s linear infinite;
+    }
+    @keyframes about-shape-move {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(4deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes circle1-move {
+      0% {
+        bottom: 40px;
+      }
+
+      50% {
+        bottom: 70px;
+      }
+
+      100% {
+        bottom: 40px;
+      }
+
+    }
+    .dot-pattern {
+      position: absolute;
+      left: -107px;
+      bottom: 20px;
+    }
+    .about-img1 {
+      position: relative;
+      z-index: 2;
+      left: 4px;
+      width: 320px;
+      display: none;
+      background: url(./assets/img-about/about-img1.jpg) no-repeat top left/cover;
+    }  
+    .about-img2 {
+      position: relative;
+      z-index: 2;
+      right: 5px;
+      width: 320px;
+      display: none;
+      background: url(./assets/img-about/about-img2.jpg) no-repeat left top / cover;
+    }
+   .about-content {
+      z-index: 4;
+      position: relative;
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px;
+      padding: 24px 25px 85px 25px;
+    }
+    .about-content h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .about-content h5 {
+      font-weight: 400;
+      margin-left: auto;
+      max-width: 100%;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 20px;
+    }
 
     @media (min-width: 768px) {
       .hero-content{
@@ -165,7 +277,26 @@
       }
       .content-wrapper {
       justify-content: center;
-    } 
+      } 
+     .about-img1 {
+        display: block;
+      }
+      .about-content h2{
+      text-align: justify;
+      margin-bottom: 52px;
+    }
+      .about-content h5{
+      text-align: justify;
+      font-size: 22px;
+      line-height: 43px;
+      max-width: 315px;
+      }
+     .vertical-logo {
+      left: calc(100% / 6);
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto;
+}
     }   
     @media(min-width: 1024px){
     .hero-content h1{
@@ -179,6 +310,13 @@
     .hero-image-wrapper {
       max-width: 995px;
     }
+    .about-content {
+      padding: 100px 6px 100px 60px;
+    }
+    .about-img2 {
+        display: block;
+      }
+
     }
     @media (min-width: 1280px){
     .hero-content h1 {
@@ -211,267 +349,6 @@
       max-width: 1280px;
     }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*-------about section------*/
-
-    /* .about-section {
-      overflow: hidden;
-      background: url("file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-bg.jpg") no-repeat center top/ cover;
-    } */
-
-    .about-section .container {
-      position: relative;
-      display: flex;
-      flex-flow: row;
-    }
-
-    /* .about-section .overlay {
-      background: rgba(22, 23, 27, 0.9);
-      z-index: 0;
-    } */
-
-    .overlay {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .about-section .about-shape {
-      position: absolute;
-      right: 0;
-      z-index: 3;
-      bottom: 30px;
-      max-width: 630px;
-      transform-origin: top right;
-      animation: about-shape-move 8s ease infinite;
-    }
-
-    .about-section .about-shape span {
-      position: absolute;
-      border-radius: 100%;
-      background: #fff;
-    }
-
-    .about-section .about-shape .circle1 {
-      width: 128px;
-      height: 128px;
-      bottom: 40px;
-      left: 100px;
-      background: #f43534;
-      animation: circle1-move 5s linear infinite;
-    }
-
-    .about-section .about-content {
-      z-index: 4;
-      position: relative;
-      max-width: 640px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 100px 6px 100px 60px;
-    }
-
-    @media (max-width: 991px) {
-      .about-section .about-content {
-        max-width: 480px;
-        padding: 84px 6px 85px 20px;
-      }
-    }
-
-    .about-section .dot-pattern {
-      position: absolute;
-      left: -107px;
-      bottom: 20px;
-    }
-
-    .about-section .about-img1 {
-      position: relative;
-      z-index: 2;
-      left: 4px;
-      width: 320px;
-      display: block;
-      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img1.jpg) no-repeat top left/cover;
-    }
-
-    @media (max-width: 767px) {
-      .about-section .about-img1 {
-        display: none;
-      }
-    }
-
-    .about-section .about-img2 {
-      position: relative;
-      z-index: 2;
-      right: 5px;
-      width: 320px;
-      display: block;
-      background: url(file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/about-img2.jpg) no-repeat left top / cover;
-    }
-
-    @media (max-width: 991px) {
-      .about-section .about-img2 {
-        display: none;
-      }
-    }
-
-    .about-section .about-img1:before {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #141518;
-      transition: all 1s ease;
-    }
-
-    .about-section .about-img1.animated:before {
-      width: 0;
-    }
-
-    .about-section .about-content h2 {
-      text-align: justify;
-      margin-bottom: 52px;
-      transition: all 1.2s ease 0.6s;
-    }
-
-    @media (max-width: 575px) {
-      .about-section .about-content h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 28px;
-        line-height: 1.5;
-      }
-    }
-
-    .about-section .about-content h5 {
-      text-align: justify;
-      font-size: 22px;
-      line-height: 43px;
-      font-family: 'Futura Bk BT';
-      font-weight: 400;
-      margin-left: auto;
-      max-width: 315px;
-      transition: all 1.2s ease 0.8s;
-    }
-
-    @media (max-width: 575px) {
-      .about-section .about-content h5 {
-        text-align: center;
-        line-height: 1.7;
-        font-size: 20px;
-        max-width: 100%;
-      }
-    }
-
-    .about-section .about-content h2,
-    .about-section .about-content h5 {
-      transform: translateY(30px);
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .about-section .about-content h2.animated,
-    .about-section .about-content h5.animated {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
-    }
-
-
-    @keyframes about-shape-move {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      50% {
-        transform: rotate(4deg);
-      }
-
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-
-    @keyframes circle1-move {
-      0% {
-        bottom: 40px;
-      }
-
-      50% {
-        bottom: 70px;
-      }
-
-      100% {
-        bottom: 40px;
-      }
-
-    }
-
-    .skill-section .section-title,
-    .blog-section .section-title,
-    .portfolio-section .section-title,
-    .service-section .section-title {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      font-size: 140px;
-      z-index: 2;
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 1;
-      color: rgba(78, 78, 78, 0.2);
-    }
-
-    .blog-section .section-title,
-    .portfolio-section .section-title,
-    .service-section .section-title {
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: #333;
-    }
-
-    .bg-header {
-      background: url(./assets/img-bg/home2-hero-bg.jpg) no-repeat;
-      background-size: 100%;
-      background-position: center bottom;
-      z-index: -1;
-      background-size: cover;
-    }
-
-
-
-    .hero-section .vertical-logo {
-    position: absolute;
-    left: calc(100% / 6);
-    top: 50%;
-    transform: translateY(-50%);
-}
-@media (max-width: 575px){
-.hero-section .vertical-logo {
-    width: 130px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}}
   </style>
 </head>
 
@@ -526,15 +403,13 @@
         </div>
       </div>
     </nav>
-
     <div class="hero-section relative">
       <span class="vertical-logo"><img src="./assets/img-about/vertical-logo.png" alt="vertical-logo"></span>
       <div class="hero-image-wrapper hero-image-wrapper-hiden">
         <span class="hero-image"></span>
-        <!-- <img src="./assets/img-bg/dot-texture.png" alt="texture" class="dot-texture"> -->
       </div>
       <a href="">
-        <span class="scroll-down animated">scroll down <img src="./assets/flecha-rigth.png"
+        <span class="scroll-down animated">scroll down<img src="./assets/flecha-rigth.png"
           alt="arrow">
       </span>
       </a>     
@@ -578,25 +453,24 @@
 
 
 
-  <section class="about-section pos-relative relative" id="about-me">
-    <div class="overlay"></div>
+  <section class="about-section relative">
     <div class="about-shape">
       <img src="./assets/img-ins/about-shape.png" alt="shape" class="shape">
       <span class="circle1"></span>
     </div>
     <div class="container mx-auto">
-      <img src="file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture.png" alt="pattern img"
+      <img src="./assets/img-about/dot-texture.png" alt="pattern img"
         class="dot-pattern">
-      <span class="about-img1 animate-me animated"></span>
+      <span class="about-img1 "></span>
       <div class="about-content">
-        <h2 class="animate-me animated text-white text-xx">Meet my startup design agency team UITrendy. Currently i am
+        <h2 class="text-pardo">Meet my startup design agency team UITrendy. Currently i am
           working at UITrendy as Wed Developer. </h2>
-        <h5 class="animate-me animated text-white">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+        <h5 class="text-pardo">Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 B making it over 2000 years old. Richard
           McClintock, a Latin professor at Hampden-Sydney Colle Virginia, looked up one of the mo obscure Latin words,
           consectetured.</h5>
       </div>
-      <span class="about-img2 animate-me animated"></span>
+      <span class="about-img2 "></span>
     </div>
   </section>
 
