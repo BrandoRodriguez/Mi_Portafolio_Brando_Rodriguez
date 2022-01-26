@@ -27,6 +27,11 @@
   rgba(255, 50, 50, 0.3),
               transparent 250px);
 }
+.recursos-section{
+    background: radial-gradient(farthest-corner at bottom left,
+   rgba(255, 50, 50, 0.3),
+   transparent 250px);
+}
 .footer-section{
     background:
     radial-gradient(farthest-corner at top left,
@@ -100,12 +105,18 @@
     rgba(255, 50, 50, 0.3),
     transparent 700px);
   }
+  .recursos-section{
+     background: radial-gradient(farthest-corner at bottom left,
+    rgba(255, 50, 50, 0.3),
+    transparent 700px);
+  }
   .footer-section{
     background:
     radial-gradient(farthest-corner at top left,
     rgba(255, 50, 50, 0.3),
     transparent 700px);
   }
+
   /* .blog-section{
     background:
     radial-gradient(farthest-corner at top right,

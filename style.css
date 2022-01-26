@@ -37,14 +37,18 @@
             border-radius: 9999px;
             border-width: 1px;
             border-style: solid;
-            /* background: linear-gradient(to right,#f969fc,#bc01f0,#43b1c8); */
+            background: linear-gradient(to right,#f969fc,#bc01f0,#43b1c8);
         }    
         .btn1{
             padding-top: 11px;
             padding-bottom: 11px;
             padding-left: 20px;
             padding-right: 20px;
+            --border-opacity: 1;
+            border-color: rgba(168, 168, 170, var(--border-opacity));
             border-radius: 9999px;
+            border-width: 1px;
+            border-style: solid;
             display: inline-flex;
             -webkit-box-pack: center;
             justify-content: center;
@@ -57,9 +61,11 @@
         }   
         .btn:hover {
             border-color: #fff;
+            opacity: 0.9;
         }
         .btn1:hover {
             opacity: 0.9;
+            border-color: #fff;
         }
         
         .img-bash-1{
