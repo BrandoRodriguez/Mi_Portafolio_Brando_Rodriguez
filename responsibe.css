@@ -220,7 +220,7 @@
   .social-icon {
     left: 4px;
     top: 350px;
-    width: 50px;
+    width: 40px;
  }
   .marge-prueba {
       padding-left: 0;
@@ -334,7 +334,6 @@
   .social-icon {
     left: 55px;
     top: 250px;          
-    width: 50px;
 }           
 } 
 @media (min-width: 1400px) {
