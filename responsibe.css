@@ -1,6 +1,47 @@
 /* <!-- ======================================= 
 ==Container-Responsibe-CSS==  
 =======================================--> */
+/* 
+.blog-section:before {
+    --bg-gradient: linear-gradient(126.05deg,rgb(241 42 42/90%) 25.95%,#bf1ceb 44.46%,#06ad57 65.35%,rgb(6 173 87/60%) 76.7%);
+    background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
+    background-image: var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 100%;
+    content: "";
+    filter: blur(100px);
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: -1;
+    height: 50vh;
+    opacity: .3;
+    width: 70vw;
+} */
+
+/* .skill-section:before {
+    --bg-gradient: linear-gradient(326.05deg,rgb(241 42 42/90%) 25.95%,#bf1ceb 44.46%,#06ad57 65.35%,rgb(6 173 87/60%) 76.7%);
+    background-image: linear-gradient(130deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
+    background-image: var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 100%;
+    content: "";
+    filter: blur(100px);
+    left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 80vh;
+    opacity: .2;
+    width: 60vw;
+} */
 .bg-header {      
     background:
     radial-gradient(farthest-side at top left,
@@ -92,7 +133,7 @@
   .portfolio-section{
       background:
       radial-gradient(farthest-corner at top right,
-      rgba(255, 50, 50, 0.3),
+      rgba(241, 42, 42, 0.3),
       transparent 700px),
       radial-gradient(farthest-corner at bottom left,
     rgba(255, 50, 50, 0.3),
@@ -113,7 +154,7 @@
   .footer-section{
     background:
     radial-gradient(farthest-corner at top left,
-    rgba(255, 50, 50, 0.3),
+    rgba(241, 42, 42, 0.3),
     transparent 700px);
   }
 
@@ -129,8 +170,8 @@
             rgba(0, 194, 255, 0.3),
             transparent 700px),
     radial-gradient(farthest-corner at bottom right,
-            rgba(255, 50, 50, 0.3),
-            transparent 700px);          
+    rgba(241, 42, 42, 0.3),
+            transparent 700px);    
 }           
 }
 @media (min-width: 1024px){
@@ -145,10 +186,10 @@
       box-shadow: none;
   }
     .btn {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .btn1{
         padding-top: 12px;
