@@ -89,8 +89,8 @@ body p{
           rgba(255, 50, 50, 0.3),
           transparent 700px);          
 }  */
-.Noise-module--noise--3_meL:after{ 
-  /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
+/* .Noise-module--noise--3_meL:after{ 
+  animation:Noise-module--flicker--2Xqie 4s steps(10) infinite;
   background: url("./assets/img-bg/bg.png");
   content: "";
     height: 300%;
@@ -99,9 +99,8 @@ body p{
     position: absolute;
     top: -100%;
     width: 300%;  
-    /* background-size: 4vw; */
-
-}
+    background-size: 4vw;
+} */
 @font-face {
   font-family: 'Futura Md BT';
   src: url('./fonts/FuturaBT-Bold.woff2');

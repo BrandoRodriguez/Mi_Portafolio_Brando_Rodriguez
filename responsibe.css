@@ -172,7 +172,19 @@
     radial-gradient(farthest-corner at bottom right,
     rgba(241, 42, 42, 0.3),
             transparent 700px);    
-}           
+}  
+.Noise-module--noise--3_meL:after{ 
+    /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
+    background: url("./assets/img-bg/bg.png");
+    content: "";
+      height: 300%;
+      left: -100%;
+      pointer-events: none;
+      position: absolute;
+      top: -100%;
+      width: 300%;  
+      /* background-size: 4vw; */
+  }         
 }
 @media (min-width: 1024px){
     .container {
