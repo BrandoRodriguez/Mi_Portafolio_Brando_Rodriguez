@@ -171,7 +171,8 @@
             transparent 700px),
     radial-gradient(farthest-corner at bottom right,
     rgba(241, 42, 42, 0.3),
-            transparent 700px);    
+            transparent 700px);   
+            height: 570px; 
 }  
 .Noise-module--noise--3_meL:after{ 
     /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
