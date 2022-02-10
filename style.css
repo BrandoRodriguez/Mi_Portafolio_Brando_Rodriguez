@@ -722,3 +722,162 @@ display: flex;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.home{
+  position:relative;
+  max-width: 1050px;
+}
+
+.home .slide-container .slide{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  padding:0 9%;
+  padding-top: 9rem;
+}
+.quote{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -1;
+}
+.content{
+  animation: slideContent .5s linear 0s backwards;
+  text-align: center;
+  position: relative;
+  padding-top: 140px;
+}
+.content h2{
+    font-style: italic;
+}
+.author-img {
+    border-radius: 100%;
+    height: 160px;
+    width: 160px;
+    border: 2px dashed #696a69;
+    padding: 10px;
+}
+@keyframes slideContent{
+  0%{
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+}
+
+.image{
+  margin: 20px 0 0 300px;
+    position: relative;
+    max-width: 210px;
+}
+.image:before {
+    content: url(./assets/img-proyects/curve.png);
+    position: absolute;
+    bottom: -30px;
+    left: 126px;
+    width: 0;
+    transition: all 1.5s ease 0.3s;
+}
+@media (max-width: 575px){
+    .image {
+        margin: 20px 0 0 80px;
+    }
+    .author-img{
+        height: 140px;
+        width: 140px;
+    }
+    .quote{
+        max-width: 150px;
+    }
+    .content{
+        padding-top: 55px;
+    }
+    .image:before {
+      display: none;
+    }
+}
+
+
+
+.author a{
+    font-size: 22px;
+    font-weight: 700;
+    color: #f43534;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-top: 26px;
+    text-decoration: none;
+}
+.designation{
+    display: block;
+    font-size: 14px;
+    text-transform: none;
+    color: #f43534;
+}
+
+
+
+
+.home .slide-container{
+  display: none;
+}
+
+.home .slide-container.active{
+  display: block;
+}
+
+.home #prev,
+.home #next{
+  position: absolute;
+  top:55%; 
+  transform:translateY(-50%);
+  border-radius: 50%;
+  z-index: 100;
+  height:5rem;
+  width:5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color:var(--black);
+  border:.2rem solid var(--black);
+  cursor: pointer;
+  text-align: center;
+}
+
+.home #prev:hover,
+.home #next:hover{
+  color:#fff;
+  background:var(--orange);
+}
+
+.home #prev{
+  left:3rem;
+}
+
+.home #next{
+  right:3rem;
+}
+
+
+@media (max-width:768px){
+  .home #prev,
+  .home #next{
+    top:62%;
+  }
+
+}
+
+
+
