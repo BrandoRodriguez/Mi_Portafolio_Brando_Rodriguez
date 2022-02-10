@@ -230,9 +230,6 @@
   .img-header{
       margin-top: 50px;          
   }
-  .text-xl{
-      font-size: 25px;
-  }
   .bash-1 {
       position: absolute;
       width: 270px;
@@ -402,7 +399,7 @@
       box-shadow: none;
   }
   .count {
-      right: -70px;
+      right: -82px;
       font-size: 110px;      
   }
   .section-title {

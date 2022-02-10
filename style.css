@@ -126,11 +126,16 @@
         .portfolio-type {
             letter-spacing:1px;
             color: #D1AC90;
+            margin-bottom: 1.75em;
+            align-items: center;
+    display: flex;
+    gap: 5px;
         }
         .icon-tec{
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
             border-radius: 50%;
             height: 40px;width: 40px;
+            margin-top: 15px;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -142,7 +147,6 @@
         }
         .portfolio-content p {
             color: #ababab;
-            font-size: 14px;
             line-height: 1.6;
             text-align: justify;
             margin-bottom: 15px;
