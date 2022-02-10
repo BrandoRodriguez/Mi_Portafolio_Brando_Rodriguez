@@ -89,7 +89,7 @@ body {
           transparent 700px);          
 }  */
 .Noise-module--noise--3_meL:after{ 
-  animation:Noise-module--flicker--2Xqie 4s steps(10) infinite;
+  /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
   background: url("./assets/img-bg/bg.png");
   content: "";
     height: 300%;
