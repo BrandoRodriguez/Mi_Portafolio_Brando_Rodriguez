@@ -41,8 +41,6 @@
         .btn1{
             padding-top: 11px;
             padding-bottom: 11px;
-            padding-left: 20px;
-            padding-right: 20px;
             --border-opacity: 1;
             border-color: rgba(168, 168, 170, var(--border-opacity));
             border-radius: 9999px;
@@ -53,11 +51,32 @@
             justify-content: center;
             -webkit-box-align: center;
             align-items: center;
-            width: 100%;
+            width: 50%;
+            gap: 10px;
             position: relative;
             z-index: 2;
-            background: linear-gradient(to right,#f969fc,#bc01f0,#43b1c8);
-        }   
+            /* background: #f43534; */
+            /* background: linear-gradient(to right,#f969fc,#bc01f0,#43b1c8); */
+        }  
+        /* .btn1:hover{
+            animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
+          }
+        @-webkit-keyframes button_pulse {
+            0% {
+                box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+            }
+          }
+        @keyframes button_pulse {
+            0% {
+                box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
+            }
+        }    */
         .btn:hover {
             border-color: #fff;
             opacity: 0.9;
@@ -233,7 +252,7 @@
         
         .skill-wrapper {
             position: relative;
-            max-width: 1130px;
+            max-width: 865px;
             margin: 0 auto;
             z-index: 2;
             display: flex;
@@ -271,16 +290,18 @@
             width: 50%;
             max-width: 535px;
             margin-bottom: 15px;
-            background: rgb(255, 255, 255, 0.9%);          
+            background: linear-gradient(to left, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 100%,rgba(78,78,78,1) 10%);
             padding: 15px 20px 15px;
             border-radius: 5px;
             border: 1px solid rgb(71, 67, 67);
             position: relative;
             z-index: 1;
-            align-self: stretch;
-        }  
+            justify-content: center;
+            display: flex;
+        } 
         .single-skill.animated:nth-child(odd) {
             transform: translate(0, 50px);
+            background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 100%,rgba(78,78,78,1) 10%);
         }
         .single-skill p {
             line-height: 1.6;
@@ -334,52 +355,15 @@
             top: 25px;
             right: -30px;
             height: 30px;
-            width: 100px;
+            width: 70px;
             background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 99%,rgba(78,78,78,1) 10%);
             z-index: -1;
         }
         .single-skill:nth-child(odd) span.rectengle{
             right: inherit;
             left: -30px;
-            background: linear-gradient(to right,  rgba(78,78,78,0.30) 99%,rgba(0,0,0,0) 100%);
+            background: linear-gradient(to left, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 99%,rgba(78,78,78,1) 10%);
         }
-        .link-default {
-            display: inline-block;
-            color: #fff;
-            font-weight: 500;
-            margin-top: 37px;
-          }
-        .link-default span {
-            height: 53px;
-            width: 53px;
-            background: #f43534;
-            border-radius: 100%;
-            display: inline-flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            margin-left: 5px;
-          }
-        .link-default:hover span{
-            animation: button_pulse 1.5s infinite cubic-bezier(.25, 0, 0, 1);
-          }
-        @-webkit-keyframes button_pulse {
-            0% {
-                box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
-            }
-            100% {
-                box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
-            }
-          }
-        @keyframes button_pulse {
-            0% {
-                box-shadow: 0 0 0 0px rgba(244, 53, 52, 1);
-            }
-            100% {
-                box-shadow: 0 0 0 20px rgba(244, 53, 52, 0);
-            }
-          }  
-          
         .blog-section{
             position: relative;
             padding-top: 50px;        
@@ -482,10 +466,6 @@
             left: 50%;
             transform: translateX(-50%);
             background: #2d2f32;
-        }
-        .blog-section .single-blog .like-comment .read-more:hover {
-            background: #f43534;
-            border-color: #f43534;
         }
         .blog-section .single-blog .like-comment span {
             color: #8b8a8a;
