@@ -88,7 +88,7 @@ body {
           rgba(255, 50, 50, 0.3),
           transparent 700px);          
 }  */
-/* .Noise-module--noise--3_meL:after{ 
+.Noise-module--noise--3_meL:after{ 
   animation:Noise-module--flicker--2Xqie 4s steps(10) infinite;
   background: url("./assets/img-bg/bg.png");
   content: "";
@@ -99,7 +99,7 @@ body {
     top: -100%;
     width: 300%;  
     background-size: 4vw;
-} */
+}
 
 address,
 blockquote,
