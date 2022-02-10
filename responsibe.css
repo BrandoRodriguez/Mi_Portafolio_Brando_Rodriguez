@@ -239,20 +239,21 @@
       border-bottom: none;          
       padding: 15px; 
       cursor: pointer;  
-      background: rgb(255, 255, 255, 0.9%);
+      /* background: rgb(255, 255, 255, 0.9%);
       border-radius: 5px;
       --border-opacity: 1;
       border-color: rgba(168, 168, 170, var(--border-opacity));
       border-width: 1px;
-      border-style: dashed;
+      border-style: dashed; */
       z-index: 2; 
+      gap:8px;
 
   }  
     .bash-1:hover {
         border-color: #fff;
     }
     .bash-1{
-        width: 350px;
+        width: 380px;
         height: 80px;
         right: 100px;
     }
@@ -366,7 +367,7 @@
       font-size: 80px;    
   }
   .bash-1{
-      width: 350px;
+      width: 380px;
       height: 80px;
       right: 130px;
   }
@@ -412,7 +413,7 @@
       margin-left: -5px;   
   }
   .bash-1{
-      width: 350px;
+      width: 380px;
       height: 80px;
       right: 170px;
   } 
