@@ -4,6 +4,15 @@
 /* <!-- ======================================= 
   ==CSS-Global==  
 =======================================--> */
+body {
+    /* background: #313131; */
+    background: #151515;
+    font-family: "gt";
+    position: relative;
+    color: rgba(255, 255, 255, .8);;
+    letter-spacing: .02em;
+    }
+
   body::-webkit-scrollbar {
       position: fixed;
       top: 0;
@@ -27,7 +36,7 @@
       height: 10%;
       background: #fff;
   }
-
+/* 
   @font-face {
       font-family: 'gt';
       font-style: normal;
@@ -54,21 +63,7 @@
       src: url('./fonts/FuturaBT-Bold.woff2');
       font-weight: bold;
       font-style: normal;
-  }
-
-  body {
-      /* background: #313131; */
-      background: #151515;
-      /* 1C1B20 */
-      /* #242526 */
-      /* background: #1F1F1F; */
-      /* #121216 */
-      font-family: "gt";
-      position: relative;
-      color: rgba(255, 255, 255, .8);
-      ;
-      letter-spacing: .02em;
-  }
+  } */
 
   @keyframes Noise-module--flicker--2Xqie {
       0% {
