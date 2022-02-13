@@ -1297,7 +1297,7 @@
         width: 200px;
         height: 80px;
         left: auto;
-        background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.7) 3.6%, rgba(67, 66, 77, 0.5) 55.41%, rgba(255, 50, 50, 0.5) 96.11%);
+        background:#151515;
     }
     .presentation-content h2{
         font-size: 12px;
