@@ -957,31 +957,12 @@
     box-shadow: none;
     outline: inherit;
   }
-
-  .portfolio-sectio .portfolio-conten .portfolio-type {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #f43534;
-    font-weight: 700;
-    font-family: 'Futura Md BT';
-    letter-spacing: 1px;
-  }
-
-  .portfolio-sectio .portfolio-conten h2 {
-    color: #fffefe;
-    font-family: 'Futura Md BT';
-    font-weight: 500;
-    margin-bottom: 28px;
-  }
-
-  .portfolio-sectio .portfolio-conten p {
+  .portfolio-conten p {
     color: #ababab;
-    font-size: 20px;
     line-height: 1.6;
     text-align: justify;
-    max-width: 430px;
-  }
-
+    margin-bottom: 15px;
+}
   .slick-arrow {
     background: transparent;
     border: 1px solid #fff;

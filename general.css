@@ -28,9 +28,6 @@
 .text-pardo{
   color: #acacac;
 }
-.font-semi-bold {
-  font-weight: 400;
-}
 .text-xx{
   font-size: 24px;
   letter-spacing: .0em;
@@ -50,12 +47,13 @@
 }
 }
 .text-lg{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 .text-md {
   font-size: 13px;
   letter-spacing: .02em;
+  font-weight: 300;
 }
 .text-sm{
   font-size: 10px;
