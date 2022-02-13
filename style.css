@@ -1237,3 +1237,47 @@
     }
   }
 
+
+  .presentation-section{
+      padding-top: 50px;
+  }
+  .presentation-walper::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 100%;
+    z-index: -2;
+    margin-top: 3%;
+  }
+  .presentation-description{
+    width: 215px;
+    height: 90px;
+    border-radius: 999PX;
+    background: rgba(67, 66, 77, 0.25);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 7px;
+    position: absolute;
+    top: 29%;
+    left: 27.5%;
+  }
+  .presentation-description-img{
+    width: 43px;
+    height: 45px;
+  }
+  .presentation-content h2{
+      font-size: 13px;
+      font-weight: 500;
+      padding-bottom: 4px;
+  }
+  /* .presentation-content h1{
+    font-size: 30px;
+    font-family: 'Futura Md BT';
+    background: linear-gradient(258.75deg, rgb(67, 177, 200) 31.33%, rgb(153, 137, 235) 48.42%, rgb(217, 127, 209) 59.35%, rgb(245, 130, 178) 65.56%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */

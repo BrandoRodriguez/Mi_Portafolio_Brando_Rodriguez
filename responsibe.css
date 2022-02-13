@@ -211,9 +211,6 @@
   .nav-hidden {
       display: block;
   }
-  .img-header{
-      margin-top: 50px;          
-  }
   .bash-1 {
       position: absolute;
       width: 270px;
@@ -223,12 +220,6 @@
       border-bottom: none;          
       padding: 15px; 
       cursor: pointer;  
-      /* background: rgb(255, 255, 255, 0.9%);
-      border-radius: 5px;
-      --border-opacity: 1;
-      border-color: rgba(168, 168, 170, var(--border-opacity));
-      border-width: 1px;
-      border-style: dashed; */
       z-index: 2; 
       gap:8px;
 
