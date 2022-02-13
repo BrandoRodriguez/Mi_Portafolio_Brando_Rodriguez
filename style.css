@@ -1294,7 +1294,16 @@
      width: 300px;
     }
     .presentation-description{
+        width: 200px;
+        height: 80px;
         left: auto;
         background: rgba(67, 66, 77, 0.5);
+    }
+    .presentation-content h2{
+        font-size: 12px;
+    }
+    .presentation-description-img{
+        width: 40px;
+        height: 42px;
       }
 }
