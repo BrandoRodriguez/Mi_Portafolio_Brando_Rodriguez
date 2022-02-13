@@ -1225,7 +1225,7 @@
       padding-top: 50px;
   }
   .presentation-walper::before{
-    position: absolute;
+   
     content: "";
     width: 400px;
     height: 400px;
