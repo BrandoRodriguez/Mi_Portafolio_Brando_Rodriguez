@@ -14,3 +14,18 @@ function prev(){
   slides[index].classList.add('active');
 }
 
+let slide = document.querySelectorAll('.slide-containe');
+let indexx = 0;
+
+function nextt(){
+  slide[indexx].classList.remove('active');
+  indexx = (indexx + 1) % slide.length;
+  slide[indexx].classList.add('active');
+}
+
+function preve(){
+  slide[indexx].classList.remove('active');
+  indexx = (indexx - 1 + slide.length) % slide.length;
+  slide[indexx].classList.add('active');
+}
+
