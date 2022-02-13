@@ -70,24 +70,6 @@ body {
   right:0;top:0;
   z-index: 1;
 }
-/* .bg-header {      
-  background:
-  radial-gradient(farthest-side at top left,
-  rgb(208, 20, 187,0.2),
-          transparent 400px),
-          radial-gradient(farthest-side at top left,
-          rgba(208, 20, 187,0.5),
-          transparent 700px),
-          radial-gradient(farthest-corner at top center,
-          rgb(36, 12, 168,0.5),
-          transparent 400px),
-          radial-gradient(farthest-corner at top center,
-          rgb(36, 12, 168,0.5),
-          transparent 600px),
-          radial-gradient(farthest-corner at bottom right,
-          rgba(255, 50, 50, 0.3),
-          transparent 700px);          
-}  */
 .Noise-module--noise--3_meL:after{ 
   /* animation:Noise-module--flicker--2Xqie 4s steps(10) infinite; */
   background: url("./assets/img-bg/bg.png");
@@ -156,7 +138,6 @@ h6{
 /* <!-- ======================================= 
         ==End CSS-General==  
 =======================================--> */ 
-
 
 /* <!-- ======================================= 
         ==Start CSS-Bg-Animation==  
