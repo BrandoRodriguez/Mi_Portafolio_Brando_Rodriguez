@@ -948,12 +948,6 @@
     outline: inherit;
   }
 
-  .portfolio-sectio .portfolio-img:before {
-    content: url("file:///C:/Users/pc/Downloads/Compressed/onlyme/onlyme/html/images/dot-texture-horizontal.png");
-    position: absolute;
-    bottom: -110px;
-    left: 20px;
-  }
 
   .portfolio-sectio .portfolio-conten {
     padding-bottom: 50px;
