@@ -183,9 +183,6 @@
             border-radius: 8px;
         }
         .link-btn {
-            height: 40px;
-            width: 40px;
-            border-radius: 100%;
             display: inline-flex;
             flex-flow: column;
             align-items: center;
@@ -193,14 +190,17 @@
             margin-left: 5px;
             position: relative;
             z-index: 2;
-            --border-opacity: 1;
-            border-color: rgba(168, 168, 170, var(--border-opacity));
-            border-width: 1px;
-            border-style: solid;
+            background: transparent;
+            border: 1px solid #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
             cursor: pointer;
+            transition: all 0.5s ease;
+            opacity: 0.3;
         }
         .link-btn:hover {
-            border-color: #fff;
+            opacity: 0.5;
         }
         .count {
             font-family: 'Futura Md BT';
@@ -411,7 +411,7 @@
         .blog-section .single-blog{
             width: calc(100% / 4 - 20px);
             margin-left: 20px;
-            background-color: rgba(128, 128, 128, .2);
+            background-color: rgba(128, 128, 128, .08);
             display: flex;
             flex-flow: column;
             justify-content: space-between;
@@ -473,7 +473,7 @@
             top: -24px;
             left: 50%;
             transform: translateX(-50%);
-            background: #2d2f32;
+            background: #1f2022;
         }
         .blog-section .single-blog .like-comment span {
             color: #8b8a8a;
@@ -500,7 +500,7 @@
         }
         .card__article-card,
         .card__hero {
-            background-color: rgba(128, 128, 128, .2);
+            background: linear-gradient(to left, rgba(0,0,0,0) 1%,rgba(78,78,78,0.50) 100%,rgba(78,78,78,0.1) 10%);
         }
         .card__hero .responsive-media {
             box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
