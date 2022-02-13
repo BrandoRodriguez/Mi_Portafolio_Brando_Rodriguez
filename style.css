@@ -1223,6 +1223,7 @@
 
   .presentation-section{
       padding-top: 50px;
+      height: 50.6vh;
   }
   .presentation-walper::before{
     content: "";
@@ -1268,6 +1269,7 @@
 @media (max-width: 575px) {
     .presentation-section{
         padding-top: 0px;
+        height: 94vh;
     }
     .presentation-walper::before{
         width: 280px;
