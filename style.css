@@ -1281,3 +1281,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
+
+@media (max-width: 575px) {
+    .presentation-walper::before{
+        width: 300px;
+        height: 300px;
+      }
+}
