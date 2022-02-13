@@ -1287,10 +1287,13 @@
         padding-top: 0px;
     }
     .presentation-walper::before{
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
       }
     .presentation-walper img{
      width: 300px;
     }
+    .presentation-description{
+        left: auto;
+      }
 }
