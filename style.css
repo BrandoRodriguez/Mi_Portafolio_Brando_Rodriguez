@@ -1231,6 +1231,10 @@
     top: 29%;
     left: 27.5%;
   }
+  .presentation-img img{ 
+    position: absolute;
+    top: 0;
+  }
   .presentation-description-img{
     width: 43px;
     height: 45px;
