@@ -1297,7 +1297,7 @@
         width: 200px;
         height: 80px;
         left: auto;
-        background:#151515;
+        background:rgb(21, 21, 21,0.7);
     }
     .presentation-content h2{
         font-size: 12px;
