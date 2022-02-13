@@ -151,6 +151,14 @@
             display: flex;
             gap: 5px;
         }
+        .portfolio-type1 {
+            letter-spacing:1px;
+            color: #D1AC90;
+            margin-bottom: 1em;
+            align-items: center;
+            display: flex;
+            gap: 5px;
+        }
         .icon-tec{
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
             border-radius: 50%;
