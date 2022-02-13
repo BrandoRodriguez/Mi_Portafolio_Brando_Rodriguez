@@ -885,6 +885,13 @@
     position: relative;
     margin-left: 60%;
 }
+
+.portfolio-sectio {
+    position: relative;
+    overflow: hidden;
+  }
+
+ 
   /* @keyframes slideContent{
     0%{
       opacity: 0;
@@ -1231,9 +1238,9 @@
     top: 29%;
     left: 27.5%;
   }
-  .presentation-img img{ 
+  .presentation-img img{
     position: absolute;
-    top: 0;
+    top: 0%;
   }
   .presentation-description-img{
     width: 43px;
@@ -1253,9 +1260,6 @@
         width: 280px;
         height: 280px;
       }
-    .presentation-walper img{
-     width: 300px;
-    }
     .presentation-description{
         width: 200px;
         height: 80px;
@@ -1269,4 +1273,7 @@
         width: 40px;
         height: 42px;
       }
+    .presentation-img img{
+        width: 280px;
+    }
 }
