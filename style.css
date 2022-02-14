@@ -16,7 +16,54 @@
     src: url(./fonts/FuturaBT-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);
     font-weight: 700;
   }
+  .vertical-linea {
+    background: rgba(92, 91, 91, var(--tw-border-opacity));
+    --tw-border-opacity: .2;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
 
+  .vertical-linea.line1 {
+    left: calc(100% / 6);
+  }
+
+  .vertical-linea.line2 {
+    left: calc(100% / 6 * 2);
+  }
+
+  .vertical-linea.line3 {
+    left: calc(100% / 6 * 3);
+  }
+
+  .vertical-linea.line4 {
+    left: calc(100% / 6 * 4);
+  }
+
+  .vertical-linea.line5 {
+    left: calc(100% / 6 * 5);
+  }
+
+  @media (max-width: 1199px) {
+    .vertical-linea.line1 {
+      left: calc(100% / 4);
+    }
+
+    .vertical-linea.line2 {
+      left: calc(100% / 4 * 2);
+    }
+
+    .vertical-linea.line3 {
+      left: calc(100% / 4 * 3);
+    }
+
+    .vertical-linea.line4,
+    .vertical-linea.line5 {
+      display: none;
+    }
+  }
 /* <!-- ======================================= 
   ==CSS-Global==  
 =======================================--> */
@@ -383,7 +430,7 @@
         .presentation-img img {
             position: absolute;
             top: 0%;
-            filter: drop-shadow(2px 4px 6px black);
+            /* filter: drop-shadow(2px 4px 6px black); */
         }
   
         .presentation-description-img {
@@ -1266,7 +1313,7 @@
 
       .p-footer {
           border-top: 1px solid;
-          --tw-border-opacity: 1;
+          --tw-border-opacity: .2;
           border-color: rgba(92, 91, 91, var(--tw-border-opacity));
           padding-top: 3rem;
           display: flex;
