@@ -1148,7 +1148,6 @@
       }
 
       .card__hero .responsive-media {
-          box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
           border-radius: 8px;
           position: relative;
       }
@@ -1220,6 +1219,7 @@
       }
 
       .card__article {
+          border-radius: 8px;
            border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
           --tw-border-opacity: .3;;
       }
@@ -1229,6 +1229,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          border-radius: 8px;
           min-height: 90px;
       }
 
