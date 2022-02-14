@@ -1049,11 +1049,6 @@
           display: flex;
           flex-flow: column;
           justify-content: space-between;
-          border-radius: 8px;
-      }
-
-      .featured-img img {
-          border-radius: 8px;
       }
 
       .blog-section .single-blog .featured-img img {
