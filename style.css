@@ -750,7 +750,7 @@
       }
 
       .icon-tec {
-          border: 1px solid rgba(255, 255, 255, 0.1) !important;
+          border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 50%;
           height: 40px;
           width: 40px;
@@ -773,9 +773,7 @@
           margin-bottom: 15px;
       }
 
-      .img-area img {
-          border-radius: 8px;
-      }
+
 
       .link-btn {
           display: inline-flex;
@@ -1222,8 +1220,8 @@
       }
 
       .card__article {
-          box-shadow: 0 4px 4px rgb(10 10 10 / 15%);
-          border-radius: 8px;
+           border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+          --tw-border-opacity: .3;;
       }
 
       .card__article-card {
@@ -1231,7 +1229,6 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border-radius: 8px;
           min-height: 90px;
       }
 
