@@ -909,7 +909,8 @@
           background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%);
           padding: 15px 20px 15px;
           border-radius: 5px;
-          border: 1px solid rgb(71, 67, 67);
+          border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+          --tw-border-opacity: .2;
           position: relative;
           z-index: 1;
           justify-content: center;
@@ -1098,14 +1099,16 @@
           align-items: center;
           justify-content: space-between;
           padding: 20px 30px;
-          border-top: 1px solid #4e5056;
+          border-top: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+          --tw-border-opacity: .2;
           position: relative;
       }
 
       .blog-section .single-blog .like-comment .read-more {
           width: 45px;
           height: 45px;
-          border: 1px solid #4e5056;
+          border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+          --tw-border-opacity: .2;
           display: flex;
           border-radius: 100%;
           flex-flow: column;

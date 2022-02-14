@@ -305,7 +305,7 @@ width: 60vw;
 @media (max-width: 991px) {
     .skill-wrapper {
         display: block;
-        max-width: 450px;
+        max-width: 330px;
     }
 
     .skill-wrapper .vertical-line {
