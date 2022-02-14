@@ -26,16 +26,13 @@
     position: relative;
     color: rgba(255, 255, 255, .8);;
     letter-spacing: .02em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
     }
-    body {
-        bottom: 0;
-        left: 0;
-        pointer-events: none;
-        right: 0;
-        top: 0;
-        z-index: 1;
-    }
-  
+
     body::before {
         /* animation:Noise 4s steps(10) infinite; */
         background: url("./assets/img-bg/bg.png");
@@ -167,7 +164,7 @@
         height: auto;
     }
 
-  /* <!-- ======================================= 
+/* <!-- ======================================= 
   ==End CSS-Global==  
 =======================================--> */
 
@@ -633,10 +630,7 @@
           top: 60px;
           z-index: 2;
           height: 125px;
-          border: 1px solid rgba(255, 255, 255, 0.18);
           border-radius: 999px;
-          position: fixed;
-          z-index: 10;
       }
 
       .social-icon li {
