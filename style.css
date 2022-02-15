@@ -82,7 +82,7 @@
 
     body::before {
         /* animation:Noise 4s steps(10) infinite; */
-        background: url("./assets/img-bg/bg.png");
+        background: url("./assets/img-bg/grain.png");
         content: "";
         height: 300%;
         left: -100%;
@@ -490,6 +490,27 @@
             gap: 5px;
             text-transform: uppercase;
         }
+        .social-icon {
+            position: absolute;
+            right: 6px;
+            bottom: 0;
+            top: 60px;
+            z-index: 2;
+            height: 125px;
+            border-radius: 999px;
+        }
+        .social-icon li a {
+            width: 37px;
+            height: 40px;
+            border-radius: 100%;
+            color: #fff;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.5s ease;
+        }
   
 
   
@@ -777,36 +798,7 @@
           width: 50px;
       }
 
-      .social-icon {
-          position: absolute;
-          right: 6px;
-          bottom: 0;
-          top: 60px;
-          z-index: 2;
-          height: 125px;
-          border-radius: 999px;
-      }
-
-      .social-icon li {
-          display: block;
-      }
-
-      .social-icon li a {
-          width: 37px;
-          height: 40px;
-          border-radius: 100%;
-          color: #fff;
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          transition: all 0.5s ease;
-      }
-
-      .social-icon li a svg {
-          width: 15px;
-      }
+    
 
       .pd-info {
           padding: 0 0 0 10px;
