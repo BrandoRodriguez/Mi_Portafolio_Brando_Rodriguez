@@ -82,12 +82,12 @@
 
     body::before {
         /* animation:Noise 4s steps(10) infinite; */
-        background: url("./assets/img-bg/grain.png");
+        background: url("./assets/img-bg/bg.png");
         content: "";
         height: 100%;
         width: 100%;
         pointer-events: none;
-        opacity: 0.4;
+        opacity: 0.5;
         position: fixed;
     }
     @keyframes Noise {
@@ -425,11 +425,10 @@
             height: 80px;
             left: auto;
             background: rgb(21, 21, 21, 0.7);
-            backdrop-filter: blur(50px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(30px);
             gap: 7px;
             top: 29%;
-            z-index: 1;
         }
    
         .presentation-description-img {
@@ -614,7 +613,7 @@
                         transparent 700px);
             }
             .header-section{
-                padding-top: 15px;
+                padding-top: 25px;
             }
             .header {
                 padding-left: 15px;
@@ -654,7 +653,6 @@
                 height: 90px;
                 background: none;
                 left: 18%;
-                z-index: -2;
             }
   
             .presentation-content h2 {
@@ -696,9 +694,7 @@
             }
             
         
-        
-
-        
+          
         }
 
         @media (min-width: 1280px) {
@@ -728,7 +724,7 @@
         @media (min-width: 1400px) {
             /* presentation */
             .presentation-description {
-                left: 27%;
+                left: 26%;
             }
             /*  */
             .news-one {
