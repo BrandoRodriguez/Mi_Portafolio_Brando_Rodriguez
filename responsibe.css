@@ -44,27 +44,13 @@ opacity: .2;
 width: 60vw;
 } */
 
-.recursos-section {
-    padding-top: 50px;
-}
-
 
 @media (min-width: 1024px) {
     
 
     
 
-    .btn1 {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        display: inline-flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        width: 16%;
-        gap: 5px;
-    }
+   
 
    
     .hg-img-hero {
@@ -72,24 +58,7 @@ width: 60vw;
     }
 
    
-    
-
-    
-
-    .bash-1:hover {
-        border-color: #fff;
-    }
-
    
-    .dk-hero-hidden {
-        display: block;
-    }
-
-    .social-icon {
-        left: 4px;
-        top: 350px;
-        width: 40px;
-    }
 
     .marge-prueba {
         padding-left: 0;
@@ -97,37 +66,9 @@ width: 60vw;
         padding-top: 0;
     }
 
-    .img-area {
-        width: 60%;
-    }
+    
 
-    .portfolio-content {
-        width: 40%;
-        padding-left: 40px;
-        margin-bottom: 0;
-    }
 
-    .single-portfolio {
-        display: flex;
-        padding-top: 25px;
-    }
-
-    .single-portfolio:nth-child(even) .portfolio-content {
-        padding-left: 0;
-        padding-right: 40px;
-    }
-
-    .count {
-        right: -30px;
-        font-size: 85px;
-    }
-
-    .section-title {
-        top: 86%;
-        left: 13px;
-        font-size: 65px;
-        position: absolute;
-    }
 
     .section-title1 {
         font-size: 65px;
@@ -178,11 +119,7 @@ width: 60vw;
 }
 
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+    
 
     .header {
         padding-left: 60px;
@@ -194,11 +131,7 @@ width: 60vw;
         font-size: 100px;
     }
 
-    .section-title {
-        top: 84%;
-        left: 55px;
-        font-size: 84px;
-    }
+
 
     .section-title1 {
         font-size: 80px;
@@ -208,11 +141,6 @@ width: 60vw;
 
     .single-skill {
         max-width: 400px;
-    }
-
-    .social-icon {
-        left: 55px;
-        top: 250px;
     }
 }
 
@@ -228,12 +156,7 @@ width: 60vw;
         font-size: 110px;
     }
 
-    .section-title {
-        top: 80%;
-        left: 55px;
-        font-size: 95px;
-    }
-
+  
     .section-title1 {
         font-size: 95px;
         margin-left: -5px;
@@ -250,7 +173,7 @@ width: 60vw;
 @media (max-width: 991px) {
     .skill-wrapper {
         display: block;
-        max-width: 330px;
+        max-width: 300px;
     }
 
     .skill-wrapper .vertical-line {
