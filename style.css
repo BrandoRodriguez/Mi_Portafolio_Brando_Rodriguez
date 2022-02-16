@@ -451,6 +451,7 @@
             backdrop-filter: blur(30px);
             gap: 7px;
             top: 29%;
+            background: rgb(0,0,0,0.6);
         }
    
         .presentation-description-img {
@@ -713,66 +714,54 @@
             margin-left: 15px;
         }
 
+        /* .portfolio-section-right .portfolio-img:before {
+            content: url("./assets/img-bg/dot-texture-horizontal.png");
+            position: absolute;
+            bottom: -110px;
+            left: 20px;
+        } */
 
+        .portfolio-section-right .portfolio-conte p {
+            color: #ababab;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
 
+        .slick-arrow {
+            background: transparent;
+            border: 1px solid #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+            padding: 0;
+        }
 
+    .slick-arrow:hover {
+            background: #f43534;
+            border-color: #f43534;
+            opacity: 1;
+        }
 
+        .slick-next {
+            left: 65px;
+        }
 
+        .slick-prev img {
+            transform: rotate(-180deg);
+            transform-origin: center center;
 
-
-
-
-    
-
-
-    .portfolio-section-right .portfolio-img:before {
-        content: url("./assets/img-bg/dot-texture-horizontal.png");
-        position: absolute;
-        bottom: -110px;
-        left: 20px;
-    }
-
-    .portfolio-section-right .portfolio-conte p {
-        color: #ababab;
-        line-height: 1.6;
-        text-align: justify;
-        margin-bottom: 15px;
-    }
-
-    .slick-arrow {
-        background: transparent;
-        border: 1px solid #fff;
-        width: 48px;
-        height: 48px;
-        border-radius: 100%;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        opacity: 0.2;
-        padding: 0;
-    }
-
-   .slick-arrow:hover {
-        background: #f43534;
-        border-color: #f43534;
-        opacity: 1;
-    }
-
-    .slick-next {
-        left: 65px;
-    }
-
-    .slick-prev img {
-        transform: rotate(-180deg);
-        transform-origin: center center;
-
-    }
+        }
 
 
 /*  */
