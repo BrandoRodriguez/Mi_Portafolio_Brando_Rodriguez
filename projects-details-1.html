@@ -11,6 +11,253 @@
     <meta name="theme-color" content="#1F1F1F">
     <link rel="stylesheet" href="./style.css">
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
+
+    <style>        
+        .grip{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(8, auto);
+                display: grid;           
+            }
+
+        .grip-1{
+            grid-column: -1/1;
+            grid-row: 1;
+            padding-bottom: 23px; 
+        }
+
+        .grip-2{
+            grid-column: 1/3;
+            grid-row: 3/5;
+            transform: translate(-60%, 0%)
+        }
+
+        .grip-3{
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+        .grip-4{
+            grid-column: 3/-1;
+            grid-row: 2/4;
+            transform: translate(120%, -5%) rotate(-90deg);          
+        } 
+           
+        .grip-5{
+            grid-column: 2/4;
+            grid-row: 4/8;
+            transform: translate(0%, 5%);
+            
+        } 
+
+        .grip-6{
+            grid-column: 3/-1;
+            grid-row: 4/8;
+            transform: translate(60%, -25%);          
+        } 
+
+        .grip-7{
+            grid-column: 4/6;
+            display: none;              
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+
+        @media (min-width: 640px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .container{
+            max-width: 768px;
+            }
+
+            .grip-4{
+                transform: translate(50%, -5%) rotate(-90deg);    
+            } 
+
+            .grip-6{
+                transform: translate(27%, -15%);         
+            } 
+
+            .grip-2{
+                transform: translate(-27%, 0%)
+            }           
+
+        }
+
+        @media (min-width: 1024px) {
+            .grip{
+                grid-template-columns: repeat(11, 1fr);         
+            }
+
+            .container{
+                max-width: 1024px;
+            }
+
+            .grip-1{
+                grid-column: 1/6; 
+                grid-row: 1/4;  
+                display: flex;
+                align-items: end;   
+            }
+
+            .grip-2{
+                grid-column: 3/6;
+                transform: translate(0%, -70%);
+                display: flex;
+                justify-content: end;
+                grid-row: 1/3;
+            }
+
+            .grip-3{
+                grid-column: 6/9;
+                transform: translate(0%, 10%);
+                display: flex;
+                justify-content: center;
+                grid-row: 1/3;
+            }
+
+            .grip-4{
+                grid-column: 9/12;
+                transform: translate(50%, 4%) rotate(-90deg);
+                display: flex;
+                justify-content: start;
+                grid-row: 1/3;            
+            } 
+
+            .grip-5{
+                grid-column: 6/9;
+                transform: translate(0%, 17%);
+                display: flex;
+                justify-content: center;
+                grid-row: 3/8;
+            } 
+
+            .grip-6{
+                grid-column: 9/12;
+                transform: translate(0%, -18%);
+                display: flex;
+                justify-content: start;
+                grid-row: 3/8;
+            
+            }  
+
+            .grip-7{
+                grid-column: 3/6;
+                display: flex;
+                justify-content: end;
+                grid-row: 3/8;       
+            }
+            
+        }
+        @media (min-width: 1280px) {
+            .container{
+                max-width: 1280px;
+            }
+            
+            .grip-4{
+                transform: translate(35%, -5%) rotate(-90deg);          
+            } 
+        }
+        @media (min-width: 1400px) {
+            .container{
+                max-width: 1400px;
+            }
+
+            .grip-4{
+                transform: translate(27%, -9%) rotate(-90deg);          
+            } 
+        }
+
+
+
+    .background-shapes {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        right: 30%;
+    }
+    .background-shape {
+        /* border: 10px solid #3be8b0; */
+        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+        --tw-border-opacity: .5;
+        border-radius: 500px;
+        position: relative;
+        /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
+        filter: var(--color-is-19);
+        /* border-width: 20px; */
+        height: 950px;
+        width: 517px;
+        transform: translate(200px, 150px);
+    }
+    
+    .background-shapes1 {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        left: 20%;
+    }
+    .background-shape1 {
+        /* border: 10px solid #3be8b0; */
+        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+        --tw-border-opacity: .5;
+        border-radius: 500px;
+        position: relative;
+        /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
+        filter: var(--color-is-19);
+        /* border-width: 20px; */
+        height: 517px;
+        width: 950px;
+        transform: translate(0px, -150px);
+    }
+
+        svg.waves {
+        z-index: -1;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        filter: drop-shadow(0 0 15px #3be8b0);
+        overflow-x: hidden;
+    }
+
+    svg.waves path {
+        fill: none;
+        stroke: #3be8b0;
+        stroke-width: 10px;
+        stroke-dasharray: 1650;
+        stroke-dashoffset: 0;
+        animation: waves 1.8s ease-in-out;
+    }
+    @keyframes waves {
+        0% {
+        stroke-dashoffset: 1650;
+        }
+        100% {
+        stroke-dashoffset: 0;
+        }
+    }  
+
+    .grip img{
+        border-radius: 25px;
+    }
+        /* .transform {
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: -12deg;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }  */
+    </style>
 </head>
 
 <body>
@@ -31,43 +278,13 @@
     <!-- ======================================= 
         ==Start Hero section==  
     =======================================-->
-    <section class="header-section relative overflow">
-        <!-- <div class="" style="
-        background-image: linear-gradient(180deg, rgba(20, 20, 22, 0.9) 29.21%, rgba(0, 10, 255, 0.72) 75.43%); 
-        position:absolute;
-        height: 100%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        
-        "></div>
-        <div class="" style="background-image: linear-gradient(178.46deg, rgba(26, 104, 130, 0) 17.98%, #FF9A3D 38.85%, #FFBE38 40.3%, #4827A5 74.77%);
-        position:absolute;
-        width: 200%;
-        height: 60%;
-        z-index: -1;
-        margin-left: -16rem;
-        margin-bottom: -3rem;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: -6deg;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        
-        "></div> -->
+    <section class="header-section relative overflow" style="padding-bottom: 200px;">
         <nav class="relative">
             <div class="header">
                 <a class="logo" href="./index.html" style="width: 90px;">
                     <img src="./assets/logo.png" alt="logo">
                 </a>
-                <div class="nav-hidden">
+                <div class="nav-hidden" style="margin-left: auto;margin-right: 2.5rem ;">
                     <ul class="flex items-center space">
                         <li><a class="text-white text-md" href="#">About</a></li>
                         <span>
@@ -104,38 +321,68 @@
             </div>
         </nav>
 
-        <section class="presentation-projects-details-section">
-            <div class="relative w-full container mx-auto">
-                <h2 class="section-title">discover</h2>
-                <div class="single-portfolio">
-                    <div class="img-area">
-                        <span class="count nav-hidden">01</span>
-                        <img src="./assets/img-proyects/pg_1.jpg" alt="portfolio-img">
-                    </div>
-                    <div class="portfolio-content">
+        
+        <section>
+            <div class="grip container">
+                <div class="grip-1">
+                    <div>
                         <span class="badge text-sm">
                             <span class="text-sm text-white">
                                 new
                             </span>
                             Start selling online.
                         </span>
-                        <h2 class="text-white text-xl">Experience the top notch performance.</h2>
+
+                        <h2 class="text-white" style="font-size: 50px;">Experience the top notch performance.</h2>  
                         <div class="flex justify-center items-center">
                             <div class="icon-tec">
                                 <img src="./assets/icon-tec/figma.png" alt="">
                             </div>
-                        </div>
+                        </div>  
                         <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
-                            your customers to experience WooCommerce at its absolute-best.</p>
+                            your customers to experience WooCommerce at its absolute-best.
+                        </p>
                         <div class="ctn-btn flex" style="padding-bottom: 25px; padding-top: 25px;">
                             <a class="btn text-white font-semi-bold text-lg" href="./projects_details.html">Demo</a>
                             <a class="btn text-white font-semi-bold text-lg" href="">Contactame</a>
                         </div>
                     </div>
+                    
+                   
                 </div>
+                <div class="grip-2">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+                <div class="grip-3">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+                <div class="grip-4">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+                <div class="grip-5">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+                <div class="grip-6">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+                <div class="grip-7">
+                    <img src="./assets/img-proyects/Cart.png" alt="">
+                </div>
+            </div>
+            <div class="background-shapes">
+                <div class="background-shape"></div>
+            </div>
+            <div class="background-shapes1">
+                <div class="background-shape1"></div>
+            </div>
+    
+    
+            <!-- <svg class="waves" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,160L21.8,160C43.6,160,87,160,131,181.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,133.3C436.4,107,480,117,524,106.7C567.3,96,611,64,655,80C698.2,96,742,160,785,176C829.1,192,873,160,916,138.7C960,117,1004,107,1047,112C1090.9,117,1135,139,1178,170.7C1221.8,203,1265,245,1309,234.7C1352.7,224,1396,160,1418,128L1440,96L1440">
+                </path>
+            </svg> -->
+            
         </section>
-
-
 
 
         <ul class="social-icon">
@@ -161,62 +408,7 @@
     =======================================-->
 
 
-    <section class="blog-single">
-        <div class="blog-single-banner">
-            <div class="overlay"></div>
-            <div class="banner-content">
-                <h1 class="text-white text-xl">Donec facilisis accumsan arcu are, quis dapibus neque ac.</h1>
-                <p>by: <span class="author"><a href="">Theme Builder</a> / </span><span class="date"><a href="">12 jan,
-                            2020</a></span></p>
-            </div>
-        </div>
-        <div class="container mx-auto">
-            <article class="single-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus sequi, aperiam ab molestiae
-                    animi veniam, consequuntur molestias suscipit doloribus reprehenderit ut laudantium fuga unde
-                    facilis odio recusandae ullam nesciunt!</p>
-
-                <blockquote>
-                    <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised</h4>
-                    <span class="author"><span class="line"></span>joe washington</span>
-                </blockquote>
-
-                <img src="" alt="image">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus sequi, aperiam ab molestiae
-                    animi veniam, consequuntur molestias suscipit doloribus reprehenderit ut laudantium fuga unde
-                    facilis odio recusandae ullam nesciunt! suscipit doloribus reprehenderit ut laudantium fuga unde
-                    facilis odio recusandae ullam nesciunt!</p>
-            </article>
-
-            <div class="single-post-pagination">
-                <a href="" class="prev">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left"
-                        class="svg-inline--fa fa-long-arrow-alt-left fa-w-14" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor"
-                            d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z">
-                        </path>
-                    </svg>
-                    Donec facilisis accumsan arcu are, quis dapibus neque
-                </a>
-
-                <a href="" class="next">
-                    Donec facilisis accumsan arcu are, quis dapibus neque
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-right"
-                        class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor"
-                            d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
+   
     <!-- ======================================= 
             ==Star Footer-Section==  
     =======================================-->
