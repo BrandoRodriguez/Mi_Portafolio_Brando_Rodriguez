@@ -12,59 +12,59 @@
     <link rel="stylesheet" href="./style.css">
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
 
-    <style>        
-        .grip{
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(8, auto);
-                display: grid;           
-            }
-
-        .grip-1{
-            grid-column: -1/1;
-            grid-row: 1;
-            padding-bottom: 23px; 
+    <style>
+        .grip {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8, auto);
+            display: grid;
         }
 
-        .grip-2{
+        .grip-1 {
+            grid-column: -1/1;
+            grid-row: 1;
+            padding-bottom: 23px;
+        }
+
+        .grip-2 {
             grid-column: 1/3;
             grid-row: 3/5;
             transform: translate(-60%, 0%)
         }
 
-        .grip-3{
+        .grip-3 {
             grid-column: 2/4;
             grid-row: 2/4;
         }
 
-        .grip-4{
+        .grip-4 {
             grid-column: 3/-1;
             grid-row: 2/4;
-            transform: translate(120%, -5%) rotate(-90deg);          
-        } 
-           
-        .grip-5{
+            transform: translate(120%, -5%) rotate(-90deg);
+        }
+
+        .grip-5 {
             grid-column: 2/4;
             grid-row: 4/8;
             transform: translate(0%, 5%);
-            
-        } 
 
-        .grip-6{
+        }
+
+        .grip-6 {
             grid-column: 3/-1;
             grid-row: 4/8;
-            transform: translate(60%, -25%);          
-        } 
+            transform: translate(60%, -25%);
+        }
 
-        .grip-7{
+        .grip-7 {
             grid-column: 4/6;
-            display: none;              
+            display: none;
         }
 
         .container {
             margin-left: auto;
             margin-right: auto;
         }
-    
+
 
         @media (min-width: 640px) {
             .container {
@@ -74,41 +74,41 @@
 
         @media (min-width: 768px) {
 
-            .container{
-            max-width: 768px;
+            .container {
+                max-width: 768px;
             }
 
-            .grip-4{
-                transform: translate(50%, -5%) rotate(-90deg);    
-            } 
+            .grip-4 {
+                transform: translate(50%, -5%) rotate(-90deg);
+            }
 
-            .grip-6{
-                transform: translate(27%, -15%);         
-            } 
+            .grip-6 {
+                transform: translate(27%, -15%);
+            }
 
-            .grip-2{
+            .grip-2 {
                 transform: translate(-27%, 0%)
-            }           
+            }
 
         }
 
         @media (min-width: 1024px) {
-            .grip{
-                grid-template-columns: repeat(11, 1fr);         
+            .grip {
+                grid-template-columns: repeat(11, 1fr);
             }
 
-            .container{
+            .container {
                 max-width: 1024px;
             }
 
-            .grip-1{
-                grid-column: 1/6; 
-                grid-row: 1/4;  
+            .grip-1 {
+                grid-column: 1/6;
+                grid-row: 1/4;
                 display: flex;
-                align-items: end;   
+                align-items: end;
             }
 
-            .grip-2{
+            .grip-2 {
                 grid-column: 3/6;
                 transform: translate(0%, -70%);
                 display: flex;
@@ -116,7 +116,7 @@
                 grid-row: 1/3;
             }
 
-            .grip-3{
+            .grip-3 {
                 grid-column: 6/9;
                 transform: translate(0%, 10%);
                 display: flex;
@@ -124,129 +124,138 @@
                 grid-row: 1/3;
             }
 
-            .grip-4{
+            .grip-4 {
                 grid-column: 9/12;
                 transform: translate(50%, 4%) rotate(-90deg);
                 display: flex;
                 justify-content: start;
-                grid-row: 1/3;            
-            } 
+                grid-row: 1/3;
+            }
 
-            .grip-5{
+            .grip-5 {
                 grid-column: 6/9;
                 transform: translate(0%, 17%);
                 display: flex;
                 justify-content: center;
                 grid-row: 3/8;
-            } 
+            }
 
-            .grip-6{
+            .grip-6 {
                 grid-column: 9/12;
                 transform: translate(0%, -18%);
                 display: flex;
                 justify-content: start;
                 grid-row: 3/8;
-            
-            }  
 
-            .grip-7{
+            }
+
+            .grip-7 {
                 grid-column: 3/6;
                 display: flex;
                 justify-content: end;
-                grid-row: 3/8;       
+                grid-row: 3/8;
             }
-            
+
         }
+
         @media (min-width: 1280px) {
-            .container{
+            .container {
                 max-width: 1280px;
             }
-            
-            .grip-4{
-                transform: translate(35%, -5%) rotate(-90deg);          
-            } 
+
+            .grip-4 {
+                transform: translate(35%, -5%) rotate(-90deg);
+            }
         }
+
         @media (min-width: 1400px) {
-            .container{
+            .container {
                 max-width: 1400px;
             }
 
-            .grip-4{
-                transform: translate(27%, -9%) rotate(-90deg);          
-            } 
+            .grip-4 {
+                transform: translate(27%, -9%) rotate(-90deg);
+            }
         }
 
 
 
-    .background-shapes {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        right: 30%;
-    }
-    .background-shape {
-        /* border: 10px solid #3be8b0; */
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .5;
-        border-radius: 500px;
-        position: relative;
-        /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
-        filter: var(--color-is-19);
-        /* border-width: 20px; */
-        height: 950px;
-        width: 517px;
-        transform: translate(200px, 150px);
-    }
-    
-    .background-shapes1 {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        left: 20%;
-    }
-    .background-shape1 {
-        /* border: 10px solid #3be8b0; */
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .5;
-        border-radius: 500px;
-        position: relative;
-        /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
-        filter: var(--color-is-19);
-        /* border-width: 20px; */
-        height: 517px;
-        width: 950px;
-        transform: translate(0px, -150px);
-    }
+        .background-shapes {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            right: 30%;
+        }
+
+        .background-shape {
+            /* border: 10px solid #3be8b0; */
+            border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+            --tw-border-opacity: .5;
+            border-radius: 500px;
+            position: relative;
+            /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
+            filter: var(--color-is-19);
+            /* border-width: 20px; */
+            height: 950px;
+            width: 517px;
+            transform: translate(200px, 150px);
+        }
+
+        .background-shapes1 {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            left: 20%;
+        }
+
+        .background-shape1 {
+            /* border: 10px solid #3be8b0; */
+            border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
+            --tw-border-opacity: .5;
+            border-radius: 500px;
+            position: relative;
+            /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
+            filter: var(--color-is-19);
+            /* border-width: 20px; */
+            height: 517px;
+            width: 950px;
+            transform: translate(0px, -150px);
+        }
 
         svg.waves {
-        z-index: -1;
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        filter: drop-shadow(0 0 15px #3be8b0);
-        overflow-x: hidden;
-    }
-
-    svg.waves path {
-        fill: none;
-        stroke: #3be8b0;
-        stroke-width: 10px;
-        stroke-dasharray: 1650;
-        stroke-dashoffset: 0;
-        animation: waves 1.8s ease-in-out;
-    }
-    @keyframes waves {
-        0% {
-        stroke-dashoffset: 1650;
+            z-index: -1;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            filter: drop-shadow(0 0 15px #3be8b0);
+            overflow-x: hidden;
         }
-        100% {
-        stroke-dashoffset: 0;
-        }
-    }  
 
-    .grip img{
-        border-radius: 25px;
-    }
+        svg.waves path {
+            fill: none;
+            stroke: #3be8b0;
+            stroke-width: 10px;
+            stroke-dasharray: 1650;
+            stroke-dashoffset: 0;
+            animation: waves 1.8s ease-in-out;
+        }
+
+        @keyframes waves {
+            0% {
+                stroke-dashoffset: 1650;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+
+
+        .grip img {
+            border-radius: 25px;
+        }
+
         /* .transform {
         --tw-translate-x: 0;
         --tw-translate-y: 0;
@@ -257,6 +266,21 @@
         --tw-scale-y: 1;
         transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }  */
+
+
+        h2 {
+            transform: translateY(30px);
+            opacity: 0;
+            visibility: hidden;
+
+        }
+
+        h2.animated {
+            transform: translateY(0px);
+            opacity: 1;
+            visibility: visible;
+            transition: all 1.2s ease 0.4s;
+        }
     </style>
 </head>
 
@@ -284,9 +308,10 @@
                 <a class="logo" href="./index.html" style="width: 90px;">
                     <img src="./assets/logo.png" alt="logo">
                 </a>
-                <div class="nav-hidden" style="margin-left: auto;margin-right: 2.5rem ;">
+                <div class="nav-hidden" style="    margin-left: auto;
+                margin-right: 3.5rem;">
                     <ul class="flex items-center space">
-                        <li><a class="text-white text-md" href="#">About</a></li>
+                        <li><a class="text-white text-md" href="./about.html">About</a></li>
                         <span>
                             <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
@@ -315,13 +340,13 @@
                     </ul>
                 </div>
                 <div class="ctn-btn flex justify-center items-center">
-                    <a class="btn text-white text-md" href="">Resume</a>
+                    <a class="btn btn-header text-white text-md " href="">Resume</a>
                     <img class="btn-hidden" src="./assets/menu-right.svg" alt="btn-menu">
                 </div>
             </div>
         </nav>
 
-        
+
         <section>
             <div class="grip container">
                 <div class="grip-1">
@@ -332,13 +357,13 @@
                             </span>
                             Start selling online.
                         </span>
-
-                        <h2 class="text-white" style="font-size: 50px;">Experience the top notch performance.</h2>  
+                        <h2 class="text-white animated" style="font-size: 50px;">Experience the top notch performance.
+                        </h2>
                         <div class="flex justify-center items-center">
                             <div class="icon-tec">
                                 <img src="./assets/icon-tec/figma.png" alt="">
                             </div>
-                        </div>  
+                        </div>
                         <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
                             your customers to experience WooCommerce at its absolute-best.
                         </p>
@@ -347,8 +372,8 @@
                             <a class="btn text-white font-semi-bold text-lg" href="">Contactame</a>
                         </div>
                     </div>
-                    
-                   
+
+
                 </div>
                 <div class="grip-2">
                     <img src="./assets/img-proyects/Cart.png" alt="">
@@ -375,13 +400,13 @@
             <div class="background-shapes1">
                 <div class="background-shape1"></div>
             </div>
-    
-    
+
+
             <!-- <svg class="waves" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0,160L21.8,160C43.6,160,87,160,131,181.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,133.3C436.4,107,480,117,524,106.7C567.3,96,611,64,655,80C698.2,96,742,160,785,176C829.1,192,873,160,916,138.7C960,117,1004,107,1047,112C1090.9,117,1135,139,1178,170.7C1221.8,203,1265,245,1309,234.7C1352.7,224,1396,160,1418,128L1440,96L1440">
                 </path>
             </svg> -->
-            
+
         </section>
 
 
@@ -408,7 +433,7 @@
     =======================================-->
 
 
-   
+
     <!-- ======================================= 
             ==Star Footer-Section==  
     =======================================-->
