@@ -4,12 +4,6 @@
   src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);
   font-weight: 400;
 }
-/* @font-face {
-  font-display: swap;
-  font-family: "GT-Walsheim";
-  src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);
-  font-weight: 500;
-} */
 @font-face {
   font-display: swap;
   font-family: "GT-Walsheim";

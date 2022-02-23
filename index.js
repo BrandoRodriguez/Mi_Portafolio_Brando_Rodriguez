@@ -30,3 +30,5 @@ function preve(){
   slide[indexx].classList.add('active');
 }
 
+
+

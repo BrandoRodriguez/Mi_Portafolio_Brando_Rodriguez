@@ -13,12 +13,11 @@
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
     <style>
         .header-section {
-            background: transparent;
-            background-position: center bottom;
-            background-size: cover;
             position: absolute;
             width: 100%;
+            background: transparent;
         }
+
 
         /* description */
         .about-section .container {
@@ -159,9 +158,6 @@
 
         @media(min-width: 1024px) {
 
-            .container {
-                max-width: 1024px;
-            }
 
             .about-content {
                 padding: 100px 6px 100px 60px;
@@ -172,21 +168,6 @@
             }
 
         }
-
-        @media (min-width: 1280px) {
-            .container {
-                max-width: 1280px;
-            }
-
-        }
-
-        @media (min-width: 1400px) {
-            .container {
-                max-width: 1400px;
-            }
-        }
-
-      
     </style>
 </head>
 
@@ -216,30 +197,18 @@
                     <img src="./assets/logo.png" alt="logo">
                 </a>
                 <div class="nav-hidden" style="margin-right: auto; margin-left: 3rem;">
-                    <ul class="flex items-center space">
+                    <ul class="flex items-baseline space">
                         <li><a class="text-white text-md" href="./about.html">About</a></li>
                         <span>
-                            <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
-                            </svg>
                         </span>
                         <li><a class="text-white text-md" href="#">Skills</a></li>
                         <span>
-                            <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
-                            </svg>
                         </span>
                         <li><a class="text-white text-md" href="./projects.html">Projects</a></li>
                         <span>
-                            <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
-                            </svg>
                         </span>
                         <li><a class="text-white text-md" href="#">Resources</a></li>
                         <span>
-                            <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle>
-                            </svg>
                         </span>
                         <li><a class="text-white text-md" href="#">Contact</a>
                         </li>
@@ -259,31 +228,26 @@
     <section class="presentation-section-about">
         <div class="relative">
             <!-- <span class="vertical-logo"><img src="./assets/img-about/vertical-logo.png" alt="vertical-logo"></span> -->
-
-            <div class="containe hero-image-wrapper hero-image-wrapper-hiden">
-                <span class="hero-image animated"></span>
+            <div class="containe hero-image-wrapper">
+                <span class="hero-image" style="background-image: url(./assets/img-about/about-perfil.png);"></span>
             </div>
-
-
-
             <div class="">
                 <div class="content-wrapper">
                     <div class=" container mx-auto hero-content animation">
-                        <!-- <img class="hidden flex img-header mx-auto" src="./assets/img-profile-mb.webp" alt=""> -->
                         <h2>Hi! I’m</h2>
                         <h1 class="">BRANDO</h1>
-                        <h2 class="">Full Stack Developer</h2>
+                        <h2 style="padding-bottom: 30px;">Full Stack Developer</h2>
                         <a href="./projects-details-1.html" class="text-white text-lg">Discover More.
                             <span class="link-btn">
                                 <img src="./assets/flecha.png" alt="arrow">
                             </span>
                         </a>
                     </div>
-                    <a href="">
-                        <span class="scroll-down animated">scroll down<img src="./assets/flecha-rigth.png" alt="arrow">
+                    <a href="" class="animation ">
+                        <span class="scroll-down">scroll down<img src="./assets/flecha-rigth.png" alt="arrow">
                         </span>
                     </a>
-                    <ul class="social-icono">
+                    <ul class="social-icono animation">
                         <li class="twitter">
                             <a href="" title="Twitter" target="_blank">
                                 <img src="./assets/img-icons/tw.svg" alt="">
