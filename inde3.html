@@ -253,6 +253,23 @@
             position: relative;
             overflow: hidden;
         }
+
+        .portfolio-bg-overlay{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: none ;
+        }
+
+
+        @media (min-width: 1024px) {
+            .portfolio-bg-overlay{
+                background-image: var(--bg-image);
+            }
+            
+        }
     </style>
 </head>
 
@@ -313,12 +330,7 @@
     <section class="presentation-section-slider">
         <div class="relative">  
                 <div class="slide-containe active">
-                    <div class="portfolio-bg-overlay  " style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
-                        height: 100%;
-                        width: 100%;
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
+                    <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
                         " >
                         <div class="portfolio-item-bg-title animated-elements">
                             <span class="bg-title">JQ
@@ -332,14 +344,14 @@
             
                         <div class="content-wrapper container mx-auto animated-elements">
                             <div class="hero-conten animation">
-                                <div class="portfolio-content" style="padding: 0; width: 50%;" >
+                                <div class="portfolio-content" style="padding: 0;" >
                                     <span class="badge text-sm">
                                         <span class="text-sm text-white">
                                             new
                                         </span>
                                         Start selling online.
                                     </span>
-                                    <h2 class="text-white " style="padding-bottom: 15px; font-size: 72px;">
+                                    <h2 class="text-white " style="padding-bottom: 15px;">
                                         JQ
                                         Official
                                         Store

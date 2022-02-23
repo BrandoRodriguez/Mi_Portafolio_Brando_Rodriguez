@@ -1665,7 +1665,6 @@
         background-size: cover;
         /* animation: scroll-image 1.2s ease ; */
         opacity: 1;     
-        z-index: -3;
     }
  
     .slider-hero-image::before {
@@ -1812,6 +1811,14 @@
         font-size: 22px;
         color: #fff;
     }
+
+    /* slider */
+    .hero-conten h2 {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    /*  */
 
     .vertical-logo {
         position: absolute;
@@ -2377,6 +2384,10 @@
             height: 100%;
             display: block;
             max-width:100%;
+        }
+
+        .hero-conten h2 {
+            font-size: 60px;
         }
     
 
