@@ -14,7 +14,7 @@
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color:  rgb(21, 21, 21);
+            background-color: rgb(21, 21, 21);
         }
 
         .header-section {
@@ -23,167 +23,15 @@
             background: transparent;
         }
 
-
-        /* description */
-        .about-section .container {
-            position: relative;
-            display: flex;
-            flex-flow: row;
-        }
-
-        .about-shape {
-            position: absolute;
-            right: 0;
-            z-index: 3;
-            bottom: 30px;
-            max-width: 630px;
-            transform-origin: top right;
-            animation: about-shape-move 8s ease infinite;
-        }
-
-        .about-shape span {
-            position: absolute;
-            border-radius: 100%;
-        }
-
-        .circle1 {
-            width: 128px;
-            height: 128px;
-            bottom: 40px;
-            left: 100px;
-            background: #f43534;
-            animation: circle1-move 5s linear infinite;
-        }
-
-        @keyframes about-shape-move {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            50% {
-                transform: rotate(4deg);
-            }
-
-            100% {
-                transform: rotate(0deg);
-            }
-        }
-
-        @keyframes circle1-move {
-            0% {
-                bottom: 40px;
-            }
-
-            50% {
-                bottom: 70px;
-            }
-
-            100% {
-                bottom: 40px;
-            }
-
-        }
-
-        .dot-pattern {
-            position: absolute;
-            left: -107px;
-            bottom: 20px;
-        }
-
-        .about-img1 {
-            position: relative;
-            z-index: 2;
-            left: 4px;
-            width: 320px;
-            display: none;
-            background: url(./assets/img-about/about-img1.jpg) no-repeat top left/cover;
-        }
-
-        .about-img2 {
-            position: relative;
-            z-index: 2;
-            right: 5px;
-            width: 320px;
-            display: none;
-            background: url(./assets/img-about/about-img2.jpg) no-repeat left top / cover;
-        }
-
-        .about-content {
-            z-index: 4;
-            position: relative;
-            max-width: 640px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0px;
-            padding: 24px 25px 85px 25px;
-        }
-
-        .about-content h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .about-content h5 {
-            font-weight: 400;
-            margin-left: auto;
-            max-width: 100%;
-            text-align: center;
-            line-height: 1.7;
-            font-size: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .about-img1 {
-                display: block;
-            }
-
-            .about-content h2 {
-                text-align: justify;
-                margin-bottom: 52px;
-            }
-
-            .about-content h5 {
-                text-align: justify;
-                font-size: 22px;
-                line-height: 43px;
-                max-width: 315px;
-            }
-
-            .vertical-logo {
-                left: calc(100% / 6);
-                top: 50%;
-                transform: translateY(-50%);
-                width: auto;
-            }
-
-
-
-        }
-
-        @media(min-width: 1024px) {
-
-
-            .about-content {
-                padding: 100px 6px 100px 60px;
-            }
-
-            .about-img2 {
-                display: block;
-            }
-
-        }
-    </style>
-    <style>
-     
-        .animated{
+        .animated {
             animation: slide_up_inner 1s;
         }
-        
-        .animated-elements{
+
+        .animated-elements {
             animation: slide_up_elements 1s;
         }
-         @keyframes slide_up_inner {
+
+        @keyframes slide_up_inner {
             0% {
                 transform: translateX(100%);
                 opacity: .5;
@@ -206,12 +54,13 @@
                 opacity: 1;
             }
         }
-        
-        
-        .portfolio-item-bg-title{
+
+
+        .portfolio-item-bg-title {
             position: absolute;
             top: 50%;
         }
+
         .bg-title {
             z-index: -1;
             line-height: .5;
@@ -224,6 +73,7 @@
             transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
             color: rgba(136, 136, 136, 0.04);
         }
+
         .portfolio-bg-overlay:before {
             content: '';
             position: absolute;
@@ -235,35 +85,33 @@
         }
 
 
-        .presentation-section-slider{
+        .presentation-section-slider {
             position: relative;
             overflow: hidden;
         }
 
-        .portfolio-bg-overlay{
+        .portfolio-bg-overlay {
             height: 100%;
             width: 100%;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: none ;
+            background-image: none;
         }
 
 
         @media (min-width: 1024px) {
-            .portfolio-bg-overlay{
+            .portfolio-bg-overlay {
                 background-image: var(--bg-image);
             }
-            
+
         }
 
-        .slider-hover{
+        .slider-hover {
             transform-style: preserve-3d;
             transform: perspective(1000px);
             z-index: 1;
         }
-
-      
     </style>
 </head>
 
@@ -289,7 +137,7 @@
         <div id="stars"></div>
         <nav class="relative animation">
             <div class="header">
-                <a class="logo" href="./index.html" style="width: 90px;";>
+                <a class="logo" href="./index.html" style="width: 90px;" ;>
                     <img src="./assets/logo.png" alt="logo">
                 </a>
                 <div class="nav-hidden">
@@ -322,61 +170,111 @@
 =======================================-->
 
     <section class="presentation-section-slider">
-        <div class="relative ">  
-                <div class="slide-containe active">
-                    <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
-                        " >
-                        <div class="portfolio-item-bg-title animated-elements">
-                            <span class="bg-title">JQ
-                                Official Store
-                                Website
-                                Design.</span>
-                        </div>
-                        
-                        <div class="slider-hero-image-wrapper">
-                                <span class="slider-hero-image animation slider-hover " style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);">
-                                </span>
-                        </div>
+        <div class="relative ">
+            <div class="slide-containe active">
+                <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
+                        ">
+                    <div class="portfolio-item-bg-title animated-elements">
+                        <span class="bg-title">JQ
+                            Official Store
+                            Website
+                            Design.</span>
+                    </div>
 
-                        <div class="container mx-auto">
-                            <div class="slider-content-wrapper">                           
-                              
-                                    <div class="slider-hero-content animated-elements" style="padding: 0;" >
-                                        <span class="badge text-sm">
-                                            <span class="text-sm text-white">
-                                                new
-                                            </span>
-                                            Start selling online.
-                                        </span>
-                                        <h2 class="text-white " style="padding-bottom: 15px;">
-                                            JQ
-                                            Official
-                                            Store
-                                            Website
-                                            Design.
-                                        </h2>
-                
-                                        <p class="text-lg" style="padding-bottom:15px;">WooCommerce. Hub provides all the tools you need to start selling online. Let
-                                            your customers to experience WooCommerce at its absolute-best.</p>
-                                        <a href="./header/index.html" class="text-white text-lg">Discover More.
-                                            <span class="link-btn">
-                                                <img src="./assets/flecha.png" alt="arrow">
-                                            </span>
-                                        </a>
-                                    </div>
-                            
+                    <div class="slider-hero-image-wrapper">
+                        <span class="slider-hero-image animation slider-hover "
+                            style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);">
+                        </span>
+                    </div>
+
+                    <div class="container mx-auto">
+                        <div class="slider-content-wrapper">
+
+                            <div class="slider-hero-content animated-elements" style="padding: 0;">
+                                <span class="badge text-sm">
+                                    <span class="text-sm text-white">
+                                        new
+                                    </span>
+                                    Start selling online.
+                                </span>
+                                <h2 class="text-white " style="padding-bottom: 15px;">
+                                    JQ
+                                    Official
+                                    Store
+                                    Website
+                                    Design.
+                                </h2>
+
+                                <p class="text-lg" style="padding-bottom:15px;">WooCommerce. Hub provides all the tools
+                                    you need to start selling online. Let
+                                    your customers to experience WooCommerce at its absolute-best.</p>
+                                <a href="./header/index.html" class="text-white text-lg">Discover More.
+                                    <span class="link-btn">
+                                        <img src="./assets/flecha.png" alt="arrow">
+                                    </span>
+                                </a>
                             </div>
+
                         </div>
-                
-                            
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="slide-containe active">
+                <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
+                        ">
+                    <div class="portfolio-item-bg-title animated-elements">
+                        <span class="bg-title">JQ
+                            Official Store
+                            Website
+                            Design.</span>
+                    </div>
+
+                    <div class="slider-hero-image-wrapper">
+                        <span class="slider-hero-image animation slider-hover "
+                            style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);">
+                        </span>
+                    </div>
+
+                    <div class="container mx-auto">
+                        <div class="slider-content-wrapper">
+
+                            <div class="slider-hero-content animated-elements" style="padding: 0;">
+                                <span class="badge text-sm">
+                                    <span class="text-sm text-white">
+                                        new
+                                    </span>
+                                    Start selling online.
+                                </span>
+                                <h2 class="text-white " style="padding-bottom: 15px;">
+                                    JQ
+                                    Official
+                                    Store
+                                    Website
+                                    Design......
+                                </h2>
+
+                                <p class="text-lg" style="padding-bottom:15px;">WooCommerce. Hub provides all the tools
+                                    you need to start selling online. Let
+                                    your customers to experience WooCommerce at its absolute-best.</p>
+                                <a href="./header/index.html" class="text-white text-lg">Discover More.
+                                    <span class="link-btn">
+                                        <img src="./assets/flecha.png" alt="arrow">
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-               
+            </div>
 
-    
-               
-   
-            
+
+
+
+
+
             <div class="ctn-btn container mx-auto flex justify-content">
                 <span id="preve" onclick="preve()" class="slick-prev slick-arrow">
                     <img style="transform: rotate(-180deg);" src="./assets/flecha.png" alt="arrow">
@@ -385,12 +283,8 @@
                     <img src="./assets/flecha.png" alt="arrow">
                 </span>
             </div>
-            
-        </div>
 
-        <!-- <div class="card" style="background-color: dodgerblue;">
-            <img src="./oh__img126-1920x1229.jpg" alt="">
-        </div> -->
+        </div>
     </section>
 
     <script src="./index.js"></script>
