@@ -2,14 +2,14 @@
     ==CSS-Global==  
     =======================================--> */
     body {
-        background: rgba(23, 22, 26);
+        background: rgb(21, 21, 21);
         font-family: "GT-Walsheim";
         position: relative;
         color: rgba(255, 255, 255, .8);;
         letter-spacing: .02em;
     }
 
-    /* .Noise {
+    .Noise {
         bottom: 0;
         left: 0;
         right: 0;
@@ -25,7 +25,7 @@
         position: fixed;
         opacity: 0.4;
         z-index: 1;
-    } */
+    }
 
     body::-webkit-scrollbar {
         position: fixed;
