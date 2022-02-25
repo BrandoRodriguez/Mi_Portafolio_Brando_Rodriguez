@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./style.css">
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
     <style>
-        body {
+        /* body {
             background-color: rgb(21, 21, 21);
-        }
+        } */
 
         .header-section {
             position: absolute;
@@ -66,12 +66,29 @@
             line-height: .5;
             white-space: nowrap;
             letter-spacing: -.02em;
-            font-size: 300px;
+            font-size: 250px;
             font-weight: 700;
             -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
             -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
             transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
             color: rgba(136, 136, 136, 0.04);
+        }
+
+        @media screen and (max-width: 768px) {
+            .portfolio-item-bg-title {
+                transform: rotate(-90deg);
+                -webkit-transform-origin: left bottom;
+                transform-origin: left bottom;
+                left: calc(100% - 50px);
+                bottom: 15px;
+                top: auto;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .bg-title {
+                font-size: 100px;
+            }
         }
 
         .portfolio-bg-overlay:before {
@@ -112,6 +129,12 @@
             transform: perspective(1000px);
             z-index: 1;
         }
+
+        .vertical-linea {
+            z-index: 1;
+        }
+
+
     </style>
 </head>
 
@@ -120,7 +143,7 @@
     <!-- ======================================= 
         ==Start Hero section==  
     =======================================-->
-    <div id="stars"></div>
+    <!-- <div id="stars"></div> -->
     <span class="vertical-linea line1"></span>
     <span class="vertical-linea line2"></span>
     <span class="vertical-linea line3"></span>
@@ -134,14 +157,13 @@
         ==Start Hero section==  
     =======================================-->
     <section class="header-section">
-        <div id="stars"></div>
-        <nav class="relative animation">
+        <nav class="relative">
             <div class="header">
-                <a class="logo" href="./index.html" style="width: 90px;" ;>
+                <a class="logo animation" href="./index.html" style="width: 90px;" ;>
                     <img src="./assets/logo.png" alt="logo">
                 </a>
-                <div class="nav-hidden">
-                    <ul class="flex items-baseline space">
+                <div class="nav-hidden" style="margin-left: auto; margin-right: 3.5rem; ">
+                    <ul class="flex items-baseline space animation">
                         <li><a class="text-white text-md" href="./about.html">About</a></li>
                         <span>
                         </span>
@@ -160,7 +182,11 @@
                 </div>
                 <div class="ctn-btn flex justify-center items-center">
                     <a class="btn btn-header text-white text-md " href="">Resume</a>
-                    <img class="btn-hidden" src="./assets/menu-right.svg" alt="btn-menu">
+                    <div class="humbarger btn-hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -170,11 +196,11 @@
 =======================================-->
 
     <section class="presentation-section-slider">
-        <div class="relative ">
+        <div class="relative">
             <div class="slide-containe active">
-                <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
+                <div class="portfolio-bg-overlay " style="--bg-image: url(./assets/img-proyects/oh__img126-1920x1229.jpg);
                         ">
-                    <div class="portfolio-item-bg-title animated-elements">
+                    <div class="portfolio-item-bg-title animation">
                         <span class="bg-title">JQ
                             Official Store
                             Website
@@ -182,8 +208,8 @@
                     </div>
 
                     <div class="slider-hero-image-wrapper">
-                        <span class="slider-hero-image animation slider-hover "
-                            style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);">
+                        <span class="slider-hero-image  slider-hover "
+                            style="background-image: url(./assets/img-proyects/oh__img126-1920x1229.jpg);">
                         </span>
                     </div>
 
@@ -205,57 +231,8 @@
                                     Design.
                                 </h2>
 
-                                <p class="text-lg" style="padding-bottom:15px;">WooCommerce. Hub provides all the tools
-                                    you need to start selling online. Let
-                                    your customers to experience WooCommerce at its absolute-best.</p>
-                                <a href="./header/index.html" class="text-white text-lg">Discover More.
-                                    <span class="link-btn">
-                                        <img src="./assets/flecha.png" alt="arrow">
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="slide-containe ">
-                <div class="portfolio-bg-overlay" style="--bg-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);
-                        ">
-                    <div class="portfolio-item-bg-title animated-elements">
-                        <span class="bg-title">JQ
-                            Official Store
-                            Website
-                            Design.</span>
-                    </div>
-
-                    <div class="slider-hero-image-wrapper">
-                        <span class="slider-hero-image animation slider-hover "
-                            style="background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio-demo-17/oh__img126-1920x1229.jpg);">
-                        </span>
-                    </div>
-
-                    <div class="container mx-auto">
-                        <div class="slider-content-wrapper">
-
-                            <div class="slider-hero-content animated-elements" style="padding: 0;">
-                                <span class="badge text-sm">
-                                    <span class="text-sm text-white">
-                                        new
-                                    </span>
-                                    Start selling online.
-                                </span>
-                                <h2 class="text-white " style="padding-bottom: 15px;">
-                                    JQ
-                                    Official
-                                    Store
-                                    Website
-                                    Design......
-                                </h2>
-
-                                <p class="text-lg" style="padding-bottom:15px;">WooCommerce. Hub provides all the tools
+                                <p class="text-lg" style="padding-bottom:15px; text-align: justify;">WooCommerce. Hub
+                                    provides all the tools
                                     you need to start selling online. Let
                                     your customers to experience WooCommerce at its absolute-best.</p>
                                 <a href="./header/index.html" class="text-white text-lg">Discover More.
@@ -270,20 +247,31 @@
                 </div>
             </div>
 
-
-
-
-
-
-            <div class="ctn-btn container mx-auto flex justify-content">
-                <span id="preve" onclick="preve()" class="slick-prev slick-arrow">
+            <div class="slider-ctn-btn">
+                <span id="preve" onclick="preve()" class="slick-prev slick-arrow" style="z-index: 1;">
                     <img style="transform: rotate(-180deg);" src="./assets/flecha.png" alt="arrow">
                 </span>
-                <span id="nextt" onclick="nextt()" class="slick-next slick-arrow">
+                <span id="nextt" onclick="nextt()" class="slick-next slick-arrow" style="z-index: 1;">
                     <img src="./assets/flecha.png" alt="arrow">
                 </span>
             </div>
-
+            <ul class="slider-social-icono animation">
+                <li class="twitter">
+                    <a href="" title="Twitter" target="_blank">
+                        <img src="./assets/img-icons/tw.svg" alt="">
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="" title="Linkedin" target="_blank">
+                        <img src="./assets/img-icons/ln.svg" alt="">
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a href="" title="Instagram" target="_blank">
+                        <img src="./assets/img-icons/ins.svg" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 

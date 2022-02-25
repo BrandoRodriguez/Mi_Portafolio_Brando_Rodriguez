@@ -2,29 +2,31 @@
     ==CSS-Global==  
     =======================================--> */
     body {
-        background: #151515;
+        background: rgb(21, 21, 21);
         font-family: "GT-Walsheim";
         position: relative;
-        color: rgba(255, 255, 255, .8);
-        ;
+        color: rgba(255, 255, 255, .8);;
         letter-spacing: .02em;
+    }
+
+    .Noise {
         bottom: 0;
         left: 0;
         right: 0;
         top: 0;
-        z-index: 1;
     }
 
-    body::before {
-        background: url("./assets/img-bg/bg.png");
+    .Noise::before {
+        background: url(./assets/img-bg/bg.png);
         content: "";
         height: 100%;
         width: 100%;
         pointer-events: none;
-        opacity: 0.4;
         position: fixed;
+        opacity: 0.4;
+        z-index: 1;
     }
-  
+
     body::-webkit-scrollbar {
         position: fixed;
         top: 0;
@@ -200,7 +202,7 @@
 
     .animation{
         opacity: 1;
-        animation: scroll .2s ;
+        animation: scroll 1s ;
     }
     
     @keyframes scroll {
@@ -391,7 +393,7 @@
     }
 
     .ctn-btn {
-        gap: 5px;
+        gap: 20px;
     }
 
     /* --- */
@@ -824,7 +826,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        position: relative;
+        /* position: relative; */
         bottom: 0;
         left: -50px;
         opacity: 0.2;
@@ -1647,6 +1649,7 @@
     }
 
     /* slider */
+
     .slider-content-wrapper{
         height: 100vh;
         width: 100%;
@@ -1667,8 +1670,7 @@
 
     .slider-hero-image {           
         width: 100%;
-        position: absolute;
-        right: 0;
+        position: absolute;   
         height: 100%;
         display: block;
         background-position: center;
@@ -1704,7 +1706,8 @@
         display: block;
         max-width: 100%;
     }
-    
+
+    /*  */
     .social-icono {
         position: absolute;
         right: 28px;
@@ -1713,6 +1716,26 @@
     }
 
     .social-icono li a {
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+        color: #fff;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Slider */
+
+    .slider-social-icono {
+        position: absolute;
+        right: 28px;
+        bottom: 50px;
+        z-index: 2;
+    }
+
+    .slider-social-icono li a {
         width: 46px;
         height: 46px;
         border-radius: 100%;
@@ -1747,7 +1770,6 @@
         50% {
             left: -40px;
         }
-
         100% {
             left: -30px;
         }
@@ -1784,15 +1806,6 @@
         justify-content: center;
     }
 
-    .content-wrapper:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        height: 50%;
-        width: 50%;
-        background-image: url(https://ohio.clbthemes.com/demo17/wp-content/themes/ohio/assets/images/pattern.svg);
-    }
-
     .hero-content {
         position: relative;
         z-index: 2;
@@ -1826,6 +1839,15 @@
     .slider-hero-content h2 {
         font-size: 40px;
         color: #fff;
+    }
+
+    .slider-ctn-btn{
+        position: absolute;
+        padding: 0 15px 30px 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        gap: 20px;
     }
 
     /*  */
@@ -1938,7 +1960,7 @@
         }
 
         /* header nav*/
-        .header-section {
+        /* .header-section {
             background:
                 radial-gradient(farthest-side at top left,
                     rgba(0, 194, 255, 0.3),
@@ -1946,7 +1968,7 @@
                 radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.2),
                     transparent 30%);
-        }
+        } */
         /* 
 
         .portfolio-section {
@@ -2028,7 +2050,7 @@
         } */
 
         .header-section {
-            padding-top: 25px;
+            padding-top: 30px;
         }
 
         .header {
@@ -2225,7 +2247,7 @@
 
         /*  */
         .slick-arrow {
-            position: absolute;
+            /* position: absolute; */
             left: 0px;
         }
 
@@ -2372,26 +2394,40 @@
           /* slider */
         .slider-content-wrapper{
             width: 50%;
+
         }
+        .slider-content-wrapper:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 50%;
+            width: 100%;
+            background-image: url(./assets/pattern.svg);
+            z-index: 1;
+        }
+
         .slider-hero-image-wrapper {
             height: 100%;
-            transform: translateX(-2%);
+            /* transform: translateX(-2%); */
             align-items: center;
             display: flex;
+            justify-content: center;
 
         }
         
     
-        .slider-hero-image {           
+        .slider-hero-image {          
             max-width: 830px;
             max-height: 531px;
-            background-position: center right;
+            /* background-position: center; */
         }
      
         .slider-hero-image::before {
             width: 55%;
             background-image: linear-gradient(to left, rgba(23, 22, 26, 0), rgba(23, 22, 26, 0.992));
             left: -1px;
+            top: -1px;
+            height: 100.3%;
         }
     
         .slider-hero-image img{
@@ -2401,8 +2437,10 @@
         }
 
         .slider-hero-content h2 {
-            font-size: 60px;
+            font-size: 70px;
         }
+        
+
     
 
     }
@@ -2500,8 +2538,20 @@
         }
 
         /* slider */
-        .slider-hero-image-wrapper {
-            transform: translateX(-60px);
+
+        .slider-ctn-btn{
+            position: absolute;
+            padding: 0 60px 30px 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+        }
+        
+        .slider-social-icono {
+            position: absolute;
+            right: 60px;
+            bottom: 45%;
+            z-index: 2;
         }
     }
 
@@ -2579,10 +2629,6 @@
         .hero-image {           
             max-width: 633px;
         }
-        /* slider */
-        .slider-hero-image-wrapper {
-            transform: translateX(-16.7%);
-        }
     }
 
 
@@ -2594,7 +2640,7 @@
         position: absolute;
         top: 0px;
 
-        /* z-index: -1; */
+
     }
 
     .vertical-linea.line1 {
