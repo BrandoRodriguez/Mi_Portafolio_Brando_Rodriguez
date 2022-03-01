@@ -5,208 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts.css">
     <title>Document</title>
+
     <style>
-        body{
-            font-family: "GT-Walsheim";
-            --tw-bg-opacity: 1;
-    background-color: rgba(233, 233, 234, var(--tw-bg-opacity));
+        :root {
+            --primary: #121f3d;
+            --white: #fff;
+            --gray: #2a324b;
         }
-        address,
-        blockquote,
-        body,
-        button,
-        code,
-        dd,
-        dl,
-        dt,
-        fieldset,
-        form,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        html,
-        input,
-        legend,
-        li,
-        ol,
-        p,
-        pre,
-        table,
-        td,
-        textarea,
-        th,
-        ul {
+
+        * {
             margin: 0;
             padding: 0;
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        *,
-        :after,
-        :before {
             box-sizing: border-box;
         }
 
-        img,
-        video {
-            max-width: 100%;
-            height: auto;
+        body {
+            font-family: sans-serif;
+            font-weight: lighter;
+            color: var(--white);
+            background-color: var(--primary);
+            height: 100vh;
         }
-        
-        .grip{
-            grid-template-columns: repeat(11, 1fr);
-            grid-template-rows: repeat(8, auto);
-            display: grid;
-           
-        }
-        .grip-1{
-            grid-column: 1/6; 
-            grid-row: 1/4;  
-            display: flex;
-            align-items: end;   
-        }
-        .grip-2{
-            grid-column: 3/6;
-            transform: translate(0%, -60%);
-            display: flex;
-            justify-content: end;
-            grid-row: 1/2;
-        }
-        .grip-3{
-            grid-column: 6/9;
-            transform: translate(0%, 10%);
-            display: flex;
-            justify-content: center;
-            grid-row: 1/3;
-        }
-        .grip-4{
-            grid-column: 9/12;
-            transform: translate(25%, -5%) rotate(-90deg);
-            display: flex;
-            justify-content: start;
-            grid-row: 1/3;
-           
-        }
-        
-        .grip-5{
-            grid-column: 6/9;
-            transform: translate(0%, 15%);
-            display: flex;
-            justify-content: center;
-            grid-row: 2/8;
-        } 
 
-        .grip-6{
-            grid-column: 9/12;
-            transform: translate(0%, -15%);
+        .nav {
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .nav__checkbox {
+            display: none;
+        }
+
+        .nav__toggle {
+            position: absolute;
+            cursor: pointer;
+            margin: 0 1rem;
+            right: 0;
+        }
+
+        .nav__toggle svg {
+            width: 1rem;
+            fill: var(--white);
+        }
+
+        .nav__toggle .close {
+            display: none;
+        }
+
+        .nav__toggle .close,
+        .nav__toggle .menu {
+            margin-top: 0.3rem;
+        }
+
+        .nav__menu {
+            align-items: center;
             display: flex;
-            justify-content: start;
-            grid-row: 2/8;
-           
-        }  
-        
-        .container {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-    .background-shapes {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        right: 30%;
-    }
-    .background-shape {
-        border: 10px solid #3be8b0;
-        border-radius: 500px;
-        position: relative;
-        --color-is-19: drop-shadow(0 0 15px #3BE8B0);
-        filter: var(--color-is-19);
-        border-width: 20px;
-        height: 950px;
-        width: 517px;
-        transform: translate(200px, 150px);
-    }
-        svg.waves {
-        z-index: -1;
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        filter: drop-shadow(0 0 15px #3be8b0);
-        overflow-x: hidden;
-    }
-    svg.waves path {
-        fill: none;
-        stroke: #3be8b0;
-        stroke-width: 10px;
-        stroke-dasharray: 1650;
-        stroke-dashoffset: 0;
-        animation: waves 1.8s ease-in-out;
-    }
-    @keyframes waves {
-        0% {
-        stroke-dashoffset: 1650;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 1rem;
         }
-        100% {
-        stroke-dashoffset: 0;
+
+        .nav__menu li {
+            display: none;
+            list-style-type: none;
         }
-    }  
-        /* .transform {
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: -12deg;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        }  */
+
+        .nav__menu li:first-child {
+            display: block;
+            margin-right: auto;
+        }
+
+        .nav__menu a {
+            color: inherit;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        .menu__logo {
+            height: 30px;
+        }
+
+        .menu__logo img {
+            height: 100%;
+        }
+
+        #nav__checkbox:checked~ul.nav__menu li {
+            display: block;
+        }
+
+        #nav__checkbox:checked~label.nav__toggle .close {
+            display: block;
+        }
+
+        #nav__checkbox:checked~label.nav__toggle .menu {
+            display: none;
+        }
+
+        @media only screen and (min-width: 560px) {
+            .nav__toggle {
+                display: none;
+            }
+
+            .nav__menu {
+                flex-direction: row;
+            }
+
+            .nav__menu li {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <section>
-        <div class="grip container">
-            <div class="grip-1">
-                <h1 style="font-size: 70px;">Experience the top performance.</h1>
-            </div>
-            <div class="grip-2">
-                <img src="file:///C:/Users/pc/Desktop/ARCHIVOS/Tailwind/shuffle.dev-all-components-config-files/config/tailwind_atis/shuffle/public/atis-assets/illustrations/book-detail-full.png" alt="">
-            </div>
-            <div class="grip-3">
-                <img src="file:///C:/Users/pc/Desktop/ARCHIVOS/Tailwind/shuffle.dev-all-components-config-files/config/tailwind_atis/shuffle/public/atis-assets/illustrations/book-detail-full.png" alt="">
-            </div>
-            <div class="grip-4">
-                <img src="file:///C:/Users/pc/Desktop/ARCHIVOS/Tailwind/shuffle.dev-all-components-config-files/config/tailwind_atis/shuffle/public/atis-assets/illustrations/book-detail-full.png" alt="">
-            </div>
-            <div class="grip-5">
-                <img src="file:///C:/Users/pc/Desktop/ARCHIVOS/Tailwind/shuffle.dev-all-components-config-files/config/tailwind_atis/shuffle/public/atis-assets/illustrations/book-detail-full.png" alt="">
-            </div>
-            <div class="grip-6">
-                <img src="file:///C:/Users/pc/Desktop/ARCHIVOS/Tailwind/shuffle.dev-all-components-config-files/config/tailwind_atis/shuffle/public/atis-assets/illustrations/book-detail-full.png" alt="">
-            </div>
-        </div>
-        <div class="background-shapes">
-            <div class="background-shape"></div>
-        </div>
+    <nav class="nav">
+        <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox" />
 
-        <svg class="waves" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,160L21.8,160C43.6,160,87,160,131,181.3C174.5,203,218,245,262,234.7C305.5,224,349,160,393,133.3C436.4,107,480,117,524,106.7C567.3,96,611,64,655,80C698.2,96,742,160,785,176C829.1,192,873,160,916,138.7C960,117,1004,107,1047,112C1090.9,117,1135,139,1178,170.7C1221.8,203,1265,245,1309,234.7C1352.7,224,1396,160,1418,128L1440,96L1440">
-            </path>
-            </svg>
         
-    </section>
+        <label for="nav__checkbox" class="nav__toggle">
+
+            <!-- SVG Menu -->
+            <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                <path
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+            </svg>
+
+            <!-- SVG Close -->
+            <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                <path
+                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+            </svg>
+
+        </label>
+
+        <ul class="nav__menu">
+            <li class="menu__logo">
+                <img src="./assets/logo.png" alt="" />
+            </li>
+            <li><a href="#">Clases</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Foro</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>

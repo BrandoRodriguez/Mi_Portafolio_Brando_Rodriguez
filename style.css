@@ -212,7 +212,7 @@
 
             } 
 
-    .nav-hidden span{
+    .nav span{
         height: 5px;
         width: 5px;
         background: #726B6B;
@@ -252,6 +252,24 @@
         right: 0%;
         width: 60%;
     }
+
+    .show-menu.humbarger span:nth-child(1) {
+        width: 100%;
+        transform-origin: center;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .show-menu.humbarger span:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .show-menu.humbarger span:nth-child(3) {
+        width: 100%;
+        transform-origin: center;
+        bottom: 50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+
     /* <!-- ======================================= 
 ==End CSS Clase General==  
 =======================================--> */
@@ -345,6 +363,27 @@
         box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
         position: relative;
         z-index: 2;
+        /* flex-direction: column; */
+    }
+
+    .nav-checkbox{
+        display: none;
+    }
+
+    .nav-toggle .close {
+        display: none;
+    }
+
+    #nav-checkbox:checked~.nav-hidden {
+        display: block;
+    }
+
+    #nav-checkbox:checked~label.nav-toggle .close {
+        display: block;
+    }
+
+    #nav-checkbox:checked~label.nav-toggle .menu {
+        display: none;
     }
 
     .header .logo img {
@@ -392,8 +431,30 @@
         padding-bottom: 7px;
     }
 
-    .ctn-btn {
-        gap: 20px;
+    @media (max-width: 575px) {
+        .nav{
+            position: absolute;
+            flex-direction: column;
+            margin-top: 3rem;
+            right: 15px;
+            background-color: #000;
+            z-index: 3;
+        }
+
+        .nav li{
+            display: contents;
+        }
+
+        .ctn-btn {
+            gap: 20px;
+        }
+
+        .btn-header{
+            margin-left: auto;
+            margin-right: 15px;
+        }
+    
+        
     }
 
     /* --- */
@@ -516,7 +577,6 @@
         right: 6px;
         bottom: 0;
         top: 60px;
-        z-index: 2;
         height: 125px;
         border-radius: 999px;
     }

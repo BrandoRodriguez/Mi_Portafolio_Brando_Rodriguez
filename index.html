@@ -32,8 +32,9 @@
                 <a class="logo" href="./index.html" style="width: 90px;">
                     <img src="./assets/logo.png" alt="logo">
                 </a>
+                <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
                 <div class="nav-hidden">
-                    <ul class="flex items-baseline space">
+                    <ul class="nav flex items-baseline space">
                         <li><a class="text-white text-md" href="./about.html">About</a></li>
                         <span>
                         </span>
@@ -50,14 +51,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ctn-btn flex justify-center items-center">
-                    <a class="btn btn-header text-white text-md " href="">Resume</a>
-                    <div class="humbarger btn-hidden">
+
+                <a class="btn btn-header text-white text-md " href="">Resume</a>
+                    
+                <label for="nav-checkbox" class="nav-toggle btn-hidden">
+                    <div class="menu humbarger ">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
+
+                    <div class="close show-menu humbarger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
             </div>
         </nav>
 
@@ -66,7 +75,9 @@
                 <div class="presentation-walper flex items-center justify-content">
                 </div>
                 <div class="presentation-img flex items-center justify-content">
-                    <img class="flex mx-auto" src="./assets/yo.webp" alt="dk-hero" style="z-index: 1;">
+                    <img class="flex mx-auto" src="./assets/yo.webp" alt="dk-hero" 
+                    
+                    >
                 </div>
                 <div class="presentation-description flex items-center justify-content">
                     <div class="presentation-description-img">
