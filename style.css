@@ -435,14 +435,17 @@
         .nav{
             position: absolute;
             flex-direction: column;
-            margin-top: 3rem;
-            right: 15px;
-            background-color: #000;
+            margin-top: 1.5rem;
+            right: 0;
+            background: #000;
             z-index: 3;
+            align-items: flex-end;
+            gap: 10px;
+            padding: 15px;
         }
 
-        .nav li{
-            display: contents;
+        .nav span{
+            display: none;
         }
 
         .ctn-btn {
