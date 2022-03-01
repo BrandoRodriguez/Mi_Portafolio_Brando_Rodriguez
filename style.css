@@ -254,7 +254,7 @@
     }
 
     .show-menu.humbarger span:nth-child(1) {
-        width: 100%;
+        width: 90%;
         transform-origin: center;
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
@@ -264,7 +264,7 @@
         visibility: hidden;
     }
     .show-menu.humbarger span:nth-child(3) {
-        width: 100%;
+        width: 90%;
         transform-origin: center;
         bottom: 50%;
         transform:translateY(50%) rotate(-45deg);
