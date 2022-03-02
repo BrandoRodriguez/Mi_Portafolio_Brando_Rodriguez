@@ -124,7 +124,6 @@
         align-items: baseline;
     }
 
-
     .justify-content {
         justify-content: center;
     }
@@ -270,7 +269,7 @@
         transform:translateY(50%) rotate(-45deg);
     }
 
-    /* <!-- ======================================= 
+/* <!-- ======================================= 
 ==End CSS Clase General==  
 =======================================--> */
 
@@ -2099,7 +2098,7 @@
                     transparent 30%);
         }
 
-        .resources-section {
+        /* .resources-section {
             background:
                 radial-gradient(farthest-corner at top right,
                     rgb(255, 50, 50, 0.3),
@@ -2107,14 +2106,14 @@
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
                     transparent 30%);
-        }
+        } */
 
-        .footer-section {
+        /* .footer-section {
             background:
                 radial-gradient(farthest-corner at top left,
                     rgb(0, 194, 255, 0.2),
                     transparent 30%);
-        } 
+        }  */
 
         .header-section {
             padding-top: 15px;
