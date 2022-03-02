@@ -23,7 +23,7 @@
         width: 100%;
         pointer-events: none;
         position: fixed;
-        opacity: 0.4;
+        opacity: 0.2;
         z-index: 1;
     }
 
@@ -436,14 +436,13 @@
             position: absolute;
             flex-direction: column;
             margin-top: 1.5rem;
-            right: 0;
-            background: #000;
+            background: rgba(0, 0, 0, 0.9);
             z-index: 3;
             align-items: flex-end;
             gap: 10px;
+            right: 0;
             padding: 15px;
         }
-
         .nav span{
             display: none;
         }
@@ -474,8 +473,6 @@
         height: 260px;
         margin-top: 10%;
         background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .4;
         box-sizing: border-box;
         border-radius: 100%;
         z-index: -2;
@@ -495,9 +492,9 @@
         left: auto;
         border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
         --tw-border-opacity: .3;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(60px);
         gap: 7px;
-        top: 29%;
+        top: 26%;
         background: rgb(0, 0, 0, 0.6);
     }
 
@@ -624,14 +621,22 @@
         background: transparent;
         padding-left: 0px;
         padding-right: 0px;
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .2;
+    }
+
+    .img-area::before{  
+        content: "";
+        position: absolute;
+        width: 50%;
+        background-image: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
+        right: -1px;
+        top: -1px;
+        height: 100%;  
     }
 
     .count {
         position: absolute;
-        right: -30px;
-        font-size: 90px;
+        right: -15px;
+        font-size: 60px;
         top: -20px;
         line-height: 0.9;
         font-weight: 900;
@@ -2023,21 +2028,20 @@
         }
 
         /* header nav*/
-        /* .header-section {
+        .header-section {
             background:
                 radial-gradient(farthest-side at top left,
                     rgba(0, 194, 255, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom right,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 30%);
-        } */
-        /* 
-
+        }
+    
         .portfolio-section {
             background:
                 radial-gradient(farthest-corner at top right,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
@@ -2051,14 +2055,14 @@
                     rgba(0, 194, 255, 0.2),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom center,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 40%);
         }
 
         .portfolio-section-right {
             background:
                 radial-gradient(farthest-corner at top center,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 40%),
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
@@ -2071,14 +2075,14 @@
                     rgb(0, 194, 255, 0.2),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom right,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 30%);
         }
 
         .testimonial-section {
             background:
                 radial-gradient(farthest-corner at top right,
-                    rgb(255, 50, 50, 0.2),
+                    rgb(255, 50, 50, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
@@ -2091,14 +2095,14 @@
                     rgb(0, 194, 255, 0.2),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom right,
-                    rgba(255, 50, 50, 0.2),
+                    rgba(255, 50, 50, 0.3),
                     transparent 30%);
         }
 
         .resources-section {
             background:
                 radial-gradient(farthest-corner at top right,
-                    rgb(255, 50, 50, 0.2),
+                    rgb(255, 50, 50, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
@@ -2110,10 +2114,10 @@
                 radial-gradient(farthest-corner at top left,
                     rgb(0, 194, 255, 0.2),
                     transparent 30%);
-        } */
+        } 
 
         .header-section {
-            padding-top: 30px;
+            padding-top: 15px;
         }
 
         .header {
@@ -2232,6 +2236,7 @@
         .portfolio-content {
             width: 40%;
             padding-left: 40px;
+            margin-top: 120px;
         }
 
         .img-area {
@@ -2511,13 +2516,13 @@
     @media (min-width: 1280px) {
         .container {
             max-width: 1280px;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         .header {
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         /* presentation */
@@ -2697,7 +2702,7 @@
 
     .vertical-linea {
         background: rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .2;
+        --tw-border-opacity: .1;
         width: 1px;
         height: 100%;
         position: absolute;
@@ -2749,6 +2754,7 @@
     width: 1px;
     height: 1px;
     opacity: 0.3;
+    z-index: 3;
     position: fixed;
     background: transparent;
     animation: animStar 50s linear infinite;

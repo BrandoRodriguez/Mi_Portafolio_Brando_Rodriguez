@@ -1,3 +1,4 @@
 @font-face {font-display: swap;font-family:"GT-Walsheim";src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);font-weight: 400;}
+@font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);font-weight: 500;}
 @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);font-weight: 700;}
 @font-face {font-display: swap;font-family: "FuturaBT-Bold";src: url(./fonts/FuturaBT-Bold.woff2);font-weight: 700;}
