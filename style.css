@@ -201,7 +201,7 @@
 
     .animation{
         opacity: 1;
-        animation: scroll 1s ;
+        animation: scroll 1.5s ;
     }
     
     @keyframes scroll {
@@ -211,6 +211,23 @@
 
             } 
 
+    .animated-elements {
+        animation: slide_up_elements 1s;
+    }
+    
+          
+    @keyframes slide_up_elements {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+    
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    
     .nav span{
         height: 5px;
         width: 5px;
@@ -512,20 +529,6 @@
         margin-left: -1px;
     }
 
-    .presentation-section .section-title {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-        position: relative;
-        left: -4px;
-        font-size: 50px;
-        color: rgb(71, 67, 67);
-        text-transform: uppercase;
-        line-height: 1;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        font-family: "FuturaBT-Bold";
-    }
-
     /*  */
     .news {
         position: relative;
@@ -605,7 +608,8 @@
         color: rgb(71, 67, 67);
         text-transform: uppercase;
         line-height: 1;
-        font-family: "FuturaBT-Bold";
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 900;
     }
 
     /*  */
@@ -638,11 +642,11 @@
         font-size: 60px;
         top: -20px;
         line-height: 0.9;
-        font-weight: 900;
         color: rgb(71, 67, 67);
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
-        font-family: "FuturaBT-Bold";
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 900;
 
     }
 
@@ -701,7 +705,6 @@
     }
 
     .bg-number {
-        /* background: linear-gradient(180deg, rgba(0, 194, 255, 0.5) 15%, rgba(28, 28, 31, .3) 65%); */
         background: linear-gradient(180deg, rgba(0, 194, 255, 0.3) 10%,rgba(255, 50, 50, 0.3) 50%, rgba(67, 66, 77, 0.1) 65% );
         font-size: 150px;
         -webkit-text-fill-color: transparent;
@@ -709,7 +712,9 @@
         text-align: center;
         line-height: .8;
         position: relative;
-        font-family: "FuturaBT-Bold";
+        /* font-family: "FuturaBT-Bold"; */
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 900;
     }
 
     .ctn-content {
@@ -2115,15 +2120,15 @@
                     transparent 30%);
         }  */
 
-        .header-section {
+        /* .header-section nav{
             padding-top: 15px;
-        }
+        } */
 
         .header {
             padding-left: 15px;
             padding-right: 15px;
+            padding-top: 15px;
             padding-bottom: 0;
-            padding-top: 0;
             box-shadow: none;
         }
 
@@ -2180,12 +2185,6 @@
 
         .presentation-img img {
             width: auto;
-        }
-
-        .presentation-section .section-title {
-            font-size: 65px;
-            margin-top: -4.5%;
-            padding-top: 0px;
         }
 
         /*  */
@@ -2529,11 +2528,6 @@
             left: 23%;
         }
 
-        .presentation-section .section-title {
-            font-size: 84px;
-            margin-top: -5.5%;
-        }
-
         /*  */
         .news {
             width: 380px;
@@ -2631,11 +2625,6 @@
         /* presentation */
         .presentation-description {
             left: 26%;
-        }
-
-        .presentation-section .section-title {
-            margin-top: -6%;
-            font-size: 95px;
         }
 
         /*  */
