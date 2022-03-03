@@ -510,23 +510,13 @@
         --tw-border-opacity: .3;
         backdrop-filter: none;
         gap: 7px;
-        top: 26%;
+        top: 29%;
         background: rgb(0, 0, 0, 0.3);
     }
 
     .presentation-description-img {
         width: 40px;
         height: 42px;
-    }
-
-    .presentation-img img::before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        background-image: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
-        right: -1px;
-        top: -1px;
-        height: 100%;
     }
 
     .presentation-content h2 {
@@ -586,23 +576,25 @@
 
     .social-icon {
         position: absolute;
-        right: 6px;
+        right: 3px;
         bottom: 0;
         top: 60px;
-        height: 125px;
-        border-radius: 999px;
     }
 
     .social-icon li a {
-        width: 37px;
+        width: 40px;
         height: 40px;
-        border-radius: 100%;
         color: #fff;
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        text-align: center;   
+        text-align: center;  
+        opacity: .7; 
+    }
+
+    .social-icon li a:hover{
+        opacity: 1;
     }
 
     .hidden {
@@ -2063,7 +2055,7 @@
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
                     transparent 30%);
-            padding-top: 0px;
+            padding-top: 50px;
         }
 
         .portfolio-information-section {
@@ -2563,7 +2555,7 @@
         }
 
         .social-icon {
-            left: 60px;
+            left: 50px;
             top: 250px;
         }
 
