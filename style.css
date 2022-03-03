@@ -619,7 +619,7 @@
         text-transform: uppercase;
         line-height: 1;
         font-family: "FuturaBT-Bold";
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        /* font-family: Helvetica; */
         font-weight: 900;
     }
 
@@ -657,7 +657,7 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
         font-family: "FuturaBT-Bold";
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        /* font-family: Helvetica; */
         font-weight: 900;
 
     }
@@ -718,14 +718,14 @@
 
     .bg-number {
         background: linear-gradient(180deg, rgba(0, 194, 255, 0.3) 10%,rgba(255, 50, 50, 0.3) 50%, rgba(67, 66, 77, 0.1) 65% );
-        font-size: 140px;
+        font-size: 150px;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         text-align: center;
         line-height: .8;
         position: relative;
         font-family: "FuturaBT-Bold";
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        /* font-family: Helvetica; */
         font-weight: 900;
     }
 
