@@ -447,7 +447,7 @@
         padding-bottom: 7px;
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 1023px) {
         .nav{
             position: absolute;
             flex-direction: column;
@@ -508,15 +508,25 @@
         left: auto;
         border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
         --tw-border-opacity: .3;
-        backdrop-filter: blur(60px);
+        backdrop-filter: none;
         gap: 7px;
         top: 26%;
-        background: rgb(0, 0, 0, 0.6);
+        background: rgb(0, 0, 0, 0.3);
     }
 
     .presentation-description-img {
         width: 40px;
         height: 42px;
+    }
+
+    .presentation-img img::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        background-image: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
+        right: -1px;
+        top: -1px;
+        height: 100%;
     }
 
     .presentation-content h2 {
@@ -535,7 +545,7 @@
         height: 80px;
         gap: 8px;
         border-bottom: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .3;
+        --tw-border-opacity: .1;
     }
 
     .link-btn {
@@ -706,13 +716,12 @@
 
     .bg-number {
         background: linear-gradient(180deg, rgba(0, 194, 255, 0.3) 10%,rgba(255, 50, 50, 0.3) 50%, rgba(67, 66, 77, 0.1) 65% );
-        font-size: 150px;
+        font-size: 140px;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         text-align: center;
         line-height: .8;
         position: relative;
-        /* font-family: "FuturaBT-Bold"; */
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-weight: 900;
     }
@@ -1969,6 +1978,10 @@
             display: block;
         }
 
+        .presentation-img img {
+            width: 320px;
+        }
+
     }
 
     @media (min-width: 768px) {
@@ -2020,10 +2033,7 @@
             margin-left: -3px;
             -webkit-text-stroke: 6px transparent;
         }
-
-      
-
-
+    
     }
 
     @media (min-width: 1024px) {
@@ -2171,6 +2181,7 @@
             width: 230px;
             height: 90px;
             background: none;
+            backdrop-filter: blur(30px);
             left: 18%;
         }
 
