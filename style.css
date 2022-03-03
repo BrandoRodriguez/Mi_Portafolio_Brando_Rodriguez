@@ -728,7 +728,7 @@
         margin: auto;
     }
 
-    .ctn-content h1 {
+    .ctn-content h2 {
         font-size: 30px;
         text-align: center;
         font-weight: 700;
@@ -2273,7 +2273,7 @@
             top: -150px;
         }
 
-        .ctn-content h1 {
+        .ctn-content h2 {
             font-size: 60px;
         }
 
