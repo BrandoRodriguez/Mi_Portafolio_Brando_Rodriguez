@@ -2,11 +2,10 @@
     ==CSS-Global==  
     =======================================--> */
     body {
-        background: rgb(21, 21, 21);
         font-family: "GT-Walsheim";
-        position: relative;
         color: rgba(255, 255, 255, .8);;
         letter-spacing: .02em;
+        background-color: rgb(21, 21, 21);
     }
 
     .Noise {
@@ -144,15 +143,41 @@
         color: rgba(255, 255, 255, 0.9);
     }
 
+    .text-s {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .text-sm {
+        font-size: 13px;
+        letter-spacing: .02em;
+        font-weight: 400;
+    }
+
+    .text-md {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .text-lg{
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .text-xl {
+        font-size: 22px;
+        letter-spacing: .02em;
+    }
+
     .text-xx {
         font-size: 24px;
         letter-spacing: .0em;
         line-height: 30px;
     }
 
-    .text-xl {
-        font-size: 22px;
-        letter-spacing: .02em;
+    .text-xxx{
+        font-size: 24px;
+        letter-spacing: .0em;
     }
 
     @media (min-width: 1024px) {
@@ -164,22 +189,22 @@
         .text-xl {
             font-size: 35px;
         }
+
+        .text-xxx{
+            font-size: 40px;
+        }
     }
 
-    .text-lg {
-        font-size: 15px;
-        font-weight: 400;
+    @media (min-width: 1280px) {
+        .text-xxx{
+            font-size: 50px;
+        }
     }
 
-    .text-md {
-        font-size: 13px;
-        letter-spacing: .02em;
-        font-weight: 400;
-    }
-
-    .text-sm {
-        font-size: 10px;
-        font-weight: 500;
+    @media (min-width: 1280px) {
+        .text-xxx{
+            font-size: 60px;
+        }
     }
 
     .mx-auto {
@@ -207,6 +232,16 @@
     @keyframes scroll {
                 0% {
                     opacity: 0;
+                }
+
+            }
+            @keyframes scroll1 {
+                from {
+                    width: 0;
+                }
+            
+                to {
+                    width: 60%;
                 }
 
             } 
@@ -286,13 +321,57 @@
         transform:translateY(50%) rotate(-45deg);
     }
 
+    .bg-title {
+        position: absolute;
+        top: 50%;
+    }
+    .portfolio-section-right .bg-title{
+        top: 65%;
+        z-index: 1;
+    }
+
+    .title {
+        line-height: .5;
+        white-space: nowrap;
+        letter-spacing: -.02em;
+        font-size: 230px;
+        font-weight: 700;
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+        color: rgba(136, 136, 136, 0.04);
+    }
+
+    @media(max-width: 768px){
+        .bg-title{
+            transform: rotate(-90deg);
+            transform-origin: left bottom;
+            left: calc(100% - 12px);
+            bottom: 15px;
+            top: auto;
+        }
+        .portfolio-section-right .bg-title{
+            top: auto;
+        }
+    }
+    
+
+    @media(max-width: 1024px){
+        .title {
+            font-size: 150px;
+        }
+    }
+
+    @media(max-width: 768px){
+        .title {
+            font-size: 100px;
+        }
+    }
+   
+
 /* <!-- ======================================= 
 ==End CSS Clase General==  
 =======================================--> */
 
     .container {
-        padding-left: 12px;
-        padding-right: 12px;
         width: 100%;
     }
 
@@ -491,12 +570,11 @@
         background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
         box-sizing: border-box;
         border-radius: 100%;
-        z-index: -2;
     }
 
     .presentation-img img {
         position: absolute;
-        top: 0%;
+        bottom: 0;
         width: 280px;
     }
 
@@ -616,6 +694,10 @@
     }
 
     /*  */
+    .portfolio-section{
+        padding-top: 25px;
+    }
+
     .single-portfolio {
         display: block;
         flex-flow: row wrap;
@@ -632,7 +714,7 @@
     .img-area::before{  
         content: "";
         position: absolute;
-        width: 50%;
+        width: 20%;
         background-image: linear-gradient(to right, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
         right: -1px;
         top: -1px;
@@ -641,7 +723,7 @@
 
     .count {
         position: absolute;
-        right: -15px;
+        right: 0px;
         font-size: 60px;
         top: -20px;
         line-height: 0.9;
@@ -660,6 +742,7 @@
     }
     .portfolio-content p{
         text-align: justify;
+        padding-bottom: 15px;
     }
 
     p {
@@ -695,9 +778,14 @@
     }
 
     .single-portfolio:nth-child(even) .img-area .count {
-        left: -70px;
+        left: 0px;
         right: inherit;
     }
+    .single-portfolio:nth-child(even) .img-area::before{  
+        background-image: linear-gradient(to left, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
+        left: -1px;
+    }
+
 
     /*  */
 
@@ -786,6 +874,7 @@
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
+        position: relative;
     }
 
     /* .portfolio-section-right .portfolio-img:before {
@@ -1219,7 +1308,7 @@
         filter: grayscale(0);
     }
 
-    .blog-section .single-blog.title {
+    .blog-section .single-blog.primary {
         background: transparent;
         display: block;
     }
@@ -1319,18 +1408,6 @@
         padding-bottom: 62%;
         text-align: left;
         width: 100%;
-    }
-
-    .card__hero .responsive-media::before {
-        content: '';
-        border-radius: 8px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        background: linear-gradient(180deg, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, .4) 75%);
     }
 
     .card__hero-content {
@@ -1963,10 +2040,17 @@
             font-size: 20px;
         }
     }
-
+    
+    @media (max-width: 1024px){
+        .container{
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+    
     @media (min-width: 640px) {
         .container {
-            width: 100%;
+            max-width: 640px;
         }
 
         .bk-bash {
@@ -2033,7 +2117,7 @@
 
     @media (min-width: 1024px) {
         .container {
-            max-width: 1025px;
+            max-width: 1024px;
         }
 
         /* header nav*/
@@ -2055,7 +2139,6 @@
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
                     transparent 30%);
-            padding-top: 50px;
         }
 
         .portfolio-information-section {
@@ -2088,7 +2171,7 @@
                     transparent 30%);
         }
 
-        .testimonial-section {
+        /* .testimonial-section {
             background:
                 radial-gradient(farthest-corner at top right,
                     rgb(255, 50, 50, 0.3),
@@ -2106,7 +2189,7 @@
                 radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.3),
                     transparent 30%);
-        }
+        } */
 
         /* .resources-section {
             background:
@@ -2166,6 +2249,12 @@
             padding-top: 50px;
         }
 
+        .presentation-section .section-title  {
+            bottom: -9px;
+            left: 8px;
+            position: absolute;
+        }
+
         .presentation-walper::before {
             height: 400px;
             width: 400px;
@@ -2191,6 +2280,7 @@
 
         .presentation-img img {
             width: auto;
+            filter: drop-shadow(2px 4px 6px black);
         }
 
         /*  */
@@ -2206,7 +2296,7 @@
 
         .news-thwo {
             top: 80px;
-            right: 90px;
+            right: 120px;
         }
 
         .news-there {
@@ -2240,7 +2330,6 @@
         .portfolio-content {
             width: 40%;
             padding-left: 40px;
-            margin-top: 120px;
         }
 
         .img-area {
@@ -2260,6 +2349,10 @@
         .count {
             right: -74px;
             font-size: 85px;
+        }
+        .single-portfolio:nth-child(even) .img-area .count {
+            left: -70px;
+            right: inherit;
         }
 
         /*  */
@@ -2303,15 +2396,16 @@
 
         .portfolio-section-right .portfolio-img {
             width: 60%;
-            background: #1e1f23;
-            position: relative;
+            /* background: transparent; */
             padding-left: 0px;
             padding-right: 0px;
+            
+            
         }
 
         .portfolio-section-left .portfolio-img {
             width: 60%;
-            background: #1e1f23;
+            background: transparent;
             position: relative;
             padding-left: 0px;
             padding-right: 0px;
@@ -2530,6 +2624,12 @@
         }
 
         /* presentation */
+
+        .presentation-section .section-title {
+            left: 42px;
+            bottom: -10px;
+        }
+
         .presentation-description {
             left: 23%;
         }
@@ -2564,6 +2664,11 @@
         }
 
         /*  */
+        
+        .portfolio-content {
+            margin-top: 120px;
+        }
+
         .portfolio-content-wrapper {
             padding-left: 60px;
         }
@@ -2654,6 +2759,7 @@
         }
 
         /*  */
+        
         .portfolio-content-wrapper {
             padding-left: 0px;
         }
@@ -2699,8 +2805,9 @@
         --tw-border-opacity: .1;
         width: 1px;
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0px;
+        z-index: 1;
 
 
     }
@@ -2942,22 +3049,18 @@
 
 
 
-    /* .skill-section:before {
---bg-gradient: linear-gradient(326.05deg,rgb(241 42 42/90%) 25.95%,#bf1ceb 44.46%,rgb(6, 173, 87) 65.35%,rgb(6 173 87/60%) 76.7%);
-background-image: linear-gradient(130deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
-background-image: var(--bg-gradient);
-background-repeat: no-repeat;
-background-size: 100% 100%;
-border-radius: 100%;
-content: "";
-filter: blur(100px);
-left: 200px;
-margin-left: auto;
-margin-right: auto;
-position: absolute;
-right: 0;
-z-index: -1;
-height: 80vh;
-opacity: .2;
-width: 60vw;
+    /* .header-section:before {
+        --bg-gradient: linear-gradient(326.05deg,rgb(241 42 42/90%) 25.95%,#bf1ceb 44.46%,rgb(6, 173, 87) 65.35%,rgb(6 173 87/60%) 76.7%);
+        background-image: linear-gradient(130deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
+        background-image: var(--bg-gradient);
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+        top: 0%;
+        background: radial-gradient(farthest-side at top left, rgba(0, 194, 255, 0.3), transparent 30%);
 } */
+

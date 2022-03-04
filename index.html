@@ -21,13 +21,34 @@
     <meta name="twitter:data" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
     <meta name="twitter:label" content="brandorodriguez.com">
     <meta name="twitter:domain" content="brandorodriguez.com">
-    <link rel="icon" href="./assets/favico.png" sizes="32x32">
+    <link rel="icon" href="./assets/favicon_brandorodriguez.png" sizes="32x32">
     <link rel="stylesheet" href="./style.css">
-    <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);font-weight: 400;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);font-weight: 500;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);font-weight: 700;}
+        @font-face {font-display: swap;font-family: "FuturaBT-Bold";src: url(./fonts/FuturaBT-Bold.woff2); font-weight: 900;}
+
+        #nav-checkbo:checked~.header-section {
+            background-color: #1F1F1F;
+        }
+
+        .header-section{
+            background-color: #151515;
+        } 
+        .check{
+            display: none;
+        }
+        
+    </style>
 </head>
 
-<body>
+<body class="body">
     
+<input type="checkbox" name="" id="nav-checkbo" class="check" />
+<label for="nav-checkbo" style="position: fixed; bottom: 50px; right: 50px;">
+    <div style="width: 50px; height: 50px; border-radius: 100%; background-color: #1F1F1F; cursor: pointer;"></div>
+</label>
 
 <!-- ======================================= 
         ==Start Hero section==  
@@ -46,33 +67,38 @@
 <!-- ======================================= 
     ==Start Hero section==  
 =======================================-->
-    <section class="header-section">
+    <section class="header-section relative overflow">
+        <div class="bg-title animation">
+            <span class="title">
+                JQ Official Store Website Design.
+            </span>
+        </div>
         <nav class="relative">
             <div class="header">
                 <a class="logo" href="./index.html" style="width: 90px;">
-                    <img src="./assets/logo.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    <img src="./assets/logo_brandorodriguez.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
                 <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
                 <div class="nav-hidden">
                     <ul class="nav flex items-baseline space ">
-                        <li><a class="text-white text-md" href="./about.html">About</a></li>
+                        <li><a class="text-white text-sm" href="./about.html">About</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./slider-portafolio.html">Skills</a></li>
+                        <li><a class="text-white text-sm" href="./slider-portafolio.html">Skills</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./projects.html">Projects</a></li>
+                        <li><a class="text-white text-sm" href="./projects.html">Projects</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./resources.html">Resources</a></li>
+                        <li><a class="text-white text-sm" href="./resources.html">Resources</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./contact.html">Contact</a>
+                        <li><a class="text-white text-sm" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
 
-                <a class="btn btn-header text-white text-md " href="">Resume</a>
+                <a class="btn btn-header text-white text-sm " href="">Resume</a>
 
                 <label for="nav-checkbox" class="nav-toggle btn-hidden">
                     <div class="menu humbarger ">
@@ -94,18 +120,18 @@
             <div class="relative container mx-auto">
                 <div class="presentation-walper flex items-center justify-content">
                 </div>
-                <div class="presentation-img flex items-center justify-content">
-                    <img class="flex mx-auto" src="./assets/yo.webp" alt="Img_Perfil - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                <div class="presentation-img flex items-center justify-content relative">
+                    <img class="flex mx-auto" src="./assets/brandorodriguez.webp" alt="Img_Perfil - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </div>
                 <div class="presentation-description flex items-center justify-content">
                     <div class="presentation-description-img">
-                        <img src="./assets/greeting.webp" alt="Greeting - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                        <img src="./assets/greeting_brandorodriguez.webp" alt="Greeting - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                     </div>
                     <div class="presentation-content">
                         <h2>
                             Hi! I’m
                         </h2>
-                        <img src="./assets/name-perfil.svg" alt="Name_Perfil - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                        <img src="./assets/@brandorodriguez.svg" alt="Name_Perfil - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         <h2>
                             Full Stack Developer
                         </h2>
@@ -114,84 +140,85 @@
                 <div class="news-section ">
                     <div class="news news-one flex items-center text-white">
                         <div>
-                            <a href="./project-ecomerce.html" class="text-white text-lg">
+                            <a href="./project-ecomerce.html" class="text-white text-md">
                                 <span class="link-btn">
-                                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 </span>
                             </a>
                         </div>
                         <div>
-                            <span class="badge text-sm">
-                                <span class="text-sm text-white">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
                                     new project
                                 </span>
                                 Modern Shop
                             </span>
-                            <h3 class="text-md">
-                                ECommerce | Layout, Design, & Styling
+                            <h3 class="text-sm">
+                                ECommerce | Layout, Design, & Styling.
                             </h3>
                         </div>
                     </div>
                     <div class="news news-thwo flex items-center text-white">
                         <div>
-                            <a href="./header/index.html" class="text-white text-lg">
+                            <a href="./project-ecomerce.html" class="text-white text-md">
                                 <span class="link-btn">
-                                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 </span>
                             </a>
                         </div>
                         <div>
-                            <span class="badge text-sm">
-                                <span class="text-sm text-white">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
                                     new project
                                 </span>
                                 Full stack website
                             </span>
-                            <h3 class="text-md">
-                                Website Brezgo
+                            <h3 class="text-sm">
+                                Frontend, Backend and Database.
                             </h3>
                         </div>
                     </div>
                     <div class="news news-there flex items-center text-white">
                         <div>
-                            <a href="./header/index.html" class="text-white text-lg">
+                            <a href="./project-ecomerce.html" class="text-white text-md">
                                 <span class="link-btn">
-                                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 </span>
                             </a>
                         </div>
                         <div>
-                            <span class="badge text-sm">
-                                <span class="text-sm text-white">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
                                     Henry
                                 </span>
                                 My path to full stack developer
                             </span>
-                            <h3 class="text-md">
-                                Frontend, Backend and Database Websites
+                            <h3 class="text-sm">
+                                Frontend, Backend and Database.
                             </h3>
                         </div>
                     </div>
-                </div>
-            
-            </div>
+                </div>    
+                <h2 class="section-title">projects</h2>
+        
+            </div>        
         </section>
 
 
         <ul class="social-icon">
             <li class="twitter">
-                <a href="/" title="Twitter">
-                    <img src="./assets/img-icons/tw.svg" alt="">
+                <a href="brandorodriguez.com" title="Twitter">
+                    <img src="./assets/img-icons/tw_brandorodriguez.svg" alt="">
                 </a>
             </li>
             <li class="linkedin">
-                <a href="/" title="Linkedin">
-                    <img src="./assets/img-icons/ln.svg" alt="">
+                <a href="brandorodriguez.com" title="Linkedin">
+                    <img src="./assets/img-icons/lk_brandorodriguez.svg" alt="">
                 </a>
             </li>
             <li class="instagram">
-                <a href="/" title="Instagram">
-                    <img src="./assets/img-icons/ins.svg" alt="">
+                <a href="brandorodriguez.com" title="Instagram">
+                    <img src="./assets/img-icons/in_brandorodriguez.svg" alt="">
                 </a>
             </li>
         </ul>
@@ -201,21 +228,20 @@
     ==End Hero section==  
 =======================================-->
 
+
 <!-- ======================================= 
     ==Start Portfolio section==  
 =======================================-->
     <section class="portfolio-section">
         <div class="container mx-auto w-full">
-            <h2 class="section-title ">projects.</h2>
-            <span></span>
             <div class="single-portfolio">
                 <div class="img-area">
                     <span class="count ">01</span>
-                    <img src="" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
+                    <img src="./assets/img-proyects/brandorodriguez_portafolio.png" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
                 </div>
                 <div class="portfolio-content ">
-                    <span class="badge text-sm">
-                        <span class="text-sm text-white">
+                    <span class="badge text-s">
+                        <span class="text-s text-white">
                             new project
                         </span>
                         Modern Shop
@@ -226,10 +252,10 @@
                             <img src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
                     </div>
-                    <p class="text-lg">Highly inspiring eCommerce interface design that will take care of all your online business needs. Start selling anything and everything today.</p>
-                    <a href="/" class="text-white text-lg">See it in action.
+                    <p class="text-md">Highly inspiring eCommerce interface design that will take care of all your online business needs. Start selling anything and everything today.</p>
+                    <a href="./project-ecomerce.html" class="text-white text-md">See it in action.
                         <span class="link-btn">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </span>
                     </a>
                 </div>
@@ -237,11 +263,11 @@
             <div class="single-portfolio">
                 <div class="img-area">
                     <span class="count ">02</span>
-                    <img src="" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
+                    <img src="./assets/img-proyects/brandorodriguez_portafolio.png" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
                 </div>
                 <div class="portfolio-content ">
-                    <span class="badge text-sm">
-                        <span class="text-sm text-white">
+                    <span class="badge text-s">
+                        <span class="text-s text-white">
                             new
                         </span>
                         Start selling online.
@@ -252,11 +278,11 @@
                             <img src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
                     </div>
-                    <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
+                    <p class="text-md">WooCommerce. Hub provides all the tools you need to start selling online. Let
                         your customers to experience WooCommerce at its absolute-best.</p>
-                    <a href="/" class="text-white text-lg">Discover More.
+                    <a href="/project-ecomerce.html" class="text-white text-md">Discover More.
                         <span class="link-btn">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </span>
                     </a>
                 </div>
@@ -264,11 +290,11 @@
             <div class="single-portfolio">
                 <div class="img-area">
                     <span class="count ">03</span>
-                    <img src="" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
+                    <img src="./assets/img-proyects/brandorodriguez_portafolio.png" alt="portfolio_img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com ">
                 </div>
                 <div class="portfolio-content ">
-                    <span class="badge text-sm">
-                        <span class="text-sm text-white">
+                    <span class="badge text-s">
+                        <span class="text-s text-white">
                             new
                         </span>
                         Start selling online.
@@ -279,20 +305,20 @@
                             <img src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
                     </div>
-                    <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
+                    <p class="text-md">WooCommerce. Hub provides all the tools you need to start selling online. Let
                         your customers to experience WooCommerce at its absolute-best.</p>
-                    <a href="/" class="text-white text-lg">Discover More.
+                    <a href="/project-ecomerce.html" class="text-white text-md">Discover More.
                         <span class="link-btn">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </span>
                     </a>
                 </div>
             </div>
            
             <div class="flex justify-content">
-                <a class="btn text-white text-lg" href="/">
+                <a class="btn text-white text-md" href="/">
                     See all projects
-                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
             </div>
         </div>
@@ -306,13 +332,13 @@
 =======================================-->
     <section class="portfolio-information-section">
         <div class="container mx-auto">
-            <h2 class="section-title text-center animate-me animated">featured new projects.</h2>
+            <h2 class="section-title text-center">featured new projects.</h2>
             <h1 class="bg-number">
                 WEB
             </h1>
             <div class="ctn-content">
-                <span class="badge text-sm justify-content">
-                    <span class="text-sm text-white">
+                <span class="badge text-s justify-content">
+                    <span class="text-s text-white">
                         new
                     </span>
                     Start selling online.
@@ -339,55 +365,58 @@
 <!-- ======================================= 
     ==Start Portfolio section==  
 =======================================-->
-    <section class="portfolio-section-right">
-        <!-- <img src="./assets/img-bg/portfolio-shape.png" alt="shape" class="shape"> -->
+    <section class="portfolio-section-right">     
+        <!-- <img src="./assets/img-bg/portfolio-shape.png" alt="shape" class="shape"> -->        
         <div class="portfolio-section-right-container mx-auto">
-            <div class="portfolio-wrapper">
-                <div class="slide-containe active">
-                    <div class="portfolio-content-wrapper">
-                        <span class="badge text-sm">
-                            <span class="text-sm text-white">
-                                new
+                <div class="portfolio-wrapper">
+                    <div class="slide-containe active">
+                        <div class="bg-title animation">
+                            <span class="title">JQ
+                                Official Store.
                             </span>
-                            Start selling online.
-                        </span>
-                        <h2 class="text-white text-xl">Experience the top notch performance.</h2>
-                        <div class="flex justify-center items-center">
-                            <div class="icon-tec">
-                                <img src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                        </div>  
+                        <div class="portfolio-content-wrapper">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
+                                    new
+                                </span>
+                                Start selling online.
+                            </span>
+                            <h2 class="text-white text-xxx">JQ Official Store Website Design.</h2>
+                            <div class="flex justify-center items-center">
+                                <div class="icon-tec">
+                                    <img src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                </div>
                             </div>
+                            <p class="text-lg" style="padding-bottom: 15px;">WooCommerce. Hub provides all the tools you need to start selling online. Let
+                                your customers to experience WooCommerce at its absolute-best.</p>
+                            <a href="./header/index.html" class="text-white text-md">See it in action.
+                                <span class="link-btn">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                </span>
+                            </a>
                         </div>
-                        <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
-                            your customers to experience WooCommerce at its absolute-best.</p>
-                        <a href="./header/index.html" class="text-white text-lg">Discover More.
-                            <span class="link-btn">
-                                <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
-                            </span>
-                        </a>
-                    </div>
-                    <div class="portfolio-img">
-                        <div class="img-areaa">
-                            <img src="" alt="Portfolio_Img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                        <div class="portfolio-img">
+                                <img loading="lazy" src="./assets/img-proyects/@brandorodriguez_portafolio.png" alt="Portfolio_Img - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
+
                     </div>
+                    
 
                 </div>
-                
-
-            </div>
-            <div class="ctn-btn container mx-auto flex justify-content">
-                <span id="preve" onclick="preve()" class="slick-prev slick-arrow">
-                    <img style="transform: rotate(-180deg);" src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
-                </span>
-                <span id="nextt" onclick="nextt()" class="slick-next slick-arrow">
-                    <img src="./assets/flecha.png" alt="arrow">
-                </span>
-            </div>
+                <div class="ctn-btn container mx-auto flex justify-content">
+                    <span id="preve" onclick="preve()" class="slick-prev slick-arrow">
+                        <img style="transform: rotate(-180deg);" src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    </span>
+                    <span id="nextt" onclick="nextt()" class="slick-next slick-arrow">
+                        <img src="./assets/flecha_brandorodriguez.png" alt="arrow">
+                    </span>
+                </div>
         </div>
         <div class="portfolio-section-right-ctn-btn flex justify-content container mx-auto">
-            <a class="btn text-white text-lg" href="/">
+            <a class="btn text-white text-md" href="/">
                 See all projects
-                <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
             </a>
         </div>
     </section>
@@ -403,11 +432,11 @@
             <h2 class="section-title">My Skills.</h2>
             <div class="single-portfolio" style="padding-top: 25px;">
                 <div class="img-area">
-                    <img src="" alt="portfolio-img" class="img-p">
+                    <img src="./assets/img-proyects/henry_brandorodriguez.webp" alt="portfolio-img" class="img-p">
                 </div>
                 <div class="portfolio-content">
-                    <span class="badge text-sm">
-                        <span class="text-sm text-white">
+                    <span class="badge text-s">
+                        <span class="text-s text-white">
                             new
                         </span>
                         Start selling online.
@@ -418,11 +447,11 @@
                             <img class="img-icon-tec" src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
                     </div>
-                    <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
+                    <p class="text-md">WooCommerce. Hub provides all the tools you need to start selling online. Let
                         your customers to experience WooCommerce at its absolute-best.</p>
-                    <a href="./header/index.html" class="text-white text-lg">Discover More.
+                    <a href="./header/index.html" class="text-white text-md">Discover More.
                         <span class="link-btn">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </span>
                     </a>
                 </div>
@@ -434,20 +463,20 @@
                     <span class="rectengle"></span>
                     <div class="flex items-center text-white" style="gap: 8px;">
                         <div>
-                            <a href="" class="text-white text-lg">
+                            <a href="" class="text-white text-md">
                                 <span class="link-btn">
-                                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 </span>
                             </a>
                         </div>
                         <div>
-                            <span class="badge text-sm">
-                                <span class="text-sm text-white">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
                                     new
                                 </span>
                                 Start selling online.
                             </span>
-                            <h3 class="text-md">
+                            <h3 class="text-sm">
                                 ECommerce | Layout, Design, & Styling
                             </h3>
                         </div>
@@ -458,20 +487,20 @@
                     <span class="rectengle"></span>
                     <div class="flex items-center text-white" style="gap: 8px;">
                         <div>
-                            <a href="" class="text-white text-lg">
+                            <a href="" class="text-white text-md">
                                 <span class="link-btn">
-                                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 </span>
                             </a>
                         </div>
                         <div>
-                            <span class="badge text-sm">
-                                <span class="text-sm text-white">
+                            <span class="badge text-s">
+                                <span class="text-s text-white">
                                     new
                                 </span>
                                 Start selling online.
                             </span>
-                            <h3 class="text-md">
+                            <h3 class="text-sm">
                                 ECommerce | Layout, Design, & Styling
                             </h3>
                         </div>
@@ -479,9 +508,9 @@
                 </div>
             </div>
             <div class="portfolio-section-right-ctn-btn flex justify-content">
-                <a class="btn text-white font-semi-bold text-lg" href="">
+                <a class="btn text-white font-semi-bold text-md" href="">
                     See all my skills
-                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
             </div>
         </div>
@@ -513,10 +542,10 @@
             </div>
 
             <div id="prev" onclick="prev()" class="link-btn">
-                <img style="transform: rotate(-180deg);" src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                <img style="transform: rotate(-180deg);" src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
             </div>
             <div id="next" onclick="next()" class="link-btn">
-                <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
             </div>
         </div>
         </div>
@@ -533,9 +562,9 @@
         <div class="container mx-auto">
             <h2 class="section-title">READ ARTICLES</h2>
             <div class="blog-wrapper">
-                <div class="single-blog title">
-                    <span class="badge text-sm">
-                        <span class="text-sm text-white">
+                <div class="single-blog primary">
+                    <span class="badge text-s">
+                        <span class="text-s text-white">
                             new
                         </span>
                         Start selling online.
@@ -546,7 +575,7 @@
                             <img class="img-icon-tec" src="./assets/icon-tec/figma.png" alt="Logo_Tec - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </div>
                     </div>
-                    <p class="text-lg">WooCommerce. Hub provides all the tools you need to start selling online. Let
+                    <p class="text-md">WooCommerce. Hub provides all the tools you need to start selling online. Let
                         your customers to experience WooCommerce at its absolute-best.</p>
 
                 </div>
@@ -561,7 +590,7 @@
                     </div>
                     <div class="like-comment">
                         <a href="#" class="read-more ">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </a>
                         <span class="like">
                             <img class="img-space" src="./assets/img-icons/crz.svg" alt="Crz - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
@@ -584,7 +613,7 @@
                     </div>
                     <div class="like-comment">
                         <a href="#" class="read-more ">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </a>
                         <span class="like">
                             <img class="img-space" src="./assets/img-icons/crz.svg" alt="Crz - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
@@ -607,7 +636,7 @@
                     </div>
                     <div class="like-comment">
                         <a href="#" class="read-more ">
-                            <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                            <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                         </a>
                         <span class="like">
                             <img class="img-space" src="./assets/img-icons/crz.svg" alt="Crz - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
@@ -622,9 +651,9 @@
 
             </div>
             <div class="portfolio-section-right-ctn-btn flex justify-content">
-                <a class="btn text-white font-semi-bold text-lg" href="">
+                <a class="btn text-white font-semi-bold text-md" href="">
                     See all my articles
-                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
             </div>
         </div>
@@ -647,8 +676,8 @@
                                 <img src="" alt="Resources_Card_Primary - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                 <div class="card__hero-content ">
                                     <div>
-                                        <span class="badge text-sm">
-                                            <span class="text-sm text-white">
+                                        <span class="badge text-s">
+                                            <span class="text-s text-white">
                                                 new
                                             </span>
                                             Start selling online.
@@ -669,13 +698,13 @@
                             <a class="card__article-card" href="">
                                 <div class="card__article-title-wrapper">
 
-                                    <span class="badge text-sm">
-                                        <span class="text-sm text-white">
+                                    <span class="badge text-s">
+                                        <span class="text-s text-white">
                                             new
                                         </span>
                                         Start selling online.
                                     </span>
-                                    <h3 class="text-md text-white">
+                                    <h3 class="text-sm text-white">
                                         Experience the top notch performance.
                                     </h3>
 
@@ -691,9 +720,9 @@
                 </div>
             </div>
             <div class="portfolio-section-right-ctn-btn flex justify-content">
-                <a class="btn text-white font-semi-bold text-lg" href="">
+                <a class="btn text-white font-semi-bold text-md" href="">
                     See all my articles
-                    <img src="./assets/flecha.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
             </div>
         </div>
@@ -710,9 +739,9 @@
     <section class="footer-section">
         <div class="p-footer">
             <a class="logo" href="./index.html" style="width: 90px;">
-                <img src="./assets/logo.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+                <img src="./assets/logo_brandorodriguez.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
             </a>
-            <p class=" text-md text-white" style="text-align: end;">
+            <p class=" text-sm text-white" style="text-align: end;">
                 <span>&copy; 2022 Brando Rodriguez.</span>
                 <span class="text-gray">All rights reserved.</span>
             </p>
