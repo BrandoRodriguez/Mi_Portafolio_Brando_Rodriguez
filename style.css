@@ -365,6 +365,59 @@
             font-size: 100px;
         }
     }
+
+    .information-check{
+        display: block;
+    }
+
+    .ctn-check{
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .check{
+        height: 30px; 
+        width: 30px; 
+        border-radius: 100%; 
+        background-color: rgb(31, 31, 31,.5);
+    }
+
+    .section-bottom-shape{
+        position: relative;
+        left: 0;
+        bottom: 0px;
+        width: 100%;  
+        height: 50px;      
+    }
+
+    .section-bottom-shape img{
+        height: 50px;
+        width: 100%;
+    }
+
+    .skill-img{
+        left: 0; 
+        right: 0;  
+        z-index: 1; 
+        top: 10%; 
+        position: relative;
+    }
+
+    @media(min-width: 1024px){
+        .section-bottom-shape{
+            display: block;
+            height: 100px;
+        }
+
+        .section-bottom-shape img{
+            height: 100px;
+        }
+
+        .skill-img{
+            top: -40%; 
+        }
+    }
+
    
 
 /* <!-- ======================================= 
@@ -500,16 +553,15 @@
         padding-bottom: 11px;
         padding-left: 20px;
         padding-right: 20px;
-        --border-opacity: 1;
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .5;
         border-radius: 9999px;
-        border-width: 1px;
-        border-style: solid;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
     }
 
     .btn:hover {
-        --tw-border-opacity: 1;
+        background: linear-gradient(310deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
         transition: all 0.5s ease;
     }
 
@@ -828,6 +880,7 @@
         padding-top: 25px;
         font-size: 15px;
         letter-spacing: .02em;
+        padding-bottom: 15px;
     }
 
     .ctn-content .color {
@@ -867,7 +920,6 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 15px;
-        padding-bottom: 75px;
     }
 
     .portfolio-section-right .portfolio-img {
@@ -893,6 +945,12 @@
 
     .portfolio-section-right-ctn-btn {
         padding-top: 70px;
+    }
+    .portfolio-section-right-button{
+        gap: 20px;
+        justify-content: center;
+        padding-top: 70px;
+        z-index: 1;
     }
     /*  */
 
@@ -926,14 +984,6 @@
 
     .slide-containe {
         display: none;
-    }
-
-    .portfolio-content-wrapper {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 75px;
     }
 
     .portfolio-section-left .portfolio-img {
@@ -981,7 +1031,6 @@
     /*  */
 
     .slick-arrow {
-        background: transparent;
         border: 1px solid #fff;
         width: 48px;
         height: 48px;
@@ -991,21 +1040,13 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        /* position: relative; */
-        bottom: 0;
-        left: -50px;
         opacity: 0.2;
-        padding: 0;
     }
 
     .slick-arrow:hover {
         background: #f43534;
         border-color: #f43534;
         opacity: 1;
-    }
-
-    .slick-next {
-        left: 50px;
     }
 
     .slick-prev img {
@@ -1015,12 +1056,6 @@
     }
 
     /* */
-
-    .skill-section {
-        padding-top: 120px;
-    }
-
-    /*  */
 
     .skill-wrapper {
         position: relative;
@@ -1047,7 +1082,7 @@
     .single-skill {
         width: 100%;
         max-width: calc(100% - 30px);
-        background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%);
+        /* background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
         padding: 15px 10px;
         border-radius: 5px;
         border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
@@ -1057,11 +1092,14 @@
         justify-content: center;
         display: flex;
         margin-left: 30px;
+        margin-bottom: 30px;
+        background-color: rgb(21, 21, 21);
     }
 
-    .single-skill.animated:nth-child(odd) {
-        transform: translate(0, 50px);
-        background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%);
+    .single-skill.animate:nth-child(odd) {
+        /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
+        background-color: rgb(21, 21, 21);
+        margin-bottom: 30px;
     }
 
     .single-skill span.circle {
@@ -2161,7 +2199,7 @@
                     transparent 30%);
         }
 
-        .skill-section {
+        /* .skill-section {
             background:
                 radial-gradient(farthest-corner at top left,
                     rgb(0, 194, 255, 0.2),
@@ -2169,7 +2207,7 @@
                 radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.3),
                     transparent 30%);
-        }
+        } */
 
         /* .testimonial-section {
             background:
@@ -2396,11 +2434,14 @@
 
         .portfolio-section-right .portfolio-img {
             width: 60%;
-            /* background: transparent; */
             padding-left: 0px;
-            padding-right: 0px;
-            
-            
+            padding-right: 0px;          
+        }
+
+        /*  */
+        .portfolio-section-right-button{
+            position: absolute;
+            bottom: 0;
         }
 
         .portfolio-section-left .portfolio-img {
@@ -2412,14 +2453,6 @@
         }
 
         /*  */
-        .slick-arrow {
-            /* position: absolute; */
-            left: 0px;
-        }
-
-        .slick-next {
-            left: 65px;
-        }
 
         .portfolio-section-left .slick-arrow {
             position: absolute;
@@ -2464,7 +2497,7 @@
             background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
         }
 
-        .single-skill.animated:nth-child(odd) {
+        .single-skill.animate:nth-child(odd) {
             transform: translate(0, 50px);
         }
 
@@ -2606,9 +2639,9 @@
             font-size: 70px;
         }
         
-
-    
-
+        .information-check{
+            display: flex;
+        }    
     }
 
     @media (min-width: 1280px) {
