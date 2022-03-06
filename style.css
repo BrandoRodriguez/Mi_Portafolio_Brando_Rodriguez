@@ -406,8 +406,6 @@
         left: 0; 
         right: 0;  
         z-index: 1; 
-        top: 10%; 
-        position: relative;
     }
 
     @media(min-width: 1024px){
@@ -421,7 +419,8 @@
         }
 
         .skill-img{
-            top: -40%; 
+            transform: translate(0%, -20%);
+            position: absolute;
         }
     }
 
@@ -1089,7 +1088,7 @@
     .single-skill {
         width: 100%;
         max-width: calc(100% - 30px);
-        /* background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
+        background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%);
         padding: 15px 10px;
         border-radius: 5px;
         position: relative;
@@ -1098,12 +1097,10 @@
         display: flex;
         margin-left: 30px;
         margin-bottom: 30px;
-        box-shadow: 0 10px 50px 0 rgb(0 0 0 / 10%);
-        background: #fff;
     }
 
     .single-skill.animate:nth-child(odd) {
-        /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%);
         margin-bottom: 30px;
     }
 
@@ -2155,6 +2152,43 @@
             margin-left: -3px;
             -webkit-text-stroke: 6px transparent;
         }
+
+         /*  */
+         .skill-wrapper {
+            display: flex;
+            max-width: 865px;
+        }
+
+        .vertical-line {
+            left: 50%;
+        }
+
+        .single-skill {
+            max-width: 340px;
+            width: 50%;
+            margin-left: 0px;
+        }
+
+        .single-skill span.circle {
+            top: 32px;
+            right: -39px;
+            left: inherit;
+        }
+
+        .single-skill span.rectengle {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
+            left: inherit;
+        }
+
+        .single-skill:nth-child(odd) span.rectengle {
+            right: inherit;
+            left: -33px;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
+        }
+
+        .single-skill.animate:nth-child(odd) {
+            transform: translate(0, 50px);
+        }
     
     }
 
@@ -2205,23 +2239,21 @@
         }
 
         .skill-section {
-            background:
+            /* background:
                 radial-gradient(farthest-corner at top left,
                     rgb(0, 194, 255, 0.2),
                     transparent 30%),
-                radial-gradient(farthest-corner at bottom right,
-                    rgba(255, 50, 50, 0.3),
-                    transparent 30%);
+                     radial-gradient(farthest-corner at bottom right,
+                    rgba(0, 194, 255, 0.2),
+                    transparent 40%); */
+            background: linear-gradient(180deg, rgba(0, 194, 255, 0.2) 10%,rgba(255, 50, 50, 0.2) 50%, rgba(21, 21, 21) 65% );;
         }
 
-        /* .testimonial-section {
+        .testimonial-section {
             background:
                 radial-gradient(farthest-corner at top right,
-                    rgb(255, 50, 50, 0.3),
-                    transparent 30%),
-                radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
-                    transparent 30%);
+                    transparent 40%);
         }
 
         .blog-section {
@@ -2232,7 +2264,7 @@
                 radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.3),
                     transparent 30%);
-        } */
+        } 
 
         /* .resources-section {
             background:
@@ -2470,40 +2502,8 @@
 
 
         /*  */
-        .skill-wrapper {
-            display: flex;
-            max-width: 865px;
-        }
-
-        .vertical-line {
-            left: 50%;
-        }
-
         .single-skill {
             max-width: 400px;
-            width: 50%;
-            margin-left: 0px;
-        }
-
-        .single-skill span.circle {
-            top: 32px;
-            right: -39px;
-            left: inherit;
-        }
-
-        .single-skill span.rectengle {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
-            left: inherit;
-        }
-
-        .single-skill:nth-child(odd) span.rectengle {
-            right: inherit;
-            left: -33px;
-            background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
-        }
-
-        .single-skill.animate:nth-child(odd) {
-            transform: translate(0, 50px);
         }
 
         /*  */
@@ -2763,6 +2763,8 @@
             bottom: 45%;
             z-index: 2;
         }
+
+
     }
 
     @media (min-width: 1400px) {
@@ -2834,6 +2836,10 @@
     @media(min-width:1700px){        
         .hero-image {           
             max-width: 633px;
+        }
+        
+        .skill-section {
+            padding-top: 20%;
         }
     }
 
