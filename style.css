@@ -140,7 +140,11 @@
     }
 
     .text-white {
-        color: rgba(255, 255, 255, 0.9);
+        color: #fff;
+    }
+
+    .text-black{
+        color:#000;
     }
 
     .text-s {
@@ -160,7 +164,7 @@
     }
     
     .text-lg{
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 400;
     }
 
@@ -192,6 +196,10 @@
 
         .text-xxx{
             font-size: 40px;
+        }
+
+        .text-lg{
+            font-size: 17px;
         }
     }
 
@@ -689,7 +697,7 @@
 
     .badge {
         letter-spacing: 1px;
-        color: #D1AC90;
+        color: #c77334;
         margin-bottom: 1em;
         align-items: center;
         display: flex;
@@ -1085,20 +1093,18 @@
         /* background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
         padding: 15px 10px;
         border-radius: 5px;
-        border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-        --tw-border-opacity: .2;
         position: relative;
         z-index: 1;
         justify-content: center;
         display: flex;
         margin-left: 30px;
         margin-bottom: 30px;
-        background-color: rgb(21, 21, 21);
+        box-shadow: 0 10px 50px 0 rgb(0 0 0 / 10%);
+        background: #fff;
     }
 
     .single-skill.animate:nth-child(odd) {
         /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 1) 10%); */
-        background-color: rgb(21, 21, 21);
         margin-bottom: 30px;
     }
 
@@ -1136,7 +1142,7 @@
     .single-skill span.rectengle {
         position: absolute;
         top: 25px;
-        right: -30px;
+        right: -33px;
         height: 30px;
         width: 70px;
         left: -32px;
@@ -2199,7 +2205,7 @@
                     transparent 30%);
         }
 
-        /* .skill-section {
+        .skill-section {
             background:
                 radial-gradient(farthest-corner at top left,
                     rgb(0, 194, 255, 0.2),
@@ -2207,7 +2213,7 @@
                 radial-gradient(farthest-corner at bottom right,
                     rgba(255, 50, 50, 0.3),
                     transparent 30%);
-        } */
+        }
 
         /* .testimonial-section {
             background:
@@ -2493,7 +2499,7 @@
 
         .single-skill:nth-child(odd) span.rectengle {
             right: inherit;
-            left: -30px;
+            left: -33px;
             background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 99%, rgba(78, 78, 78, 1) 10%);
         }
 
