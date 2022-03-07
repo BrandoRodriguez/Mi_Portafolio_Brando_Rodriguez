@@ -2239,22 +2239,19 @@
         }
 
         .skill-section {
-            /* background:
-                radial-gradient(farthest-corner at top left,
-                    rgb(0, 194, 255, 0.2),
-                    transparent 30%),
-                     radial-gradient(farthest-corner at bottom right,
-                    rgba(0, 194, 255, 0.2),
-                    transparent 40%); */
-            background: linear-gradient(180deg, rgba(0, 194, 255, 0.2) 10%,rgba(255, 50, 50, 0.2) 50%, rgba(21, 21, 21) 65% );;
+            background:
+                radial-gradient(farthest-corner at top center,
+                rgba(255, 50, 50, 0.3),
+                    transparent 40%),
+                    linear-gradient(180deg, rgba(0, 194, 255, 0.1) 5%,rgba(255, 50, 50, 0.1) 40%, rgba(21, 21, 21) 65% );
         }
 
-        .testimonial-section {
+        /* .testimonial-section {
             background:
                 radial-gradient(farthest-corner at top right,
                     rgba(0, 194, 255, 0.2),
                     transparent 40%);
-        }
+        } */
 
         .blog-section {
             background:
