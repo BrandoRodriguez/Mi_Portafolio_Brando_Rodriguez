@@ -11,6 +11,12 @@
     <meta name="theme-color" content="#1F1F1F">
     <link rel="stylesheet" href="./style.css">
     <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);font-weight: 400;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);font-weight: 500;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);font-weight: 700;}
+        @font-face {font-display: swap;font-family: "FuturaBT-Bold";src: url(./fonts/FuturaBT-Bold.woff2); font-weight: 900;}
+    </style>
 </head>
 
 <body>
@@ -64,30 +70,43 @@
         <nav class="relative">
             <div class="header">
                 <a class="logo" href="./index.html" style="width: 90px;">
-                    <img src="./assets/logo.png" alt="logo">
+                    <img src="./assets/logo_brandorodriguez.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
+                <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
                 <div class="nav-hidden">
-                    <ul class="flex items-baseline space">
-                        <li><a class="text-white text-md" href="./about.html">About</a></li>
+                    <ul class="nav flex items-baseline space ">
+                        <li><a class="text-white text-sm" href="./">About</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Skills</a></li>
+                        <li><a class="text-white text-sm" href="./">Skills</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./projects.html">Projects</a></li>
+                        <li><a class="text-white text-sm" href="./slider-projects.html">Projects</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Resources</a></li>
+                        <li><a class="text-white text-sm" href="./">Resources</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Contact</a>
+                        <li><a class="text-white text-sm" href="./">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="ctn-btn flex justify-center items-center">
-                    <a class="btn btn-header text-white text-md " href="">Resume</a>
-                    <img class="btn-hidden" src="./assets/menu-right.svg" alt="btn-menu">
-                </div>
+
+                <a class="btn btn-header text-white text-sm " href="">Resume</a>
+
+                <label for="nav-checkbox" class="nav-toggle btn-hidden">
+                    <div class="menu humbarger ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="close show-menu humbarger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
             </div>
         </nav>
 
