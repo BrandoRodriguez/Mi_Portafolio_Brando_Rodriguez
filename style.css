@@ -855,7 +855,7 @@
     }
 
     .blog-information-section {
-        /* padding-top: 120px; */
+        padding-top: 120px;
         overflow: hidden;
     }
 
@@ -1440,18 +1440,23 @@
         background: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(78, 78, 78, 0.50) 100%, rgba(78, 78, 78, 0.1) 10%);
     }
 
-    .card__hero .responsive-media {
-        border-radius: 8px;
-        position: relative;
-    }
-
     .responsive-media {
+        border-radius: 8px;
         position: relative;
         height: 0;
         overflow: hidden;
         padding-bottom: 62%;
         text-align: left;
         width: 100%;
+    }
+   
+    .responsive-media::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.95));
+        bottom: -1px;
+        height: 50%;
     }
 
     .card__hero-content {
@@ -2024,7 +2029,6 @@
 
     .hero-content h2 {
         font-size: 22px;
-        color: #fff;
     }
 
     /* slider */
@@ -2035,7 +2039,6 @@
 
     .slider-hero-content h2 {
         font-size: 40px;
-        color: #fff;
     }
 
     .slider-ctn-btn{
@@ -2257,7 +2260,6 @@
         }
 
         .blog-information-section {
-            padding-top: 120px;
             background:
                 radial-gradient(farthest-corner at top right,
                     rgba(0, 194, 255, 0.2),
@@ -2621,23 +2623,20 @@
 
         .slider-hero-image-wrapper {
             height: 100%;
-            /* transform: translateX(-2%); */
             align-items: center;
             display: flex;
             justify-content: center;
-
         }
-        
-    
+          
         .slider-hero-image {          
             max-width: 830px;
             max-height: 531px;
-            /* background-position: center; */
         }
      
         .slider-hero-image::before {
             width: 55%;
             background-image: linear-gradient(to left, rgba(23, 22, 26, 0), rgba(23, 22, 26, 0.992));
+            background-image: linear-gradient(to left, rgba(21, 21, 21, 0), rgba(21,21,21,0.992));
             left: -1px;
             top: -1px;
             height: 100.3%;

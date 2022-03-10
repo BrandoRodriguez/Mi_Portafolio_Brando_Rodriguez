@@ -5,16 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
-    <meta name="description" content="Brando Rodriguez" />
-    <meta name="author" content="Brando Rodriguez" />
-    <meta name="theme-color" content="#1F1F1F">
+    <title>Projects - Brando Rodriguez - @brandorodriguez - brandorodriguez.com</title>
+    <meta name="description" content="Hi! I’m, Brando Rodriguez - @brandorodriguez - brandorodriguez.com, Full Stack Developer" />
+    <meta name="author" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com" />
+    <meta name="theme-color" content="rgb(21, 21, 21)">
+    <meta property="og:title" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="brandorodriguez.com">
+    <meta property="og:image" content="https://s3.envato.com/files/371217342/01_preview.__large_preview.png">
+    <meta property="og:description" content="I'm a Creative Developer for interactive projects that usually are apps and Creative websites. I Spend most of time coding outstanding projects or studying new technologies. to improve my development stack. I develop compelling designs that spring to life using transition and animations that suit my clients, using the most sophisticated technologies available today for fully interactive, responsive and performance websites and apps.">
+    <meta property="og:site_name" content="@brandorodriguez">
+    <meta name="twitter:card" content="@brandorodriguez">
+    <meta name="twitter:site" content="@brandorodriguez">
+    <meta name="twitter:creator" content="@brandorodriguez">
+    <meta name="twitter:data" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+    <meta name="twitter:label" content="brandorodriguez.com">
+    <meta name="twitter:domain" content="brandorodriguez.com">
+    <link rel="icon" href="./assets/favicon_brandorodriguez.png" sizes="32x32">
     <link rel="stylesheet" href="./style.css">
-    <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
     <style>
-        /* body {
-            background-color: rgb(21, 21, 21);
-        } */
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);font-weight: 400;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);font-weight: 500;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);font-weight: 700;}
+        @font-face {font-display: swap;font-family: "FuturaBT-Bold";src: url(./fonts/FuturaBT-Bold.woff2); font-weight: 900;}
+
 
         .header-section {
             position: absolute;
@@ -55,41 +69,6 @@
         }
 
 
-        .portfolio-item-bg-title {
-            position: absolute;
-            top: 50%;
-        }
-
-        .bg-title {
-            z-index: -1;
-            line-height: .5;
-            white-space: nowrap;
-            letter-spacing: -.02em;
-            font-size: 250px;
-            font-weight: 700;
-            -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-            -o-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-            transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-            color: rgba(136, 136, 136, 0.04);
-        }
-
-        @media screen and (max-width: 768px) {
-            .portfolio-item-bg-title {
-                transform: rotate(-90deg);
-                -webkit-transform-origin: left bottom;
-                transform-origin: left bottom;
-                left: calc(100% - 50px);
-                bottom: 15px;
-                top: auto;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .bg-title {
-                font-size: 100px;
-            }
-        }
-
         .portfolio-bg-overlay:before {
             content: '';
             position: absolute;
@@ -97,7 +76,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(23, 22, 26, 0.99);
+            /* background-color: rgba(23, 22, 26, 0.99); */
+            background-color: rgba(20, 21, 25, 0.85);
+            background-color: rgb(21, 21, 21, 0.80);
         }
 
 
@@ -112,27 +93,16 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: none;
-        }
-
-
-        @media (min-width: 1024px) {
-            .portfolio-bg-overlay {
-                background-image: var(--bg-image);
-            }
+            background-image: var(--bg-image);
 
         }
+
 
         .slider-hover {
             transform-style: preserve-3d;
             transform: perspective(1000px);
             z-index: 1;
         }
-
-        .vertical-linea {
-            z-index: 1;
-        }
-
 
     </style>
 </head>
@@ -142,7 +112,6 @@
     <!-- ======================================= 
         ==Start Hero section==  
     =======================================-->
-    <!-- <div id="stars"></div> -->
     <span class="vertical-linea line1"></span>
     <span class="vertical-linea line2"></span>
     <span class="vertical-linea line3"></span>
@@ -158,35 +127,44 @@
     <section class="header-section">
         <nav class="relative">
             <div class="header">
-                <a class="logo animation" href="./index.html" style="width: 90px;" ;>
-                    <img src="./assets/logo.png" alt="logo">
+                <a class="logo" href="./index.html" style="width: 90px;">
+                    <img src="./assets/logo_brandorodriguez.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
-                <div class="nav-hidden" style="margin-left: auto; margin-right: 3.5rem; ">
-                    <ul class="nav flex items-baseline space animation">
-                        <li><a class="text-white text-md" href="./about.html">About</a></li>
+                <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
+                <div class="nav-hidden" style="margin-left: auto; margin-right: 4rem;">
+                    <ul class="nav flex items-baseline space ">
+                        <li><a class="text-white text-sm" href="./about.html">About</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./slider-portafolio.html">Skills</a></li>
+                        <li><a class="text-white text-sm" href="./slider-portafolio.html">Skills</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./projects.html">Projects</a></li>
+                        <li><a class="text-white text-sm" href="./projects.html">Projects</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./resources.html">Resources</a></li>
+                        <li><a class="text-white text-sm" href="./resources.html">Resources</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./contact.html">Contact</a>
+                        <li><a class="text-white text-sm" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="ctn-btn flex justify-center items-center">
-                    <a class="btn btn-header text-white text-md " href="">Resume</a>
-                    <div class="humbarger btn-hidden">
+
+                <a class="btn btn-header text-white text-sm " href="">Resume</a>
+
+                <label for="nav-checkbox" class="nav-toggle btn-hidden">
+                    <div class="menu humbarger ">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
+
+                    <div class="close show-menu humbarger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
             </div>
         </nav>
     </section>
@@ -197,17 +175,15 @@
     <section class="presentation-section-slider">
         <div class="relative">
             <div class="slide-containe active">
-                <div class="portfolio-bg-overlay " style="--bg-image: url(./assets/img-proyects/oh__img126-1920x1229.jpg);
-                        ">
-                    <div class="portfolio-item-bg-title animation">
-                        <span class="bg-title">JQ
-                            Official Store
-                            Website
-                            Design.</span>
+                <div class="portfolio-bg-overlay " style="--bg-image: url(./assets/img-proyects/project-bg1.jpg);">
+                    <div class="bg-title animation">
+                        <span class="title">
+                            JQ Official Store Website Design.
+                        </span>
                     </div>
 
                     <div class="slider-hero-image-wrapper">
-                        <span class="slider-hero-image  slider-hover "
+                        <span class="slider-hero-image slider-hover"
                             style="background-image: url(./assets/img-proyects/oh__img126-1920x1229.jpg);">
                         </span>
                     </div>
@@ -216,11 +192,11 @@
                         <div class="slider-content-wrapper">
 
                             <div class="slider-hero-content animated-elements" style="padding: 0;">
-                                <span class="badge text-sm">
-                                    <span class="text-sm text-white">
-                                        new
+                                <span class="badge text-s">
+                                    <span class="text-s text-white">
+                                        new project
                                     </span>
-                                    Start selling online.
+                                    Modern Shop
                                 </span>
                                 <h2 class="text-white " style="padding-bottom: 15px;">
                                     JQ
@@ -234,9 +210,9 @@
                                     provides all the tools
                                     you need to start selling online. Let
                                     your customers to experience WooCommerce at its absolute-best.</p>
-                                <a href="./header/index.html" class="text-white text-lg">Discover More.
+                                <a href="./header/index.html" class="text-white text-md">Discover More.
                                     <span class="link-btn">
-                                        <img src="./assets/flecha.png" alt="arrow">
+                                        <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                                     </span>
                                 </a>
                             </div>
@@ -248,35 +224,15 @@
 
             <div class="slider-ctn-btn">
                 <span id="preve" onclick="preve()" class="slick-prev slick-arrow" style="z-index: 1;">
-                    <img style="transform: rotate(-180deg);" src="./assets/flecha.png" alt="arrow">
+                    <img style="transform: rotate(-180deg);" src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </span>
                 <span id="nextt" onclick="nextt()" class="slick-next slick-arrow" style="z-index: 1;">
-                    <img src="./assets/flecha.png" alt="arrow">
+                    <img src="./assets/flecha_brandorodriguez.png" alt="Arrow - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </span>
-            </div>
-            <ul class="slider-social-icono animation">
-                <li class="twitter">
-                    <a href="" title="Twitter" target="_blank">
-                        <img src="./assets/img-icons/tw.svg" alt="">
-                    </a>
-                </li>
-                <li class="linkedin">
-                    <a href="" title="Linkedin" target="_blank">
-                        <img src="./assets/img-icons/ln.svg" alt="">
-                    </a>
-                </li>
-                <li class="instagram">
-                    <a href="" title="Instagram" target="_blank">
-                        <img src="./assets/img-icons/ins.svg" alt="">
-                    </a>
-                </li>
-            </ul>
+            </div> 
         </div>
     </section>
-
     <script src="./index.js"></script>
-
-
 </body>
 
 </html>
