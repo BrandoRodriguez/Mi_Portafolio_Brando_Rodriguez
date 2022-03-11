@@ -435,7 +435,7 @@
     }
 
     /* header nav */
-    .header-section {
+    /* .header-section {
         background:
             radial-gradient(farthest-side at top left,
                 rgba(0, 194, 255, 0.3),
@@ -454,9 +454,9 @@
                 rgba(0, 194, 255, 0.3),
                 transparent 200px);
         padding-top: 0px;
-    }
+    } */
 
-   .portfolio-information-section {
+    /* .portfolio-information-section {
         background:
             radial-gradient(farthest-corner at top left,
                 rgba(0, 194, 255, 0.3),
@@ -504,7 +504,7 @@
             radial-gradient(farthest-corner at bottom right,
                 rgba(255, 50, 50, 0.3),
                 transparent 200px);
-    }  
+    }  */
 
     .header {
         display: flex;
