@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome!</title>
-    <meta name="description" content="Brando Rodriguez" />
-    <meta name="author" content="Brando Rodriguez" />
-    <meta name="theme-color" content="#1F1F1F">
+    <title>Home - Brando Rodriguez - @brandorodriguez - brandorodriguez.com</title>
+    <meta name="description" content="Hi! I’m, Brando Rodriguez - @brandorodriguez - brandorodriguez.com, Full Stack Developer" />
+    <meta name="author" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com" />
+    <meta name="theme-color" content="rgb(21, 21, 21)">
+    <meta property="og:title" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="brandorodriguez.com">
+    <meta property="og:image" content="https://s3.envato.com/files/371217342/01_preview.__large_preview.png">
+    <meta property="og:description" content="I'm a Creative Developer for interactive projects that usually are apps and Creative websites. I Spend most of time coding outstanding projects or studying new technologies. to improve my development stack. I develop compelling designs that spring to life using transition and animations that suit my clients, using the most sophisticated technologies available today for fully interactive, responsive and performance websites and apps.">
+    <meta property="og:site_name" content="@brandorodriguez">
+    <meta name="twitter:card" content="@brandorodriguez">
+    <meta name="twitter:site" content="@brandorodriguez">
+    <meta name="twitter:creator" content="@brandorodriguez">
+    <meta name="twitter:data" content="Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
+    <meta name="twitter:label" content="brandorodriguez.com">
+    <meta name="twitter:domain" content="brandorodriguez.com">
+    <link rel="icon" href="./assets/favicon_brandorodriguez.png" sizes="32x32">
     <link rel="stylesheet" href="./style.css">
-    <link href="./fonts.css?family=GT-Walsheim:400,500,700&display=swap" rel="stylesheet">
     <style>
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Regular.woff2), url(./fonts/GT-Walsheim-Regular.woff);font-weight: 400;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Medium.woff2), url(./fonts/GT-Walsheim-Medium.woff);font-weight: 500;}
+        @font-face {font-display: swap;font-family: "GT-Walsheim";src: url(./fonts/GT-Walsheim-Bold.woff2), url(./fonts/GT-Walsheim-Bold.woff);font-weight: 700;}
+        @font-face {font-display: swap;font-family: "FuturaBT-Bold";src: url(./fonts/FuturaBT-Bold.woff2); font-weight: 900;}
+
         .header-section {
             position: absolute;
             width: 100%;
@@ -190,34 +206,46 @@
         ==Start Hero section==  
     =======================================-->
     <section class="header-section">
-        <div id="stars"></div>
-        <nav class="relative animation">
+        <nav class="relative">
             <div class="header">
-                <a class="logo" href="./index.html">
-                    <img src="./assets/logo.png" alt="logo">
+                <a class="logo" href="./index.html" style="width: 90px;">
+                    <img src="./assets/logo_brandorodriguez.png" alt="logo - Brando Rodriguez - @brandorodriguez - brandorodriguez.com">
                 </a>
-                <div class="nav-hidden" style="margin-right: auto; margin-left: 3rem;">
-                    <ul class="flex items-baseline space">
-                        <li><a class="text-white text-md" href="./about.html">About</a></li>
+                <input type="checkbox" name="" id="nav-checkbox" class="nav-checkbox" />
+                <div class="nav-hidden">
+                    <ul class="nav flex items-baseline space">
+                        <li><a class="text-white text-sm" href="./">About</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Skills</a></li>
+                        <li><a class="text-white text-sm" href="./">Skills</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="./projects.html">Projects</a></li>
+                        <li><a class="text-white text-sm" href="./slider-projects.html">Projects</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Resources</a></li>
+                        <li><a class="text-white text-sm" href="./">Resources</a></li>
                         <span>
                         </span>
-                        <li><a class="text-white text-md" href="#">Contact</a>
+                        <li><a class="text-white text-sm" href="./">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="ctn-btn flex justify-center items-center">
-                    <a class="btn btn-header text-white text-md " href="">Resume</a>
-                    <img class="btn-hidden" src="./assets/menu-right.svg" alt="btn-menu">
-                </div>
+
+                <a class="btn btn-header text-white text-sm " href="">Resume</a>
+
+                <label for="nav-checkbox" class="nav-toggle btn-hidden">
+                    <div class="menu humbarger ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="close show-menu humbarger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
             </div>
         </nav>
     </section>
