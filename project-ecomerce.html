@@ -81,19 +81,7 @@
             margin-right: auto;
         }
 
-
-        @media (min-width: 640px) {
-            .container {
-                width: 100%;
-            }
-        }
-
         @media (min-width: 768px) {
-
-            .container {
-                max-width: 768px;
-            }
-
             .grip-4 {
                 transform: translate(50%, -5%) rotate(-90deg);
             }
@@ -111,10 +99,6 @@
         @media (min-width: 1024px) {
             .grip {
                 grid-template-columns: repeat(11, 1fr);
-            }
-
-            .container {
-                max-width: 1024px;
             }
 
             .grip-1 {
@@ -175,113 +159,21 @@
         }
 
         @media (min-width: 1280px) {
-            .container {
-                max-width: 1280px;
-            }
-
             .grip-4 {
                 transform: translate(35%, -5%) rotate(-90deg);
             }
         }
 
         @media (min-width: 1400px) {
-            .container {
-                max-width: 1400px;
-            }
-
             .grip-4 {
                 transform: translate(27%, -9%) rotate(-90deg);
             }
         }
 
-
-
-        .background-shapes {
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            right: 30%;
-        }
-
-        .background-shape {
-            /* border: 10px solid #3be8b0; */
-            border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-            --tw-border-opacity: .5;
-            border-radius: 500px;
-            position: relative;
-            /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
-            filter: var(--color-is-19);
-            /* border-width: 20px; */
-            height: 950px;
-            width: 517px;
-            transform: translate(200px, 150px);
-        }
-
-        .background-shapes1 {
-            position: absolute;
-            bottom: 0;
-            z-index: -1;
-            left: 20%;
-        }
-
-        .background-shape1 {
-            /* border: 10px solid #3be8b0; */
-            border: 1px solid rgba(92, 91, 91, var(--tw-border-opacity));
-            --tw-border-opacity: .5;
-            border-radius: 500px;
-            position: relative;
-            /* --color-is-19: drop-shadow(0 0 15px #3BE8B0); */
-            filter: var(--color-is-19);
-            /* border-width: 20px; */
-            height: 517px;
-            width: 950px;
-            transform: translate(0px, -150px);
-        }
-
-        svg.waves {
-            z-index: -1;
-            position: absolute;
-            bottom: 30px;
-            left: 0;
-            filter: drop-shadow(0 0 15px #3be8b0);
-            overflow-x: hidden;
-        }
-
-        svg.waves path {
-            fill: none;
-            stroke: #3be8b0;
-            stroke-width: 10px;
-            stroke-dasharray: 1650;
-            stroke-dashoffset: 0;
-            animation: waves 1.8s ease-in-out;
-        }
-
-        @keyframes waves {
-            0% {
-                stroke-dashoffset: 1650;
-            }
-
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-
-
         .grip img {
             border-radius: 25px;
         }
-
-        /* .transform {
-        --tw-translate-x: 0;
-        --tw-translate-y: 0;
-        --tw-rotate: -12deg;
-        --tw-skew-x: 0;
-        --tw-skew-y: 0;
-        --tw-scale-x: 1;
-        --tw-scale-y: 1;
-        transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-        }  */
+        
     </style>
 </head>
 
