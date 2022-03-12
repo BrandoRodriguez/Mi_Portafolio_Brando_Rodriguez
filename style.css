@@ -432,6 +432,8 @@
 
     .container {
         width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     /* header nav */
@@ -439,7 +441,7 @@
         background:
             radial-gradient(farthest-side at top left,
                 rgba(0, 194, 255, 0.3),
-                transparent 300px),
+                transparent 200px),
             radial-gradient(farthest-corner at bottom right,
                 rgba(255, 50, 50, 0.3),
                 transparent 300px);
@@ -634,6 +636,7 @@
         position: absolute;
         bottom: 0;
         width: 280px;
+        filter: drop-shadow(2px 4px 6px black);
     }
 
     .presentation-description {
@@ -2085,13 +2088,6 @@
         }
     }
     
-    @media (max-width: 1024px){
-        .container{
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    }
-    
     @media (min-width: 640px) {
         .container {
             max-width: 640px;
@@ -2336,8 +2332,7 @@
         }
 
         .presentation-section .section-title  {
-            bottom: -9px;
-            left: 8px;
+            bottom: -px;
             position: absolute;
         }
 
@@ -2366,7 +2361,6 @@
 
         .presentation-img img {
             width: auto;
-            filter: drop-shadow(2px 4px 6px black);
         }
 
         /*  */
