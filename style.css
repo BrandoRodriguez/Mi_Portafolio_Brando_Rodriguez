@@ -437,7 +437,7 @@
     }
 
     /* header nav */
-    .header-section {
+    /* .header-section {
         background:
             radial-gradient(farthest-side at top left,
                 rgba(0, 194, 255, 0.3),
@@ -456,7 +456,7 @@
                 rgba(0, 194, 255, 0.3),
                 transparent 200px);
         padding-top: 0px;
-    }
+    } */
 
     /* .portfolio-information-section {
         background:
