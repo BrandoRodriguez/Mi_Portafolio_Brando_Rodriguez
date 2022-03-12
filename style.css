@@ -650,7 +650,7 @@
         backdrop-filter: none;
         gap: 7px;
         top: 29%;
-        background: rgb(0, 0, 0, 0.3);
+        background: rgb(0, 0, 0, 0.5);
     }
 
     .presentation-description-img {
