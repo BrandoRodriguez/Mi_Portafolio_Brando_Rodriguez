@@ -2247,6 +2247,7 @@
                 rgba(255, 50, 50, 0.3),
                     transparent 40%),
                     linear-gradient(180deg, rgba(0, 194, 255, 0.1) 5%,rgba(255, 50, 50, 0.1) 40%, rgba(21, 21, 21) 65% );
+            padding-top: 400px;
         }
 
         .testimonial-section {
@@ -2439,7 +2440,7 @@
         /*  */
 
         .bg-number {
-            font-size: 400px;
+            font-size: 350px;
         }
 
         .ctn-content {
@@ -2766,6 +2767,11 @@
             bottom: 45%;
             z-index: 2;
         }
+
+        .bg-number {
+            font-size: 400px;
+        }
+
 
 
     }
