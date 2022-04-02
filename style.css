@@ -616,6 +616,14 @@
 
     /* --- */
 
+    .skill-section {
+        background:
+            radial-gradient(farthest-corner at top center,
+            rgba(255, 50, 50, 0.3),
+                transparent 40%),
+                linear-gradient(180deg, rgba(0, 194, 255, 0.1) 5%,rgba(255, 50, 50, 0.1) 40%, rgba(21, 21, 21) 65% );
+    }
+
     /* presentation-section */
 
     .presentation-section {
@@ -744,7 +752,7 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
         position: relative;
-        left: -4px;
+
         font-size: 50px;
         color: rgb(71, 67, 67);
         text-transform: uppercase;
@@ -2241,15 +2249,6 @@
                     transparent 30%);
         }
 
-        .skill-section {
-            background:
-                radial-gradient(farthest-corner at top center,
-                rgba(255, 50, 50, 0.3),
-                    transparent 40%),
-                    linear-gradient(180deg, rgba(0, 194, 255, 0.1) 5%,rgba(255, 50, 50, 0.1) 40%, rgba(21, 21, 21) 65% );
-            padding-top: 400px;
-        }
-
         .testimonial-section {
             background:
                 radial-gradient(farthest-corner at bottom right,
@@ -2334,8 +2333,9 @@
         }
 
         .presentation-section .section-title  {
-            bottom: -px;
+            bottom: -5px;
             position: absolute;
+            left: 10px;
         }
 
         .presentation-walper::before {
