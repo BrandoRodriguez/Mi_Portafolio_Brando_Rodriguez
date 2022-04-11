@@ -328,10 +328,9 @@
         bottom: 50%;
         transform:translateY(50%) rotate(-45deg);
     }
-
     .bg-title {
         position: absolute;
-        top: 50%;
+        top: 48%;
     }
     .portfolio-section-right .bg-title{
         top: 65%;
@@ -2511,6 +2510,10 @@
         /*  */
         .single-skill {
             max-width: 400px;
+        }
+
+        .skill-section {
+            padding-top: 35%;
         }
 
         /*  */
