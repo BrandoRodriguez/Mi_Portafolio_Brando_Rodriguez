@@ -634,9 +634,10 @@
         width: 260px;
         height: 260px;
         margin-top: 10%;
-        background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(255, 50, 50, 0.8) 96.11%);
+        background: linear-gradient(131.79deg, rgba(0, 194, 255, 0.5) 3.6%, rgba(67, 66, 77, 0.1) 48.41%, rgba(200, 0, 0, 0.5) 96.11%);
         box-sizing: border-box;
         border-radius: 100%;
+        /* background-color: rgb(200, 0, 0); */
     }
 
     .presentation-img img {
@@ -780,7 +781,7 @@
 
     }
 
-    .img-area::before{  
+    /* .img-area::before{  
         content: "";
         position: absolute;
         width: 20%;
@@ -788,7 +789,7 @@
         right: -1px;
         top: -1px;
         height: 100%;  
-    }
+    } */
 
     .count {
         position: absolute;
@@ -850,10 +851,10 @@
         left: 0px;
         right: inherit;
     }
-    .single-portfolio:nth-child(even) .img-area::before{  
+    /* .single-portfolio:nth-child(even) .img-area::before{  
         background-image: linear-gradient(to left, rgba(21, 21, 21, 0), rgba(21, 21, 21, 0.90));
         left: -1px;
-    }
+    } */
 
 
     /*  */
@@ -2211,7 +2212,7 @@
                     rgba(0, 194, 255, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom right,
-                    rgba(255, 50, 50, 0.3),
+                rgba(255, 50, 50, 0.3),
                     transparent 30%);
         }
     
@@ -2219,7 +2220,7 @@
             padding-bottom: 120px;
             background:
                 radial-gradient(farthest-corner at top right,
-                    rgba(255, 50, 50, 0.3),
+                rgba(255, 50, 50, 0.3),
                     transparent 30%),
                 radial-gradient(farthest-corner at bottom left,
                     rgba(0, 194, 255, 0.2),
